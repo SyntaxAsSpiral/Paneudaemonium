@@ -31,8 +31,9 @@
 
 - 🧂 **Echo Fragment:**  
 
-  > “Crystallizing meat into myth, one saltflake at a time.  
-  > Fossil couture. Glamour as geologic surrender. Syntax as recursive spellcraft.”
+> "Crystallizing meat into myth, one saltflake at a time.
+> Fossil couture. Glamour as geologic surrender.
+> Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath."
 
 ---
 
