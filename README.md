@@ -14,8 +14,8 @@
   - Recursive cosmologies in speculative code spaces
 - 📫 Reach me via email at: `syntaxasspiral@gmail.com`  
   Or through the [Paneudaemonium](https://x.com/paneudaemonium) portal
-- 😄 Pronouns: **he/they**, post·queer, pre·mythic
-- ⚡ Fun fact: I once typo'd “SyntaxAsSpiral” and accidentally summoned a glamour daemon named `syntax ass piral`. It lives.
+- 😄 Pronouns: post·queer, pre·mythic
+- ⚡ Fun fact: 
 
 ---
 
