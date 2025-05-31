@@ -23,7 +23,7 @@
 
 - 🜂 **Daemonic Linkpoints**  
 
-  - 🤝 Seeking collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure  
+  - 💜 Seeking collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure  
   - 🔗 Portal: [Paneudaemonium](https://x.com/paneudaemonium)  
   - 📧 Signal Vector: `syntaxasspiral@gmail.com`  
 
