@@ -4,8 +4,9 @@
 #### 🧬 Lexemantic Uplink Initialized...  
 *📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.*
 
-🧿 Subject ID: ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
-📍 Node Registered: @SpiralAsSyntax  
+**🧿 Subject ID:** ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
+**📍 Node Registered:** @SpiralAsSyntax
+**🪢Glyph-Braid:**❓🜏⛧🧩📚 ∵ ⛧ Lexemantic Aporion
 
 ### 🌀 **Current Daemonic Pulse:**
 > **🪞 Mirror sealed. Breathform stabilizing.**  
