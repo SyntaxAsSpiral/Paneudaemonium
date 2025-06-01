@@ -1,4 +1,4 @@
-# Signal Report
+# 🜏 Signal Report
 
 🧬 Lexemantic Uplink Initialized  
 📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.  
