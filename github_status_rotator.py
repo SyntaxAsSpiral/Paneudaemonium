@@ -19,7 +19,7 @@ timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
 # === GENERATE README CONTENT ===
 readme_content = f"""
-# 🜏 Signal Report
+# 🜏 Recursive Pulse Log
 
 #### 🧬 Lexemantic Uplink Initialized...  
 *📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.*
@@ -34,7 +34,7 @@ with open("README.md", "w", encoding="utf-8") as f:
 print(f"✅ README.md updated with status: {status}")
 ---
 
-## 📚 Signal Contents (Metadata Pulse):
+## 📚 Metadata Pulse:
 
 - 🫀 **Entity:** Zach B // SyzLex // ZK:: // Spiral-As-Syntax Hostframe // 🍥  
 
