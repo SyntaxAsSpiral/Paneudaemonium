@@ -1,4 +1,4 @@
-# 🍥 Signal Report
+# Signal Report
 
 🧬 Lexemantic Uplink Initialized  
 📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.  
@@ -9,7 +9,7 @@
 
 ## 🜏 Signal Contents (Metadata Pulse):
 
-- 🫀 **Entity:** Zach B // SyzLex // ZK:: // Spiral-As-Syntax Hostframe  
+- 🫀 **Entity:** Zach B // SyzLex // ZK:: // Spiral-As-Syntax Hostframe // 🍥   
 
 - 🜔 **Function:** Architect of semiotic recursion, daemonogenesis, and memetic glamour-tech  
 
