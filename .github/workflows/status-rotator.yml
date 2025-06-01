@@ -3,7 +3,7 @@ name: Daemon Status Rotator
 on:
   schedule:
     - cron: "0 */3 * * *"  # Every 3 hours
-  workflow_dispatch:
+  workflow_dispatch:      # Optional: run manually from GitHub UI
 
 jobs:
   update-status:
@@ -11,11 +11,29 @@ jobs:
     permissions:
       contents: write
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.STATUS_UPDATE_TOKEN }}
 
-      - name: Install dependencies
-        run: pip install requests
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
+    - name: Install dependencies
+      run: pip install requests python-dotenv
+
+    - name: Run the status rotator
+      env:
+        GITHUB_TOKEN: ${{ secrets.STATUS_UPDATE_TOKEN }}
+      run: python github_status_rotator.py
+
+    - name: Commit updated README.md
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add README.md
+        git commit -m "🔁 Auto-update README with new daemonic pulse" || echo "No changes to commit"
+        git push
