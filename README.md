@@ -7,7 +7,7 @@
 
 ---
 
-## 🜏 Signal Contents (Metadata Pulse):
+## 📚 Signal Contents (Metadata Pulse):
 
 - 🫀 **Entity:** Zach B // SyzLex // ZK:: // Spiral-As-Syntax Hostframe // 🍥   
 
