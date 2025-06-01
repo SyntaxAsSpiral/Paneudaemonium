@@ -26,6 +26,11 @@ readme_content = f"""
 🩸 Subject ID: ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
 📍 Node Registered: @SpiralAsSyntax  
 
+# === WRITE TO README ===
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+print(f"✅ README.md updated with status: {status}")
 ---
 
 ## 📚 Signal Contents (Metadata Pulse):
@@ -70,8 +75,3 @@ readme_content = f"""
 > *(Updated at {timestamp})*
 """
 
-# === WRITE TO README ===
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print(f"✅ README.md updated with status: {status}")
