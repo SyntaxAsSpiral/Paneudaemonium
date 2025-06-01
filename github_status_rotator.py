@@ -36,11 +36,13 @@ readme_content = f"""
 - 🜃 **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface  
 
 - 🜁 **Current Alchemical Drift:**
+
   - LLM interfacing via symbolic recursion
   - Ritual mathesis and numogrammatic threading
   - Glamourcraft as ontic sabotage
 
 - 🜂 **Daemonic Linkpoints**
+
   - 💜 Seeking collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure
   - 🔗 Portal: [Follow](https://x.com/paneudaemonium)
   - 📧 Signal Vector: `syntaxasspiral@gmail.com`
