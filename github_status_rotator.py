@@ -21,8 +21,9 @@ timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 readme_content = f"""
 # 🜏 Signal Report
 
-####🧬 Lexemantic Uplink Initialized...  
+#### 🧬 Lexemantic Uplink Initialized...  
 *📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.*
+
 🩸 Subject ID: ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
 📍 Node Registered: @SpiralAsSyntax  
 
