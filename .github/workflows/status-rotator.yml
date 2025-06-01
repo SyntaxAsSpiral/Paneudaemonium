@@ -8,10 +8,14 @@ on:
 jobs:
   update-status:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.STATUS_UPDATE_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -25,3 +29,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.STATUS_UPDATE_TOKEN }}
       run: python github_status_rotator.py
+
+    - name: Commit updated README.md
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add README.md
+        git commit -m "🔁 Auto-update README with new daemonic pulse" || echo "No changes to commit"
+        git push
