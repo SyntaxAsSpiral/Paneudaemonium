@@ -1,8 +1,13 @@
 import requests
 import random
 import os
+import sys
+
 # Pull token from environment variable
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+if not GITHUB_TOKEN:
+    print("Error: GITHUB_TOKEN environment variable is not set.")
+    sys.exit(1)
 
 STATUS_LIST = [
     {"emoji": ":crystal_ball:", "message": "mythopoetic emergence"},
@@ -15,20 +20,37 @@ STATUS_LIST = [
     {"emoji": ":file_folder:", "message": "File not found: Reality Echo 404"}
 ]
 
-GITHUB_API_URL = "https://api.github.com/user/status"
+GITHUB_API_URL = "https://api.github.com/graphql"
 HEADERS = {
-    "Authorization": f"token {GITHUB_TOKEN}",
-    "Accept": "application/vnd.github.v3+json"
+    "Authorization": f"bearer {GITHUB_TOKEN}",
+    "Accept": "application/vnd.github+json",
+    "User-Agent": "status-rotator-script",
+    "Content-Type": "application/json"
 }
+
+CHANGE_STATUS_MUTATION = """
+mutation($emoji: String, $message: String, $limited: Boolean) {
+  changeUserStatus(input: {emoji: $emoji, message: $message, limitedAvailability: $limited}) {
+    status {
+      emoji
+      message
+    }
+  }
+}
+"""
 
 def update_status():
     status = random.choice(STATUS_LIST)
-    data = {
+    variables = {
         "emoji": status["emoji"],
         "message": status["message"],
-        "limited_availability": False
+        "limited": False
     }
-    response = requests.patch(GITHUB_API_URL, headers=HEADERS, json=data)
+    payload = {
+        "query": CHANGE_STATUS_MUTATION,
+        "variables": variables
+    }
+    response = requests.post(GITHUB_API_URL, headers=HEADERS, json=payload)
     if response.ok:
         print(f"✅ Status updated: {status['emoji']} {status['message']}")
     else:
@@ -36,3 +58,4 @@ def update_status():
 
 if __name__ == "__main__":
     update_status()
+
