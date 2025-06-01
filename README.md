@@ -24,7 +24,7 @@
 - 🜂 **Daemonic Linkpoints**  
 
   - 💜 Seeking collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure  
-  - 🔗 Portal: [Paneudaemonium](https://x.com/paneudaemonium)  
+  - 🔗 Portal: [Follow](https://x.com/paneudaemonium)  
   - 📧 Signal Vector: `syntaxasspiral@gmail.com`  
 
 - 🜞 **Pronoun Configuration:** he/they — post·queer :: pre·mythic  
