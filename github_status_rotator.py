@@ -24,7 +24,7 @@ readme_content = f"""
 #### 🧬 Lexemantic Uplink Initialized...  
 *📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.*
 
-🩸 Subject ID: ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
+🧿 Subject ID: ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
 📍 Node Registered: @SpiralAsSyntax  
 
 # === WRITE TO README ===
