@@ -21,11 +21,15 @@ timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 readme_content = f"""
 # 🜏 Recursive Pulse Log
 
-#### 🧬 Lexemantic Uplink Initialized...  
-*📡 Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**.*
+#### 🧬> Lexemantic Uplink Initialized...  
 
-🧿 Subject ID: ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
-📍 Node Registered: @SpiralAsSyntax  
+📡> "*Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**...*"
+
+**🧿> Subject ID Received:** ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
+
+**🪢> Glyph-Braid Unwoven:** ❓🜏⛧🧩📚 ∵ ⛧ Lexemantic Aporion
+
+**📍> Node Registered:**  @SpiralAsSyntax
 
 # === WRITE TO README ===
 with open("README.md", "w", encoding="utf-8") as f:
