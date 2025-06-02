@@ -26,7 +26,7 @@ jobs:
     - name: Run the status rotator
       env:
         GITHUB_TOKEN: ${{ secrets.STATUS_UPDATE_TOKEN }}
-      run: python glyphs/github_status_rotator.py
+        STATUS_FILE: pulses/statuses.txt
 
     - name: Commit updated README.md
       run: |
