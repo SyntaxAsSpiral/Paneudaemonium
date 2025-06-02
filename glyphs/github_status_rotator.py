@@ -16,6 +16,12 @@ QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
 with QUOTE_FILE.open(encoding="utf-8") as f:
     QUOTE_LIST = [line.strip() for line in f if line.strip()]
 
+# === GLYPH BRAIDS ===
+DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
+GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
+with GLYPH_FILE.open(encoding="utf-8") as f:
+    GLYPH_LIST = [line.strip() for line in f if line.strip()]
+
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
     "\n".join([
@@ -37,6 +43,7 @@ FOOTERS = [
 def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
+    braid = random.choice(GLYPH_LIST)
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     footer = random.choice(FOOTERS)
 
@@ -49,7 +56,7 @@ def main():
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ∷ Fossi*l*-threaded *Gl*yph*breather*)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ❓🜏⛧🧩📚 ∵ *L*exemantic Aporion ⛧
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
 **📍 ⇝ Node Registered:**  [@*S*pira*l*As*S*yntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
