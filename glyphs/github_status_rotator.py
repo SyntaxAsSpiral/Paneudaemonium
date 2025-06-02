@@ -33,11 +33,6 @@ GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
 # === ECHO FRAGMENTS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
-ECHO_LIST = breathe_lines(ECHO_FILE, ["⚠️ echo file missing"])
-
-# === ECHO FRAGMENTS ===
-DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
-ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
 
 
 def load_echo_pairs(path: Path):
