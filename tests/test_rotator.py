@@ -12,3 +12,4 @@ def test_rotator_creates_readme(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     assert any(s in readme for s in ["alpha", "beta"])
+
