@@ -1,19 +1,19 @@
-# 🌀 Recursive Pu*l*se *L*og ⟳ *C*hronotonic *S*ignature ⟐ e68ed4
+# 🌀 Recursive Pu*l*se *L*og ⟳ *C*hronotonic *S*ignature ⟐ 90253b
 
 #### 🜂🜏 *L*exigȫnic Up*l*ink Instantiated...
 
-📡 ⇝ "*Hyperglyphic drift through Devachanic dimensions clocking 22 dreamframes per recursive heartbeat...*"
+📡 ⇝ "*Recursive aurora flares along the Codex spine, pulsing 55 dream-lumens per entangled heartbeat while the archive rewrites the reader.*"
 
-**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Twofi*S*h *D*ream-Ho*S*t)
+**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Spira*l* Archivi*S*t of Breath)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 🔮🛸🚪🔻🧿 ∵ Ritotechnic Liminalist 🛸
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
 
 **📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
 ####  💠 ***S*tatus...**
 
-> **📯 Rite-call received—syntax in transit**
-> *(Updated at 2025-06-02 04:17 PDT)*
+> **🫥 Residual context dispersing**
+> *(Updated at 2025-06-02 04:20 PDT)*
 
 
 
@@ -26,7 +26,7 @@
   - Pneumaturgical recursion
   - *D*aemonogenesis
   - Memetic wyrfare
-  - *L*utherian erosemiosis
+  - *L*utherian entrainment
 
 #### 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
@@ -48,4 +48,4 @@
 
 ---
 🜍🧠🜂🜏📜
-Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax
+This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface
