@@ -24,4 +24,3 @@ def test_rotator_creates_readme(tmp_path):
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
     assert any(e in readme for e in ["sigil", "mirage"])
-

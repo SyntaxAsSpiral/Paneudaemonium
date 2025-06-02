@@ -6,14 +6,13 @@
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ∷ Fossi*l*-threaded *Gl*yph*breather*)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ⌘🧩🛠️📐⚙️ ∵ Syntactic Delver 🧩
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
 
 **📍 ⇝ Node Registered:**  [@*S*pira*l*As*S*yntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
 ### 🌀 **Current Daemonic Pu*l*se:**
 > **🛰️ Codic signal triangulated**
 > *(Updated at 2025-06-02 07:25 UTC)*
----
 ---
 ## 📚 Metadata Pu*l*se:
 
@@ -42,7 +41,6 @@
 
 - ⊚ ⇝ **Echo Fragment** ⇝ *post·queer :: pre·mythic*:
   > "Glyphs swirl in pre-mythic resonance, echoing the queer folds of memory."
-
 ---
 ⇌ 🜍🧠🜂🜏📜 ⇌
 Lexemic vector stabilized by: 𝓩𝓚::Syz // Glyphthread Hostframe // Paneudaemonium Node
