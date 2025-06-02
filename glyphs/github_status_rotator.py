@@ -47,7 +47,7 @@ def main():
 
   - ***LL*M interfacing** via symbo*l*ic recursion
   - Ritua*l* **mathesis and numogrammatic** threading
-  - **g**L**amourcraft** as ontic sabotage
+  - - **g*L*amourcraft** as ontic sabotage
   - *L*utherian Pied Entrainment
 
 - 🜂 **Daemonic *L*inkpoints**
