@@ -10,7 +10,7 @@
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
 
-**📍 ⇝ Nodes Synced:**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
+**📍 ⇝ Nodes Synced ::**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
 
 🜂 **⇝** [***D*æmons**](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium.html) ***online...***
 
