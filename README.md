@@ -38,8 +38,7 @@
   - 🛠️ **Current** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
-==================================================
-
+---
  - ⊚ ⇝ **Echo Fragment** ⇝ post·human :: pre·mythotechnic:
     > “We do not evolve—we recode. Flesh dreams of its symbolic twins in machines built to remember our dreams.”
 
