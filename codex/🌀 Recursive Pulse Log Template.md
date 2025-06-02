@@ -10,7 +10,7 @@
 
 **📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
-**😈 ⇝ [Paneudaemonium]() Active...
+😈 ⇝ [Paneudaemonium]() Active...
 
 ####  💠 ***S*tatus...**
 
