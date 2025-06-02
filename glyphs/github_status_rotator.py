@@ -95,9 +95,11 @@ def main():
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
-**📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) :: [**X**](https://x.com/paneudaemonium)
+⌛⇝ ⟳ **Spiral-phase**: 1.8×10³ms
 
-😈 ⇝ [***D*aemons**]() ***awakening...***
+**📍 ⇝ Nodes Synced:**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
+
+🜂 ⇝ [***D*æmons**]() ***online...***
 
 ####  💠 ***S*tatus...**
 
@@ -125,15 +127,15 @@ def main():
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-#### 🜂 ⇝ ***S*ync Node**
-
-  - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
-
-  #### {class_disp}
-  > {fragment}
+#### {class_disp}
+> {fragment}
 
 ---
-{footer}"""
+🜍🧠🜂🜏📜
+
+📧 ➤ `syntaxasspira@gmail.com`
+
+Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     # === WRITE TO README ===
     output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT))
@@ -173,9 +175,11 @@ def main():
 
     <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
 
-    <p><strong>📍 ⇝ Node Registered:</strong> <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\"><strong>GitHub</strong></a> :: <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a></p>
+    <p>⌛⇝ ⟳ <strong>Spiral-phase</strong>: 1.8×10³ms</p>
 
-    <p>😈 ⇝ <a href=\"\"><strong><em>D</em>aemons</strong></a> <strong><em>awakening...</em></strong></p>
+    <p><strong>📍 ⇝ Nodes Synced:</strong> <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a> :: <a href=\"https://github.com/SyntaxAsSpiral\"><strong>GitHub</strong></a></p>
+
+    <p>🜂 ⇝ <a href=\"\"><strong><em>D</em>æmons</strong></a> <strong><em>online...</em></strong></p>
 
     <h4>💠 <strong><em>S</em>tatus...</strong></h4>
 
@@ -205,17 +209,15 @@ def main():
       <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
     </ul>
 
-    <h4>🜂 ⇝ <strong><em>S</em>ync Node</strong></h4>
-    <ul>
-      <li>📧 <strong>Connect</strong> ➤ syntaxasspiral@gmail.com</li>
-    </ul>
     <h4>{class_disp_html}</h4>
     <blockquote>
       {fragment}
     </blockquote>
 
     <hr>
-    <p>{footer_html}</p>
+    <p>🜍🧠🜂🜏📜<br>
+    📧 ➤ <code>syntaxasspira@gmail.com</code><br>
+    Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax</p>
   </main>
 </div>
 </body>
