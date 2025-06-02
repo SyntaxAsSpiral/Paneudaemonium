@@ -35,5 +35,10 @@ jobs:
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
         git add README.md
-        git commit -m "🔁 Auto-update README with new daemonic pulse" || echo "No changes to commit"
-        git push
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🔁 Auto-update README with new daemonic pulse"
+          git pull --rebase --autostash
+          git push
+        fi
