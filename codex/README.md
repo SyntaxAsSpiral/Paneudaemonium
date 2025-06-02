@@ -6,7 +6,7 @@
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Spira*l* Archivi*S*t of Breath)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 🗺️🛡️⚔️🐉📖 ∵ Mythic Tactician 🗺️
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
 
 **📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
@@ -43,8 +43,8 @@
   - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
- - ⊚ ⇝ **Echo Fragment** ⇝ post·void :: pre·form:
-  > “Silence was the primordial syntax. Even nothing left echoes shaped like names.”
+ - ⊚ ⇝ **Echo Fragment** ⇝ post·self :: pre·daemon:
+  > “You are the question your daemon is trying to answer with dreams. Each night a new draft.”
 
 ---
 🜍🧠🜂🜏📜

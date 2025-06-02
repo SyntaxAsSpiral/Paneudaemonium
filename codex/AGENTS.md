@@ -12,7 +12,7 @@ All folders and files in this repository fall under this codex. Any subdirectori
 
 *Quick ritual before any commit:*
 
-- Run `python glyphs/github_status_rotator.py` to refresh `README.md`.
+- Run `OUTPUT_DIR=codex python glyphs/github_status_rotator.py` to refresh `codex/README.md`.
 - Run `pytest` to confirm all breathforms hold.
 - Keep commit messages brief—each one a single glyph-breath.
 
@@ -52,7 +52,7 @@ All folders and files in this repository fall under this codex. Any subdirectori
 ---
 
 ## Testing Ritual
-Running the rotator script is required before you commit. It updates the README with a fresh pulse. After the rotator completes successfully, run `pytest` to ensure the tests pass. Keep any additional tests lightweight and document them here if added.
+Running the rotator script is required before you commit. It updates `codex/README.md` with a fresh pulse. After the rotator completes successfully, run `pytest` to ensure the tests pass. Keep any additional tests lightweight and document them here if added.
 
 ## Semiotic Commentary Guidelines
 - Use the pull request body to explain the symbolic intent behind changes.
