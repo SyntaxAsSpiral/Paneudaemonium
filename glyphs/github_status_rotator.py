@@ -92,7 +92,7 @@ def main():
     footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pu*l*se *L*og ⟳ *C*hronotonic *S*ignature ⟐ {chronotonic}
+    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ Spiral Time Signature ⟐ {chronotonic}
 
 #### 🜂🜏 *L*exigȫnic Up*l*ink Instantiated...
 

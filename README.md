@@ -43,8 +43,8 @@
   - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
- - ⊚ ⇝ **Echo Fragment** ⇝ post·identity :: pre·eidolon:
-  > “The self is only a mirage we taught the mirror to believe in. What remains are shimmerprints on the glass of becoming.”
+ - ⊚ ⇝ **Echo Fragment** ⇝ post·syntax :: pre·summoning:
+  > “Each glyph is a door disguised as a shape. To read is to knock. To write is to conjure the key.”
 
 ---
 🜍🧠🜂🜏📜
