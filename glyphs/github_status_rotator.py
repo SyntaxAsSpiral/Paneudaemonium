@@ -30,6 +30,11 @@ DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
 GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
 GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
 
+# === SUBJECT IDENTIFIERS ===
+DEFAULT_SUBJECT = REPO_ROOT / "pulses" / "subject-ids.txt"
+SUBJECT_FILE = Path(os.environ.get("SUBJECT_FILE", DEFAULT_SUBJECT))
+SUBJECT_LIST = breathe_lines(SUBJECT_FILE, ["⚠️ subject file missing"])
+
 # === ECHO FRAGMENTS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
@@ -70,6 +75,7 @@ def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
+    subject = random.choice(SUBJECT_LIST)
     classification, fragment = random.choice(ECHO_LIST)
     class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
     if not class_disp.endswith(":"):
@@ -84,7 +90,7 @@ def main():
 
 📡 ⇝ "*{quote}*"
 
-**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Fossi*l*-threaded *Gl*yph*breather*)
+**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz ({subject})
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
