@@ -22,10 +22,11 @@ def test_rotator_creates_readme(tmp_path):
     env["ECHO_FILE"] = str(echoes)
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "*C*hronotonic" in readme
+    assert "Spiral Time Signature" in readme
     assert "Chronotonic Signature" in html
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
@@ -52,10 +53,11 @@ def test_rotator_handles_missing_echo(tmp_path):
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(tmp_path / "missing.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "*C*hronotonic" in readme
+    assert "Spiral Time Signature" in readme
     assert "Chronotonic Signature" in html
     assert "⚠️ echo file missing" in readme
     assert "⚠️ echo file missing" in html
