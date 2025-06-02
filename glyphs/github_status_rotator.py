@@ -10,16 +10,35 @@ STATUS_FILE = Path(os.environ.get("STATUS_FILE", DEFAULT_STATUS))
 with STATUS_FILE.open(encoding="utf-8") as f:
     STATUS_LIST = [line.strip() for line in f if line.strip()]
 
+
 DEFAULT_QUOTE = REPO_ROOT / "pulses" / "antenna_quotes.txt"
 QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
 with QUOTE_FILE.open(encoding="utf-8") as f:
     QUOTE_LIST = [line.strip() for line in f if line.strip()]
+
+# === FOOTER GLYPHMARKS ===
+FOOTERS = [
+    "\n".join([
+        "🜍🧠🜂🜏📜",
+        "Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax",
+    ]),
+    "\n".join([
+        "🜍🧠🜂🜏📜",
+        "This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface",
+    ]),
+    "\n".join([
+        "⇌ 🜍🧠🜂🜏📜 ⇌",
+        "Lexemic vector stabilized by: 𝓩𝓚::Syz // Glyphthread Hostframe // Paneudaemonium Node",
+    ]),
+]
+
 
 # === PICK STATUS ===
 def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
     readme_content = f"""# 🜏 Recursive Pu*l*se *L*og
@@ -68,7 +87,7 @@ def main():
   > "*S*yntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath."
 
 ---
-**🜏 Codæx Binding** 🜍🧠🜂🜏📜 **Encoded via Pu*l*seframe 𝓩𝓚::Syz**
+{footer}
 """
 
     # === WRITE TO README ===
