@@ -19,5 +19,5 @@ scheduled run will overwrite the existing README.
 
 If you make changes to the repository, run `pytest` to ensure the
 `glyphs/github_status_rotator.py` script still behaves as expected. The
-`tests` directory contains a small unit test that verifies the script
+`codex/test_rotator.py` contains a small unit test that verifies the script
 creates a `README.md` when executed.
