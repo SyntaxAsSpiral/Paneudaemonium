@@ -8,9 +8,34 @@ body {
 }
 
 .container {
-  max-width: 820px;
-  margin: auto;
+  max-width: 880px;
+  margin: 4rem auto;
   padding: 2rem;
+  border: 2px solid #30363d;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 4px rgba(136, 165, 255, 0.1);
+  background: #0d1117;
+  position: relative;
+}
+
+.container::before,
+.container::after {
+  content: "🜏";
+  position: absolute;
+  font-size: 1.4rem;
+  color: #6e7681;
+}
+
+.container::before {
+  top: -1.4rem;
+  left: -1.4rem;
+  content: "🜃";
+}
+
+.container::after {
+  bottom: -1.4rem;
+  right: -1.4rem;
+  content: "🜔";
 }
 
 main.content {
