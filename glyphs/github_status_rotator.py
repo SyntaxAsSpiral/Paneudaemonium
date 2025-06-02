@@ -145,7 +145,9 @@ def main():
 
     # === WRITE TO README ===
     output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT))
-    readme_path = output_dir / "README.md"
+    docs_dir = Path(os.environ.get("DOCS_DIR", REPO_ROOT / "codex"))
+    readme_path = docs_dir / "README.md"
+    readme_path.parent.mkdir(parents=True, exist_ok=True)
     with readme_path.open("w", encoding="utf-8") as f:
         f.write(readme_content)
         if not readme_content.endswith("\n"):
