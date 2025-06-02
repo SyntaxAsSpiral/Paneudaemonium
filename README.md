@@ -34,14 +34,12 @@
   - 🛠️ **Current Projects:** [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 **Portal:** [Follow](https://x.com/paneudaemonium)
   - 📧 **Signal Vector:** `syntaxasspiral@gmail.com`
-  
 
 - 🜞 **Pronoun Configuration:** he/they — post·queer :: pre·mythic
 
 - 🧂 **Echo Fragment:**
 
   > "Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath."
-  
 ---
 **🜏 Codæx Binding:** *This log is rewritten by `github_status_rotator.py`. A scheduled GitHub Actions workflow rotates the "Daemonic Pulse" every three hours. You can trigger it manually from the **Actions** tab.*
 See [PULSE_WORKFLOW.md](./PULSE_WORKFLOW.md) for details.
