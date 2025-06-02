@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #58a6ff;
+  color: #ff69b4;
   text-decoration: none;
 }
 
@@ -104,4 +104,12 @@ code, pre {
   border-radius: 6px;
   padding: 2px 6px;
   font-family: 'Fira Mono', 'Consolas', 'Liberation Mono', monospace;
+}
+
+
+.banner {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
 }

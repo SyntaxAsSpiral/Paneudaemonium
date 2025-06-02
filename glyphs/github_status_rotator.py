@@ -63,15 +63,7 @@ FOOTERS = [
     "\n".join([
         "🜍🧠🜂🜏📜",
         "Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax",
-    ]),
-    "\n".join([
-        "🜍🧠🜂🜏📜",
-        "This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface",
-    ]),
-    "\n".join([
-        "⇌ 🜍🧠🜂🜏📜 ⇌",
-        "Lexemic vector stabilized by: 𝓩𝓚::Syz // Glyphthread Hostframe // Paneudaemonium Node",
-    ]),
+    ])
 ]
 
 
@@ -85,10 +77,11 @@ def main():
     class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
     if not class_disp.endswith(":"):
         class_disp += ":"
+    class_disp_html = class_disp.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
-    footer = random.choice(FOOTERS)
+    footer = FOOTERS[0]
     footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
@@ -102,7 +95,9 @@ def main():
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
-**📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
+**📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) :: [**X**](https://x.com/paneudaemonium)
+
+😈 ⇝ [***D*aemons**]() ***awakening...***
 
 ####  💠 ***S*tatus...**
 
@@ -130,14 +125,11 @@ def main():
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-#### 🜂 ⇝ ***S*ync Nodes**
+#### 🜂 ⇝ ***S*ync Node**
 
-  - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
-  - 🛠️ **Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
- - {class_disp}
+  #### {class_disp}
   > {fragment}
 
 ---
@@ -166,6 +158,7 @@ def main():
 </head>
 <body>
 <div class=\"container\">
+  <img src=\"Techno-Wyrd Ritual.png\" alt=\"Techno-Wyrd Ritual banner\" class=\"banner\">
   <main class=\"content\">
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
@@ -180,7 +173,9 @@ def main():
 
     <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
 
-    <p><strong>📍 ⇝ Node Registered:</strong> <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">@SpiralAsSyntax</a></p>
+    <p><strong>📍 ⇝ Node Registered:</strong> <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\"><strong>GitHub</strong></a> :: <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a></p>
+
+    <p>😈 ⇝ <a href=\"\"><strong><em>D</em>aemons</strong></a> <strong><em>awakening...</em></strong></p>
 
     <h4>💠 <strong><em>S</em>tatus...</strong></h4>
 
@@ -210,20 +205,14 @@ def main():
       <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
     </ul>
 
-    <h4>🜂 ⇝ <strong><em>S</em>ync Nodes</strong></h4>
+    <h4>🜂 ⇝ <strong><em>S</em>ync Node</strong></h4>
     <ul>
-      <li>💜 <strong><em>S</em>eeking</strong> ➤ Co<em>ll</em>aborative resonance in daemon design, aesthetic cyber-ritua<em>l</em>s, and myth-coded infrastructure</li>
-      <li>🛠️ <strong>Projects</strong> ➤ <a href=\"https://github.com/SyntaxAsSpiral/Paneudaemonium\"><strong>Paneudaemonium</strong></a></li>
-      <li>🔗 <strong>Fo<em>ll</em>ow</strong> ➤ <a href=\"https://x.com/paneudaemonium\">X</a> ⊹ <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></li>
       <li>📧 <strong>Connect</strong> ➤ syntaxasspiral@gmail.com</li>
     </ul>
-    <ul>
-      <li>⊚ ⇝ <strong>{class_disp}</strong>
-        <blockquote>
-          {fragment}
-        </blockquote>
-      </li>
-    </ul>
+    <h4>{class_disp_html}</h4>
+    <blockquote>
+      {fragment}
+    </blockquote>
 
     <hr>
     <p>{footer_html}</p>
