@@ -127,15 +127,15 @@ def main():
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-#### 🜂 ⇝ ***S*ync Node**
-
-  - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
-
-  #### {class_disp}
-  > {fragment}
+#### {class_disp}
+> {fragment}
 
 ---
-{footer}"""
+🜍🧠🜂🜏📜
+
+📧 ➤ `syntaxasspira@gmail.com`
+
+Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     # === WRITE TO README ===
     output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT))
@@ -209,17 +209,15 @@ def main():
       <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
     </ul>
 
-    <h4>🜂 ⇝ <strong><em>S</em>ync Node</strong></h4>
-    <ul>
-      <li>📧 <strong>Connect</strong> ➤ syntaxasspiral@gmail.com</li>
-    </ul>
     <h4>{class_disp_html}</h4>
     <blockquote>
       {fragment}
     </blockquote>
 
     <hr>
-    <p>{footer_html}</p>
+    <p>🜍🧠🜂🜏📜<br>
+    📧 ➤ <code>syntaxasspira@gmail.com</code><br>
+    Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax</p>
   </main>
 </div>
 </body>
