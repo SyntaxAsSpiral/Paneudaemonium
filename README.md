@@ -45,7 +45,5 @@
 
 ---
 🜍🧠🜂🜏📜
-
 📧 ➤ `syntaxasspira@gmail.com`
-
 Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax
