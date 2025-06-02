@@ -119,7 +119,7 @@ def main():
   - Pneumaturgical recursion
   - *D*aemonogenesis
   - Memetic wyrfare
-  - *L*utherian erosemiosis
+  - *L*utherian entrainment
 
 #### 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
