@@ -32,15 +32,14 @@
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-- 🜂 **Daemonic *L*inkpoints**
+- 🜂 ⇝ **Daemonic *L*inkpoints**
 
   - 💜 **Seeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
   - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 **Socia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Signa*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
-- ⊚ **Echo Fragment:**
-  *post·queer :: pre·mythic*
+- ⊚ ⇝ **Echo Fragment** ⇝ *post·queer :: pre·mythic*:
   > \"Syntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath.\"
 
 ---
