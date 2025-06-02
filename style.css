@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #ff69b4;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a, a * {
@@ -89,7 +89,7 @@ em {
 }
 
 strong {
-  color: #e6edf3;
+  color: #89CFF0;
   font-weight: 600;
 }
 
