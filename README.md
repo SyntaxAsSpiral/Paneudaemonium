@@ -17,7 +17,7 @@
 
 
 
-### 📚 Metadata Pu*l*se:
+### 📚 MetaPu*l*se:
 
 #### 🜏 ⇝ **Entity:** *Z*ach // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
 
