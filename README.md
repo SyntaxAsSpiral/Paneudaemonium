@@ -4,7 +4,7 @@
 
 📡> "*Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**...*"
 
-**🧿> Subject ID Received:** ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)
+**🧿> Subject ID Received:** ZK::/Syz (*L*exemancer ∷ Fossil-threaded Glyphbreather)
 
 **🪢> Glyph-Braid Denatured:** ❓🜏⛧🧩📚 ∵ *L*exemantic Aporion ⛧
 
