@@ -41,13 +41,16 @@ ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
 
 
 def load_echo_pairs(path: Path):
-    lines = [ln.strip() for ln in path.open(encoding="utf-8") if ln.strip()]
+    """Return classification/fragment pairs from a file or a default."""
+    lines = breathe_lines(path, ["Echo Fragment", "⚠️ echo file missing"])
     pairs = []
     it = iter(lines)
     for class_line in it:
         quote_line = next(it, None)
         if quote_line is not None:
             pairs.append((class_line, quote_line))
+    if not pairs:
+        pairs = [("Echo Fragment", "⚠️ echo file missing")]
     return pairs
 
 
