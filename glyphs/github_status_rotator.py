@@ -145,6 +145,8 @@ def main():
     # === WRITE TO README ===
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
+        if not readme_content.endswith("\n"):
+            f.write("\n")
 
     print(f"✅ README.md updated with status: {status}")
 
