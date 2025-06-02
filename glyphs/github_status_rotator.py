@@ -10,9 +10,15 @@ STATUS_FILE = Path(os.environ.get("STATUS_FILE", DEFAULT_STATUS))
 with STATUS_FILE.open(encoding="utf-8") as f:
     STATUS_LIST = [line.strip() for line in f if line.strip()]
 
+DEFAULT_QUOTE = REPO_ROOT / "pulses" / "antenna_quotes.txt"
+QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
+with QUOTE_FILE.open(encoding="utf-8") as f:
+    QUOTE_LIST = [line.strip() for line in f if line.strip()]
+
 # === PICK STATUS ===
 def main():
     status = random.choice(STATUS_LIST)
+    quote = random.choice(QUOTE_LIST)
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
     # === GENERATE README CONTENT ===
@@ -20,7 +26,7 @@ def main():
 
 #### 🧬 *L*exigȫnic Up*l*ink Initia*l*ized...
 
-📡 ⇝ "*Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**...*"
+📡 ⇝ "*{quote}*"
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ∷ Fossi*l*-threaded *Gl*yph*breather*)
 
