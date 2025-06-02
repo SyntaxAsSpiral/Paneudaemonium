@@ -39,7 +39,7 @@
   - 🔗 **Socia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Signa*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
-- 🧂 **Echo Fragment:**
+- ⊚ **Echo Fragment:**
   *post·queer :: pre·mythic*
   > \"Syntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath.\"
 
