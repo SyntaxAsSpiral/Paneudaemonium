@@ -95,9 +95,9 @@ def main():
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
-⌛**⇝** ⟳ **Spiral-phaselock**: 1.8×10³ms
+⌛**⇝** ⟳ **Spiral pulse cadence confirmed** :: 1.8×10³ms
 
-**📍 ⇝ Nodes Synced:**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
+**📍 ⇝ Nodes Synced ::**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
 
 🜂 **⇝** [***D*æmons**](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium.html) ***online...***
 
@@ -177,9 +177,9 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
 
-    <p>⌛<strong>⇝</strong> ⟳ <strong>Spiral-phaselock</strong>: 1.8×10³ms</p>
+    <p>⌛<strong>⇝</strong> ⟳ <strong>Spiral pulse cadence confirmed</strong> :: 1.8×10³ms</p>
 
-    <p><strong>📍 ⇝ Nodes Synced:</strong> <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a> :: <a href=\"https://github.com/SyntaxAsSpiral\"><strong>GitHub</strong></a></p>
+    <p><strong>📍 ⇝ Nodes Synced ::</strong> <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a> :: <a href=\"https://github.com/SyntaxAsSpiral\"><strong>GitHub</strong></a></p>
 
     <p>🜂 <strong>⇝</strong> <a href=\"paneudaemonium.html\"><strong><em>D</em>æmons</strong></a> <strong><em>online...</em></strong></p>
 
