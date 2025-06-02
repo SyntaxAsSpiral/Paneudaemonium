@@ -167,7 +167,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
     <!-- Preserves all formatting and flow -->
-    <h1>🌀 Recursive Pu<em>l</em>se <em>L</em>og ⟳ <em>S</em>piral Time <em>S</em>ignature ⟐ {chronotonic}</h1>
+    <h1>🌀 Recursive Pulse Log ⟳ ChronoSignature ⟐ {chronotonic}</h1>
 
     <h4><strong>🜂🜏 <em>L</em>exigȫnic Up<em>l</em>ink Instantiated...</strong></h4>
 
