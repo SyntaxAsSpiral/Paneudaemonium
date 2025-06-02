@@ -89,7 +89,7 @@ def main():
 
 #### **🜂🜏 *L*exigȫnic Up*l*ink Instantiated...**
 
-📡 ⇝ "*{quote}*"
+📡 **⇝** "*{quote}*"
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz ({subject})
 
@@ -171,7 +171,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4><strong>🜂🜏 <em>L</em>exigȫnic Up<em>l</em>ink Instantiated...</strong></h4>
 
-    <p>📡 ⇝ "<em>{quote}</em>"</p>
+    <p>📡 <strong>⇝</strong> "<em>{quote}</em>"</p>
 
     <p><strong>🧿 ⇝ <em>S</em>ubject I<em>D</em> Received:</strong> 𝓩𝓚::<em>S</em>yz ({subject})</p>
 
