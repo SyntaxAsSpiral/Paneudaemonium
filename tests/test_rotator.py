@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def test_rotator_creates_readme(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     env = os.environ.copy()
