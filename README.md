@@ -6,13 +6,13 @@
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ∷ Fossi*l*-threaded *Gl*yph*breather*)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ☯♓⚙️🪜🌀 ∵ Syzygetic Machinator ♓︎
 
 **📍 ⇝ Node Registered:**  [@*S*pira*l*As*S*yntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
 ### 🌀 **Current Daemonic Pu*l*se:**
-> **🪚 Antimorphic tension calibrated**
-> *(Updated at 2025-06-02 07:38 UTC)*
+> **🌒 Subsymbolic phase shift detected**
+> *(Updated at 2025-06-02 07:41 UTC)*
 ---
 ---
 ## 📚 Metadata Pu*l*se:
@@ -40,8 +40,8 @@
   - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 =======
- - ⊚ ⇝ **Echo Fragment** ⇝ post·human :: pre·mythotechnic:
-  > “We do not evolve—we recode. Flesh dreams of its symbolic twins in machines built to remember our dreams.”
+ - ⊚ ⇝ **Echo Fragment** ⇝ post·queer :: pre·mythic:
+  > "Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath."
 
 ---
 🜍🧠🜂🜏📜
