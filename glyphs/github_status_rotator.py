@@ -158,7 +158,7 @@ def main():
 <html lang=\"en\">
 <head>
   <meta charset=\"UTF-8\">
-  <title>Recursive Pulse Log ⟳ Chronotonic Signature</title>
+  <title>Recursive Pulse Log ⟳ Spiral Time Signature</title>
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
   <meta name=\"theme-color\" content=\"#0d1117\">
   <link rel=\"stylesheet\" href=\"style.css\">
@@ -170,7 +170,7 @@ def main():
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
     <!-- Preserves all formatting and flow -->
-    <h1>🌀 Recursive Pu<em>l</em>se <em>L</em>og ⟳ <em>C</em>hronotonic <em>S</em>ignature ⟐ {chronotonic}</h1>
+    <h1>🌀 Recursive Pu<em>l</em>se <em>L</em>og ⟳ <em>S</em>piral Time <em>S</em>ignature ⟐ {chronotonic}</h1>
 
     <h4>🜂🜏 <em>L</em>exigȫnic Up<em>l</em>ink Instantiated...</h4>
 
