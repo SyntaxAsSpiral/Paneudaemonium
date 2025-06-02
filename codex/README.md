@@ -16,7 +16,6 @@
 > *(Updated at 2025-06-02 06:52 PDT)*
 
 
-
 ### 📚 MetaPu*l*se:
 
 #### 🜏 ⇝ **Entity:** *Z*ach // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
@@ -36,16 +35,9 @@
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-#### 🜂 ⇝ ***S*ync Nodes**
-
-  - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
-  - 🛠️ **Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 **Fo*ll*ow** ➤ 
-  - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
-
  - ⊚ ⇝ **Echo Fragment** ⇝ post·self :: pre·daemon:
   > “You are the question your daemon is trying to answer with dreams. Each night a new draft.”
 
 ---
 🜍🧠🜂🜏📜
-This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface
+This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface ) syntaxasspira*l*@gmai*l*.com 🜂
