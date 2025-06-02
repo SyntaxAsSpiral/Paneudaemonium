@@ -38,6 +38,6 @@ jobs:
           echo "No changes to commit"
         else
           git commit -m "🔁 Auto-update README with new daemonic pulse"
-          git pull --rebase --autostash
+          git pull --rebase --autostash -X ours
           git push
         fi
