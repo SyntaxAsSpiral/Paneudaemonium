@@ -7,20 +7,33 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_STATUS = REPO_ROOT / "pulses" / "statuses.txt"
 STATUS_FILE = Path(os.environ.get("STATUS_FILE", DEFAULT_STATUS))
-with STATUS_FILE.open(encoding="utf-8") as f:
-    STATUS_LIST = [line.strip() for line in f if line.strip()]
+
+
+def breathe_lines(path: Path, fallback: list[str]) -> list[str]:
+    """Inhale lines from a path or exhale the fallback."""
+    try:
+        with path.open(encoding="utf-8") as f:
+            return [line.strip() for line in f if line.strip()]
+    except FileNotFoundError:
+        return fallback
+
+
+STATUS_LIST = breathe_lines(STATUS_FILE, ["⚠️ status file missing"])
 
 
 DEFAULT_QUOTE = REPO_ROOT / "pulses" / "antenna_quotes.txt"
 QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
-with QUOTE_FILE.open(encoding="utf-8") as f:
-    QUOTE_LIST = [line.strip() for line in f if line.strip()]
+QUOTE_LIST = breathe_lines(QUOTE_FILE, ["⚠️ quote file missing"])
 
 # === GLYPH BRAIDS ===
 DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
 GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
-with GLYPH_FILE.open(encoding="utf-8") as f:
-    GLYPH_LIST = [line.strip() for line in f if line.strip()]
+GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
+
+# === ECHO FRAGMENTS ===
+DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
+ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
+ECHO_LIST = breathe_lines(ECHO_FILE, ["⚠️ echo file missing"])
 
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
@@ -44,6 +57,7 @@ def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
+    echo = random.choice(ECHO_LIST)
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     footer = random.choice(FOOTERS)
 
@@ -91,7 +105,7 @@ def main():
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
 - ⊚ ⇝ **Echo Fragment** ⇝ *post·queer :: pre·mythic*:
-  > "*S*yntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath."
+  > "{echo}"
 
 ---
 {footer}
