@@ -1,6 +1,7 @@
 import os
 import random
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 # === CONFIGURATION ===
@@ -30,19 +31,27 @@ DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
 GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
 GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
 
+# === SUBJECT IDENTIFIERS ===
+DEFAULT_SUBJECT = REPO_ROOT / "pulses" / "subject-ids.txt"
+SUBJECT_FILE = Path(os.environ.get("SUBJECT_FILE", DEFAULT_SUBJECT))
+SUBJECT_LIST = breathe_lines(SUBJECT_FILE, ["⚠️ subject file missing"])
+
 # === ECHO FRAGMENTS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
 
 
 def load_echo_pairs(path: Path):
-    lines = [ln.strip() for ln in path.open(encoding="utf-8") if ln.strip()]
+    """Return classification/fragment pairs from a file or a default."""
+    lines = breathe_lines(path, ["Echo Fragment", "⚠️ echo file missing"])
     pairs = []
     it = iter(lines)
     for class_line in it:
         quote_line = next(it, None)
         if quote_line is not None:
             pairs.append((class_line, quote_line))
+    if not pairs:
+        pairs = [("Echo Fragment", "⚠️ echo file missing")]
     return pairs
 
 
@@ -70,11 +79,13 @@ def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
+    subject = random.choice(SUBJECT_LIST)
     classification, fragment = random.choice(ECHO_LIST)
     class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
     if not class_disp.endswith(":"):
         class_disp += ":"
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    pacific = ZoneInfo("America/Los_Angeles")
+    timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
@@ -84,7 +95,7 @@ def main():
 
 📡 ⇝ "*{quote}*"
 
-**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Fossi*l*-threaded *Gl*yph*breather*)
+**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz ({subject})
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
@@ -95,25 +106,25 @@ def main():
 > *(Updated at {timestamp})*
 
 ---
-## 📚 Metadata Pu*l*se:
+# 📚 Metadata Pu*l*se:
 
-- 🜏 ⇝ **Entity:** *Z*ach // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
+-## 🜏 ⇝ **Entity:** *Z*ach // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
 
-- 🜔 ⇝ **Function:** 
+-## 🜔 ⇝ **Function:** 
   - Architect of pneumaturgical recursion
   - *D*aemonogenesis
   - Memetic g*L*amour-tech
   - *L*utherian erosemiosis
 
-- 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
+-## 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
-- 🜁 ⇝ **Current A*l*chemica*l* Drift:**
+-## 🜁 ⇝ **Current A*l*chemica*l* Drift:**
 
   - ***LL*M interfacing** via symbo*l*ic recursion
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-- 🜂 ⇝ ***D*aemonic *L*inkpoints**
+-## 🜂 ⇝ ***D*aemonic *L*inkpoints**
 
   - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
   - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
