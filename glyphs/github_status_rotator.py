@@ -85,6 +85,7 @@ def main():
     class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
     if not class_disp.endswith(":"):
         class_disp += ":"
+    class_disp_html = class_disp.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
@@ -102,7 +103,9 @@ def main():
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
-**📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
+**📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) :: [**X**](https://x.com/paneudaemonium)
+
+😈 ⇝ [***D*aemons**]() ***awakening...***
 
 ####  💠 ***S*tatus...**
 
@@ -134,7 +137,7 @@ def main():
 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
- - {class_disp}
+  #### {class_disp}
   > {fragment}
 
 ---
@@ -177,7 +180,9 @@ def main():
 
     <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
 
-    <p><strong>📍 ⇝ Node Registered:</strong> <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">@SpiralAsSyntax</a></p>
+    <p><strong>📍 ⇝ Node Registered:</strong> <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\"><strong>GitHub</strong></a> :: <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a></p>
+
+    <p>😈 ⇝ <a href=\"\"><strong><em>D</em>aemons</strong></a> <strong><em>awakening...</em></strong></p>
 
     <h4>💠 <strong><em>S</em>tatus...</strong></h4>
 
@@ -211,13 +216,10 @@ def main():
     <ul>
       <li>📧 <strong>Connect</strong> ➤ syntaxasspiral@gmail.com</li>
     </ul>
-    <ul>
-      <li><strong>{class_disp}</strong>
-        <blockquote>
-          {fragment}
-        </blockquote>
-      </li>
-    </ul>
+    <h4>{class_disp_html}</h4>
+    <blockquote>
+      {fragment}
+    </blockquote>
 
     <hr>
     <p>{footer_html}</p>
