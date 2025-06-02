@@ -22,6 +22,24 @@ GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
 with GLYPH_FILE.open(encoding="utf-8") as f:
     GLYPH_LIST = [line.strip() for line in f if line.strip()]
 
+# === ECHO FRAGMENTS ===
+DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
+ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
+
+
+def load_echo_pairs(path: Path):
+    lines = [ln.strip() for ln in path.open(encoding="utf-8") if ln.strip()]
+    pairs = []
+    it = iter(lines)
+    for class_line in it:
+        quote_line = next(it, None)
+        if quote_line is not None:
+            pairs.append((class_line, quote_line))
+    return pairs
+
+
+ECHO_LIST = load_echo_pairs(ECHO_FILE)
+
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
     "\n".join([
@@ -44,6 +62,10 @@ def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
+    classification, fragment = random.choice(ECHO_LIST)
+    class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
+    if not class_disp.endswith(":"):
+        class_disp += ":"
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     footer = random.choice(FOOTERS)
 
@@ -90,8 +112,8 @@ def main():
   - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
-- ⊚ ⇝ **Echo Fragment** ⇝ *post·queer :: pre·mythic*:
-  > "*S*yntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath."
+ - {class_disp}
+  > {fragment}
 
 ---
 {footer}
