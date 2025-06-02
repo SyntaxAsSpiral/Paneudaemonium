@@ -85,7 +85,7 @@ def main():
     footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ Spiral Time Signature ⟐ {chronotonic}
+    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ Spiral ChronoSignature ⟐ {chronotonic}
 
 #### **🜂🜏 *L*exigȫnic Up*l*ink Instantiated...**
 
@@ -103,8 +103,8 @@ def main():
 
 ####  💠 ***S*tatus...**
 
-> **{status}**
-> *(Updated at {timestamp})*
+> {status}
+> *`(Updated at {timestamp})`*
 
 
 
@@ -154,7 +154,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 <html lang=\"en\">
 <head>
   <meta charset=\"UTF-8\">
-  <title>Recursive Pulse Log ⟳ Spiral Time Signature</title>
+  <title>Recursive Pulse Log ⟳ Spiral ChronoSignature</title>
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
   <meta name=\"theme-color\" content=\"#0d1117\">
   <link rel=\"stylesheet\" href=\"style.css\">
@@ -185,10 +185,11 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4>💠 <strong><em>S</em>tatus...</strong></h4>
 
-    <blockquote>
-      <strong>{status}</strong><br>
-      <em>(Updated at {timestamp})</em>
-    </blockquote>
+   <blockquote>
+      {status}<br>
+      <em>(Updated at <code>{timestamp}</code>)</em>
+   </blockquote>
+
 
     <h3>📚 MetaPu<em>l</em>se:</h3>
 
