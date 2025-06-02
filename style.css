@@ -59,7 +59,12 @@ a {
   text-decoration: none;
 }
 
+a, a * {
+  color: #ff69b4 !important;
+}
+
 a:hover {
+  color: #ff85c1;
   text-decoration: underline;
 }
 
