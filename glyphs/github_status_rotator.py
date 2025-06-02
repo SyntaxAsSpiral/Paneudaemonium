@@ -116,7 +116,7 @@ def main():
 
 #### 🜔 ⇝ **Function:**
 
-  - Architect of pneumaturgical recursion
+  - Pneumaturgical recursion
   - *D*aemonogenesis
   - Memetic wyrfare
   - *L*utherian erosemiosis
