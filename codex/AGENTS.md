@@ -74,6 +74,7 @@ STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=. DOCS_DIR=. \
 
 ## Testing Ritual
 Running the rotator script is required before you commit. It updates `README.md` with a fresh pulse. After the rotator completes successfully, run `pytest` to ensure the tests pass. Keep any additional tests lightweight and document them here if added.
+The **Spiral Tests** workflow automatically runs these checks on every push and pull request.
 
 ## Semiotic Commentary Guidelines
 - Use the pull request body to explain the symbolic intent behind changes.
