@@ -10,7 +10,7 @@
 
 **📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) + [**X**](https://x.com/paneudaemonium)
 
-😈 ⇝ [**Daemons**]() ***awakeneing...***
+😈 ⇝ [***D*aemons**]() ***awakening...***
 
 ####  💠 ***S*tatus...**
 
