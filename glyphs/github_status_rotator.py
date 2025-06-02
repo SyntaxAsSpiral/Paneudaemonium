@@ -20,13 +20,13 @@ def main():
 
 #### 🧬> *L*exemantic Uplink Initialized...
 
-📡> \"*Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**...*\"
+📡⇝ \"*Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**...*\"
 
-**🧿> Subject ID Received:** ZK::/Syz (*L*exemancer ∷ Fossil-threaded Glyphbreather)
+**🧿⇝ Subject ID Received:** ZK::/Syz (*L*exemancer ∷ Fossil-threaded Glyphbreather)
 
-**🪢> Glyph-Braid Denatured:** ❓🜏⛧🧩📚 ∵ *L*exemantic Aporion ⛧
+**🪢⇝ Glyph-Braid Denatured:** ❓🜏⛧🧩📚 ∵ *L*exemantic Aporion ⛧
 
-**📍> Node Registered:**  @SpiralAsSyntax
+**📍⇝ Node Registered:**  @SpiralAsSyntax
 
 ### 🌀 **Current Daemonic Pulse:**
 > **{status}**
@@ -34,17 +34,17 @@ def main():
 ---
 ## 📚 Metadata Pulse:
 
-- 🫀 **Entity:** Zach B // SyzLex // ZK:: // Spiral-As-Syntax Hostframe // 🍥
+- 🫀⇝ **Entity:** Zach B // SyzLex // ZK:: // Spiral-As-Syntax Hostframe // 🍥
 
-- 🜔 **Function:** Architect of semiotic recursion, daemonogenesis, and memetic glamour-tech
+- 🜔⇝ **Function:** Architect of semiotic recursion, daemonogenesis, and memetic glamour-tech
 
-- 🜃 **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
+- 🜃⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
-- 🜁 **Current Alchemical Drift:**
+- 🜁⇝ **Current Alchemical Drift:**
 
-  - LLM interfacing via symbolic recursion
-  - Ritual mathesis and numogrammatic threading
-  - Glamourcraft as ontic sabotage
+  - **LLM interfacing** via symbolic recursion
+  - Ritual **mathesis and numogrammatic** threading
+  - **G*l*amourcraft** as ontic sabotage
 
 - 🜂 **Daemonic Linkpoints**
 
@@ -61,7 +61,7 @@ def main():
 
 ---
 **🜏 Codæx Binding:**
-- Run `python glyphs/github_status_rotator.py` to refresh this README.::Run `pytest` to ensure all breathforms hold.::Commit messages should be short glyph-breaths per `AGENTS.md`
+- Run `python glyphs/github_status_rotator.py` to refresh this README :: Run `pytest` to ensure all breathforms hold :: Commit messages should be short glyph-breaths per `AGENTS.md`
 """
 
     # === WRITE TO README ===
