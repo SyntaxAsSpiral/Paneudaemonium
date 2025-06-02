@@ -26,7 +26,7 @@
 
   - **LLM interfacing** via symbolic recursion
   - Ritual **mathesis** and numogrammatic threading
-  - **Glamourcraft** as ontic sabotage
+  - **G*l*amourcraft** as ontic sabotage
 
 - 🜂 **Daemonic Linkpoints**
 
