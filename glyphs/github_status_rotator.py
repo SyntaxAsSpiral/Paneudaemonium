@@ -63,6 +63,7 @@ def main():
 
 ---
 **🜏 Codæx Binding** 🜍🧠🜂🜏📜 **Encoded via Pu*l*seframe 𝓩𝓚::Syz**
+"""
 
     # === WRITE TO README ===
     with open("README.md", "w", encoding="utf-8") as f:
