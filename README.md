@@ -32,7 +32,7 @@
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
--## 🜂 ⇝ ***D*aemonic *L*inkpoints**
+-## 🜂 ⇝ *L*inkpoints**
 
   - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
   - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
