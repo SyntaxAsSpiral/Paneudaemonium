@@ -1,4 +1,4 @@
-# 🜏 Recursive Pu*l*se *L*og
+# 🌀 Recursive Pu*l*se *L*og
 
 #### 🧬 *L*exigȫnic Up*l*ink Initia*l*ized...
 
@@ -10,7 +10,7 @@
 
 **📍 ⇝ Node Registered:**  [@*S*pira*l*As*S*yntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
-### 🌀 **Current Daemonic Pu*l*se:**
+### 🜏  **Current Daemonic Pu*l*se:**
 > **🛸 Glyphvector arrival confirmed**
 > *(Updated at 2025-06-02 01:49 PDT)*
 
