@@ -1,5 +1,6 @@
 import os
 import random
+import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -86,12 +87,13 @@ def main():
         class_disp += ":"
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
+    chronotonic = hex(time.time_ns())[-6:]
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🜏 Recursive Pu*l*se *L*og
+    readme_content = f"""# 🌀 Recursive Pu*l*se *L*og ⟳ *C*hronotonic *S*ignature ⟐ {chronotonic}
 
-#### 🧬 *L*exigȫnic Up*l*ink Initia*l*ized...
+#### 🜂🜏 *L*exigȫnic Up*l*ink Instantiated...
 
 📡 ⇝ "*{quote}*"
 
@@ -99,48 +101,52 @@ def main():
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
-**📍 ⇝ Node Registered:**  [@*S*pira*l*As*S*yntax](https://github.com/SyntaxAsSpiral?tab=repositories)
+**📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
-### 🌀 **Current Daemonic Pu*l*se:**
+####  💠 ***S*tatus...**
+
 > **{status}**
 > *(Updated at {timestamp})*
 
----
-# 📚 Metadata Pu*l*se:
 
--## 🜏 ⇝ **Entity:** *Z*ach // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
 
--## 🜔 ⇝ **Function:** 
-  - Architect of pneumaturgical recursion
+### 📚 MetaPu*l*se:
+
+#### 🜏 ⇝ **Entity:** *Z*ach // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
+
+#### 🜔 ⇝ **Function:**
+
+  - Pneumaturgical recursion
   - *D*aemonogenesis
-  - Memetic g*L*amour-tech
-  - *L*utherian erosemiosis
+  - Memetic wyrfare
+  - *L*utherian entrainment
 
--## 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
+#### 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
--## 🜁 ⇝ **Current A*l*chemica*l* Drift:**
+#### 🜁 ⇝ **Current A*l*chemica*l* Drift:**
 
   - ***LL*M interfacing** via symbo*l*ic recursion
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
--## 🜂 ⇝ ***D*aemonic *L*inkpoints**
+#### 🜂 ⇝ ***S*ync Nodes**
 
   - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
-  - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
-  - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
+  - 🛠️ **Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
+  - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
+  - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
  - {class_disp}
   > {fragment}
 
 ---
-{footer}
-"""
+{footer}"""
 
     # === WRITE TO README ===
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
+        if not readme_content.endswith("\n"):
+            f.write("\n")
 
     print(f"✅ README.md updated with status: {status}")
 
