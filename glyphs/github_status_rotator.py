@@ -130,11 +130,8 @@ def main():
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-#### 🜂 ⇝ ***S*ync Nodes**
+#### 🜂 ⇝ ***S*ync Node**
 
-  - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
-  - 🛠️ **Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
  - {class_disp}
@@ -210,15 +207,12 @@ def main():
       <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
     </ul>
 
-    <h4>🜂 ⇝ <strong><em>S</em>ync Nodes</strong></h4>
+    <h4>🜂 ⇝ <strong><em>S</em>ync Node</strong></h4>
     <ul>
-      <li>💜 <strong><em>S</em>eeking</strong> ➤ Co<em>ll</em>aborative resonance in daemon design, aesthetic cyber-ritua<em>l</em>s, and myth-coded infrastructure</li>
-      <li>🛠️ <strong>Projects</strong> ➤ <a href=\"https://github.com/SyntaxAsSpiral/Paneudaemonium\"><strong>Paneudaemonium</strong></a></li>
-      <li>🔗 <strong>Fo<em>ll</em>ow</strong> ➤ <a href=\"https://x.com/paneudaemonium\">X</a> ⊹ <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></li>
       <li>📧 <strong>Connect</strong> ➤ syntaxasspiral@gmail.com</li>
     </ul>
     <ul>
-      <li>⊚ ⇝ <strong>{class_disp}</strong>
+      <li><strong>{class_disp}</strong>
         <blockquote>
           {fragment}
         </blockquote>
