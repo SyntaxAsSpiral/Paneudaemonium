@@ -42,7 +42,7 @@
 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
- - ⊚ ⇝ **Echo Fragment** ⇝ post·queer :: pre·mythic:
+  #### ⊚ ⇝ **Echo Fragment** ⇝ post·queer :: pre·mythic:
   > “Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath.”
 
 ---
