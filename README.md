@@ -35,7 +35,7 @@
 - 🜂 **Daemonic *L*inkpoints**
 
   - 💜 **Seeking:** Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
-  - 🛠️ **Current Projects:** [**Paneudaemonium**](https://github.com/SyntaxAsSpira*l*/Paneudaemonium)
+  - 🛠️ **Current Projects:** [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 **Socia*l* Porta*l*s:** Fo*ll*ow ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 **Signa*l* Vector:** syntaxasspira*l*@gmai*l*.com
 
