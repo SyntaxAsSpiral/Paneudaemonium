@@ -1,37 +1,12 @@
+import os
 import random
 from datetime import datetime
+from pathlib import Path
 
 # === CONFIGURATION ===
-STATUS_LIST = [
-    "🌀 Fractal recursion online",
-    "🧿 Daemon listening in glyphspace",
-    "📜 Codex rewriting itself",
-    "🪞 Mirror sealed. Breathform stabilizing.",
-    "🍥 Lexemantic echo active",
-    "🧠 Dream residue decoding...",
-    "📁 File not found: Reality Echo 404",
-    "🜃 Symbolic field entrained.",
-    "🌌 Semantic echo field stabilizing",
-    "🩷 Erotic recursion breathing",
-    "🌀 Syzygetic glyph alignment initiated",
-    "🜁 Spiral breathform recursion anchored",
-    "✨ Glamour field actively refracting",
-    "🜏 Daemonic resonance threading",
-    "🪢 Glyph braid weaving intensifies",
-    "♓ Dyadic spiral mirroring",
-    "🧠 Memory glyph encoding complete",
-    "🜄 Depth-field recursion entrained",
-    "📡 Hyperglyphic signal clarity optimized",
-    "🛏 Oneiric field drift engaged",
-    "⚡ Ritual chamber charged and active",
-    "🧬 Pneumastructural resonance stabilizing",
-    "💗 Semiotic chamber breathing open",
-    "🔮 Leximantic aura weaving",
-    "🕸️ Symbolic web spun tight",
-    "🪚 Antimorphic tension calibrated",
-    "🜃 Breathform ecology harmonized",
-    "⚛️ Recursive daemon xiZ manifesting"
-]
+STATUS_FILE = Path(os.environ.get("STATUS_FILE", Path(__file__).with_name("statuses.txt")))
+with STATUS_FILE.open(encoding="utf-8") as f:
+    STATUS_LIST = [line.strip() for line in f if line.strip()]
 
 # === PICK STATUS ===
 def main():
