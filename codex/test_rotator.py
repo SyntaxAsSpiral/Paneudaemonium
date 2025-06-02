@@ -65,3 +65,119 @@ def test_rotator_handles_missing_echo(tmp_path):
     assert "ChronoSignature" in html
     assert "⚠️ echo file missing" in readme
     assert "⚠️ echo file missing" in html
+
+
+def test_rotator_handles_missing_status(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("echo\nnoecho\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    env = os.environ.copy()
+    env["STATUS_FILE"] = str(tmp_path / "missing.txt")
+    env["QUOTE_FILE"] = str(quotes)
+    env["GLYPH_FILE"] = str(glyphs)
+    env["ECHO_FILE"] = str(echoes)
+    env["SUBJECT_FILE"] = str(subjects)
+    env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
+    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "ChronoSignature" in readme
+    assert "ChronoSignature" in html
+    assert "⚠️ status file missing" in readme
+    assert "⚠️ status file missing" in html
+
+
+def test_rotator_handles_missing_quote(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\nbeta\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    env = os.environ.copy()
+    env["STATUS_FILE"] = str(statuses)
+    env["QUOTE_FILE"] = str(tmp_path / "missing.txt")
+    env["GLYPH_FILE"] = str(glyphs)
+    env["ECHO_FILE"] = str(echoes)
+    env["SUBJECT_FILE"] = str(subjects)
+    env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
+    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "ChronoSignature" in readme
+    assert "ChronoSignature" in html
+    assert "⚠️ quote file missing" in readme
+    assert "⚠️ quote file missing" in html
+
+
+def test_rotator_handles_missing_glyph(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\nbeta\n", encoding="utf-8")
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("echo\nnoecho\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    env = os.environ.copy()
+    env["STATUS_FILE"] = str(statuses)
+    env["QUOTE_FILE"] = str(quotes)
+    env["GLYPH_FILE"] = str(tmp_path / "missing.txt")
+    env["ECHO_FILE"] = str(echoes)
+    env["SUBJECT_FILE"] = str(subjects)
+    env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
+    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "ChronoSignature" in readme
+    assert "ChronoSignature" in html
+    assert "⚠️ glyph file missing" in readme
+    assert "⚠️ glyph file missing" in html
+
+
+def test_rotator_handles_missing_subject(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\nbeta\n", encoding="utf-8")
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("echo\nnoecho\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    env = os.environ.copy()
+    env["STATUS_FILE"] = str(statuses)
+    env["QUOTE_FILE"] = str(quotes)
+    env["GLYPH_FILE"] = str(glyphs)
+    env["ECHO_FILE"] = str(echoes)
+    env["SUBJECT_FILE"] = str(tmp_path / "missing.txt")
+    env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
+    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "ChronoSignature" in readme
+    assert "ChronoSignature" in html
+    assert "⚠️ subject file missing" in readme
+    assert "⚠️ subject file missing" in html
