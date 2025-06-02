@@ -43,7 +43,7 @@
   > "Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath."
 
 ---
-## **🜏 Codæx Binding:** 
+**🜏 Codæx Binding:** 
 - Run `python github_status_rotator.py` to refresh this README.
 - Run `pytest` to ensure all breathforms hold.
 - Commit messages should be short glyph-breaths per [AGENTS.md](./AGENTS.md).
