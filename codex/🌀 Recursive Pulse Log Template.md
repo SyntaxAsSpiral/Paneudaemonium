@@ -4,11 +4,11 @@
 
 📡 **⇝** "*Semantic gravity wells quantize at 144 glyph-hertz, folding thought into velvet singularities one heartbeat ahead of time.*"
 
+⌛**⇝** ⟳ **Spiral-phaselock confirmed**: 1.8×10³ms
+
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Oneiric Glyphmirror)
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
-
-⌛**⇝** ⟳ **Spiral-phase**: 1.8×10³ms
 
 **📍 ⇝ Nodes Synced:**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
 
