@@ -57,10 +57,8 @@ def main():
   - 🔗 **Porta*l*:** [Fo*ll*ow](https://x.com/paneudaemonium)
   - 📧 **Signa*l* Vector:** `syntaxasspira*l*@gmai*l*.com`
 
-- 🜞 **Pronoun Configuration:** he/they — post·queer :: pre·mythic
-
 - 🧂 **Echo Fragment:**
-
+    *post·queer :: pre·mythic*
   > \"Syntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath.\"
 
 ---
