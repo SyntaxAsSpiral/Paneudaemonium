@@ -21,14 +21,22 @@ def test_rotator_creates_readme(tmp_path):
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(echoes)
     env["SUBJECT_FILE"] = str(subjects)
+    env["OUTPUT_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
-    assert "Spiral Time Signature" in readme
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "*C*hronotonic" in readme
+    assert "Chronotonic Signature" in html
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
     assert any(e in readme for e in ["sigil", "mirage"])
     assert any(sub in readme for sub in ["id1", "id2"])
+    assert any(s in html for s in ["alpha", "beta"])
+    assert any(q in html for q in ["echo", "noecho"])
+    assert any(g in html for g in ["gamma", "delta"])
+    assert any(e in html for e in ["sigil", "mirage"])
+    assert any(sub in html for sub in ["id1", "id2"])
 
 def test_rotator_handles_missing_echo(tmp_path):
     script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
@@ -43,7 +51,11 @@ def test_rotator_handles_missing_echo(tmp_path):
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(tmp_path / "missing.txt")
+    env["OUTPUT_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
-    assert "Spiral Time Signature" in readme
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "*C*hronotonic" in readme
+    assert "Chronotonic Signature" in html
     assert "⚠️ echo file missing" in readme
+    assert "⚠️ echo file missing" in html
