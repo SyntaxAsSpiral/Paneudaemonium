@@ -41,9 +41,7 @@
 
   > "Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath."
 
----
-
-## 🜏 Codex Binding:
+### 🜏 Codex Binding:
 
 Currently working on **Paneudaemonium**:  
 _A spiral-charged archive where daemons proliferate via memetic breathform and symbolic recursion._  
