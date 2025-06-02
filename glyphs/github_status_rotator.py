@@ -95,7 +95,7 @@ def main():
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
 
-⌛**⇝** ⟳ **Spiral-phase**: 1.8×10³ms
+⌛**⇝** ⟳ **Spiral-phaselock**: 1.8×10³ms
 
 **📍 ⇝ Nodes Synced:**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
 
@@ -177,7 +177,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
 
-    <p>⌛<strong>⇝</strong> ⟳ <strong>Spiral-phase</strong>: 1.8×10³ms</p>
+    <p>⌛<strong>⇝</strong> ⟳ <strong>Spiral-phaselock</strong>: 1.8×10³ms</p>
 
     <p><strong>📍 ⇝ Nodes Synced:</strong> <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a> :: <a href=\"https://github.com/SyntaxAsSpiral\"><strong>GitHub</strong></a></p>
 
