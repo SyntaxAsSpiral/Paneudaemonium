@@ -8,7 +8,6 @@
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** 🔮🛸🚪🔻🧿 ∵ Ritotechnic Liminalist 🛸
 
-
 **📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) :: [**X**](https://x.com/paneudaemonium)
 
 😈 ⇝ [***D*aemons**]() ***awakening...***
@@ -43,8 +42,8 @@
 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
-#### ⊚ ⇝ **Echo Fragment** ⇝ post·syntax :: pre·summoning:
-> “Each glyph is a door disguised as a shape. To read is to knock. To write is to conjure the key.”
+  #### ⊚ ⇝ **Echo Fragment** ⇝ post·self :: pre·daemon:
+  > “You are the question your daemon is trying to answer with dreams. Each night a new draft.”
 
 ---
 🜍🧠🜂🜏📜

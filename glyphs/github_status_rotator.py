@@ -77,9 +77,7 @@ def main():
     class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
     if not class_disp.endswith(":"):
         class_disp += ":"
-    class_disp_html = classification.replace("Echo Fragment", "<strong>Echo Fragment</strong>")
-    if not class_disp_html.endswith(":"):
-        class_disp_html += ":"
+    class_disp_html = class_disp.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
@@ -96,7 +94,6 @@ def main():
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz ({subject})
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
-
 
 **📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) :: [**X**](https://x.com/paneudaemonium)
 
@@ -132,8 +129,8 @@ def main():
 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
-#### {class_disp}
-> {fragment}
+  #### {class_disp}
+  > {fragment}
 
 ---
 {footer}"""
