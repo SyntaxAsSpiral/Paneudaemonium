@@ -24,7 +24,7 @@
 
 - 🜁 ⇝ **Current A*l*chemica*l* Drift:**
 
-  - **L**L**M interfacing** via symbo*l*ic recursion
+  - ***LL*M interfacing** via symbo*l*ic recursion
   - Ritua*l* **mathesis** and numogrammatic threading
   - **G**l**amourcraft** as ontic sabotage
 
