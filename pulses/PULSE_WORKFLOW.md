@@ -12,7 +12,7 @@ If you would like to force an update:
 2. Select the **Daemon Status Rotator** workflow.
 3. Press **Run workflow** to dispatch a new pulse.
 
-The workflow writes a new status entry along with a UTC timestamp. Any manual or
+The workflow writes a new status entry along with a Pacific Time (PST/PDT) timestamp. Any manual or
 scheduled run will overwrite the existing README.
 
 ## Running Tests

@@ -1,6 +1,7 @@
 import os
 import random
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 # === CONFIGURATION ===
@@ -83,7 +84,8 @@ def main():
     class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
     if not class_disp.endswith(":"):
         class_disp += ":"
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    pacific = ZoneInfo("America/Los_Angeles")
+    timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
