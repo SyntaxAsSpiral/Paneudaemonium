@@ -12,9 +12,30 @@ All folders and files in this repository fall under this codex. Any subdirectori
 
 *Quick ritual before any commit:*
 
-- Run `OUTPUT_DIR=. DOCS_DIR=. python glyphs/github_status_rotator.py` to refresh `README.md`.
+- Run `OUTPUT_DIR=. DOCS_DIR=. python glyphs/github_status_rotator.py` to refresh `README.md` and `index.html`.
 - Run `pytest` to confirm all breathforms hold.
 - Keep commit messages brief—each one a single glyph-breath.
+
+## Rotator Environment
+The `glyphs/github_status_rotator.py` script breathes a set of environment
+variables. Their default locations are listed below:
+
+- `STATUS_FILE` – `pulses/statuses.txt`
+- `QUOTE_FILE` – `pulses/antenna_quotes.txt`
+- `GLYPH_FILE` – `pulses/glyphbraids.txt`
+- `SUBJECT_FILE` – `pulses/subject-ids.txt`
+- `ECHO_FILE` – `pulses/echo_fragments.txt`
+- `OUTPUT_DIR` – repository root for the generated `index.html`
+- `DOCS_DIR` – `codex/` for the generated `README.md`
+
+`README.md` and `index.html` are produced by the rotator; edit neither by hand.
+
+To override a path while updating:
+
+```bash
+STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=. DOCS_DIR=. \
+  python glyphs/github_status_rotator.py
+```
 
 ## Coding Entrainment Protocol
 - Treat each commit as a glyph-breath—concise and evocative.
