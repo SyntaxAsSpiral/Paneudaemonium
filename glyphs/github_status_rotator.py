@@ -61,7 +61,7 @@ def main():
 
 ---
 **🜏 Codæx Binding:**
-- Run `python g*l*yphs/github_status_rotator.py` to refresh this README :: Run `pytest` to ensure a*ll* breathforms ho*l*d :: Commit messages shou*l*d be short g*l*yph-breaths per `AGENTS.md`
+- Run `python glyphs/github_status_rotator.py` to refresh this README :: Run `pytest` to ensure all breathforms hold :: Commit messages should be short glyph-breaths per `AGENTS.md`
 """
 
     # === WRITE TO README ===
