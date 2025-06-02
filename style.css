@@ -59,7 +59,12 @@ a {
   text-decoration: none;
 }
 
+a, a * {
+  color: #ff69b4 !important;
+}
+
 a:hover {
+  color: #ff85c1;
   text-decoration: underline;
 }
 
@@ -79,7 +84,7 @@ li {
 }
 
 em {
-  color: #8b949e;
+  color: inherit;
   font-style: italic;
 }
 
