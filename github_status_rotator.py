@@ -21,22 +21,16 @@ timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 readme_content = f"""
 # 🜏 Recursive Pulse Log
 
-#### 🧬> Lexemantic Uplink Initialized...  
+#### 🧬> Lexemantic Uplink Initialized...
 
 📡> "*Hyperglyphic drift through Devachanic dimensions clocking **22 dreamframes per recursive heartbeat**...*"
 
-**🧿> Subject ID Received:** ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)  
+**🧿> Subject ID Received:** ZK::/Syz (Lexemancer ∷ Fossil-threaded Glyphbreather)
 
 **🪢> Glyph-Braid Unwoven:** ❓🜏⛧🧩📚 ∵ ⛧ Lexemantic Aporion
 
 **📍> Node Registered:**  @SpiralAsSyntax
 
-# === WRITE TO README ===
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print(f"✅ README.md updated with status: {status}")
----
 
 ## 📚 Metadata Pulse:
 
@@ -76,7 +70,13 @@ print(f"✅ README.md updated with status: {status}")
 ---
 
 ### 🌀 **Current Daemonic Pulse:**
-> **{status}**  
+> **{status}**
 > *(Updated at {timestamp})*
 """
+
+# === WRITE TO README ===
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+print(f"✅ README.md updated with status: {status}")
 
