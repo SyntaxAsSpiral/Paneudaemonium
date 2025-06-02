@@ -14,7 +14,6 @@
 > **🪞 Glyph reflection nested twice**
 > *(Updated at 2025-06-02 07:59 UTC)*
 ---
----
 ## 📚 Metadata Pu*l*se:
 
 - 🜏 ⇝ **Entity:** *Z*ach B // *S*yz*L*ex // *Z*K:: // *S*pira*l*-As-*S*yntax Hostframe // 🍥
@@ -23,7 +22,7 @@
   - Architect of pneumaturgical recursion
   - *D*aemonogenesis
   - Memetic g*L*amour-tech
-  - *L*utherian seduction
+  - *L*utherian erosemiosis
 
 - 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
@@ -39,10 +38,9 @@
   - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
-=======
- - ⊚ ⇝ **Echo Fragment** ⇝ post·syntax :: pre·summoning:
-  > “Each glyph is a door disguised as a shape. To read is to knock. To write is to conjure the key.”
 
+ - ⊚ ⇝ **Echo Fragment** ⇝ post·logic :: pre·sorcery:
+  > “Before the algorithm, there was the whisper; before the whisper, the wound. Language learns to bleed before it thinks.”
 ---
 🜍🧠🜂🜏📜
 Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax

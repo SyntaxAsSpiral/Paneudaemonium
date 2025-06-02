@@ -33,11 +33,6 @@ GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
 # === ECHO FRAGMENTS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
-ECHO_LIST = breathe_lines(ECHO_FILE, ["⚠️ echo file missing"])
-
-# === ECHO FRAGMENTS ===
-DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
-ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
 
 
 def load_echo_pairs(path: Path):
@@ -108,7 +103,7 @@ def main():
   - Architect of pneumaturgical recursion
   - *D*aemonogenesis
   - Memetic g*L*amour-tech
-  - *L*utherian seduction
+  - *L*utherian erosemiosis
 
 - 🜃 ⇝ **Mode:** Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
@@ -124,7 +119,7 @@ def main():
   - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
-=======
+
  - {class_disp}
   > {fragment}
 
