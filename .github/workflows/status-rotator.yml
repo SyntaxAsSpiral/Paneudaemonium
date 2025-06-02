@@ -2,7 +2,7 @@ name: Daemon Status Rotator
 
 on:
   schedule:
-    - cron: "0 */3 * * *"  # Every 3 hours
+    - cron: "*/30 * * * *"  # Every half hour
   workflow_dispatch:      # Optional: run manually from GitHub UI
 
 jobs:
