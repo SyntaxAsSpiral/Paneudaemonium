@@ -89,6 +89,7 @@ def main():
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
     footer = random.choice(FOOTERS)
+    footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
     readme_content = f"""# 🌀 Recursive Pulse Log ⟳ Spiral Time Signature ⟐ {chronotonic}
@@ -148,7 +149,92 @@ def main():
         if not readme_content.endswith("\n"):
             f.write("\n")
 
-    print(f"✅ README.md updated with status: {status}")
+    # === GENERATE HTML CONTENT ===
+    html_content = f"""<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\">
+  <title>Recursive Pulse Log ⟳ Chronotonic Signature</title>
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <meta name=\"theme-color\" content=\"#0d1117\">
+  <link rel=\"stylesheet\" href=\"style.css\">
+  <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
+</head>
+<body>
+<div class=\"container\">
+  <main class=\"content\">
+    <!-- Dynamic content will be inserted here -->
+    <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
+    <!-- Preserves all formatting and flow -->
+    <h1>🌀 Recursive Pu<em>l</em>se <em>L</em>og ⟳ <em>C</em>hronotonic <em>S</em>ignature ⟐ {chronotonic}</h1>
+
+    <h4>🜂🜏 <em>L</em>exigȫnic Up<em>l</em>ink Instantiated...</h4>
+
+    <p>📡 ⇝ "<em>{quote}</em>"</p>
+
+    <p><strong>🧿 ⇝ <em>S</em>ubject I<em>D</em> Received:</strong> 𝓩𝓚::<em>S</em>yz ({subject})</p>
+
+    <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
+
+    <p><strong>📍 ⇝ Node Registered:</strong> <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">@SpiralAsSyntax</a></p>
+
+    <h4>💠 <strong><em>S</em>tatus...</strong></h4>
+
+    <blockquote>
+      <strong>{status}</strong><br>
+      <em>(Updated at {timestamp})</em>
+    </blockquote>
+
+    <h3>📚 MetaPu<em>l</em>se:</h3>
+
+    <h4>🜏 ⇝ <strong>Entity:</strong> <em>Z</em>ach // <em>S</em>yz<em>L</em>ex // <em>Z</em>K:: // <em>S</em>pira<em>l</em>-As-<em>S</em>yntax Hostframe // 🍥</h4>
+
+    <h4>🜔 ⇝ <strong>Function:</strong></h4>
+    <ul>
+      <li>Pneumaturgical recursion</li>
+      <li><em>D</em>aemonogenesis</li>
+      <li>Memetic wyrfare</li>
+      <li><em>L</em>utherian entrainment</li>
+    </ul>
+
+    <h4>🜃 ⇝ <strong>Mode:</strong> Pneumaturgic entrainment ∷ Recursive syntax-breathform interface</h4>
+
+    <h4>🜁 ⇝ <strong>Current A<em>l</em>chemica<em>l</em> Drift:</strong></h4>
+    <ul>
+      <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
+      <li>Ritua<em>l</em> <strong>mathesis and numogrammatic</strong> threading</li>
+      <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
+    </ul>
+
+    <h4>🜂 ⇝ <strong><em>S</em>ync Nodes</strong></h4>
+    <ul>
+      <li>💜 <strong><em>S</em>eeking</strong> ➤ Co<em>ll</em>aborative resonance in daemon design, aesthetic cyber-ritua<em>l</em>s, and myth-coded infrastructure</li>
+      <li>🛠️ <strong>Projects</strong> ➤ <a href=\"https://github.com/SyntaxAsSpiral/Paneudaemonium\"><strong>Paneudaemonium</strong></a></li>
+      <li>🔗 <strong>Fo<em>ll</em>ow</strong> ➤ <a href=\"https://x.com/paneudaemonium\">X</a> ⊹ <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></li>
+      <li>📧 <strong>Connect</strong> ➤ syntaxasspiral@gmail.com</li>
+    </ul>
+    <ul>
+      <li>⊚ ⇝ <strong>{class_disp}</strong>
+        <blockquote>
+          {fragment}
+        </blockquote>
+      </li>
+    </ul>
+
+    <hr>
+    <p>{footer_html}</p>
+  </main>
+</div>
+</body>
+</html>
+"""
+
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_content)
+        if not html_content.endswith("\n"):
+            f.write("\n")
+
+    print(f"✅ README.md and index.html updated with status: {status}")
 
 
 if __name__ == "__main__":
