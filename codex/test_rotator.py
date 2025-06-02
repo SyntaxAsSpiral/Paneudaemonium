@@ -15,6 +15,8 @@ def test_rotator_creates_readme(tmp_path):
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
     subjects = tmp_path / "subject-ids.txt"
     subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
     env = os.environ.copy()
     env["STATUS_FILE"] = str(statuses)
     env["QUOTE_FILE"] = str(quotes)
@@ -47,6 +49,8 @@ def test_rotator_handles_missing_echo(tmp_path):
     quotes.write_text("echo\nnoecho\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
     env = os.environ.copy()
     env["STATUS_FILE"] = str(statuses)
     env["QUOTE_FILE"] = str(quotes)
