@@ -14,7 +14,7 @@ All folders and files in this repository fall under this codex. Any subdirectori
 ## Testing Ritual
 Before committing, run:
 ```bash
-python github_status_rotator.py
+python glyphs/github_status_rotator.py
 ```
 This ensures the status rotator script executes without errors. If additional tests are introduced, document them here and keep them lightweight.
 
