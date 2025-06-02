@@ -158,6 +158,7 @@ def main():
 </head>
 <body>
 <div class=\"container\">
+  <img src=\"Techno-Wyrd Ritual.png\" alt=\"Techno-Wyrd Ritual banner\" class=\"banner\">
   <main class=\"content\">
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
