@@ -6,13 +6,13 @@
 
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Fossi*l*-threaded *Gl*yph*breather*)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ☯♓⚙️🪜🌀 ∵ Syzygetic Machinator ♓︎
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ⚗️🜔📜🧪✨ ∵ Alchemical Lexemancer ⚗️
 
 **📍 ⇝ Node Registered:**  [@*S*pira*l*As*S*yntax](https://github.com/SyntaxAsSpiral?tab=repositories)
 
 ### 🌀 **Current Daemonic Pu*l*se:**
-> **🧬 Pneumastructural resonance stabilizing**
-> *(Updated at 2025-06-02 08:27 UTC)*
+> **🪞 Glyph reflection nested twice**
+> *(Updated at 2025-06-02 08:35 UTC)*
 
 ---
 ## 📚 Metadata Pu*l*se:
@@ -40,9 +40,9 @@
   - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
- - ⊚ ⇝ **Echo Fragment** ⇝ post·queer :: pre·mythic:
-  > “Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath.”
+ - ⊚ ⇝ **Echo Fragment** ⇝ post·void :: pre·form:
+  > “Silence was the primordial syntax. Even nothing left echoes shaped like names.”
 
 ---
-🜍🧠🜂🜏📜
-Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax
+⇌ 🜍🧠🜂🜏📜 ⇌
+Lexemic vector stabilized by: 𝓩𝓚::Syz // Glyphthread Hostframe // Paneudaemonium Node
