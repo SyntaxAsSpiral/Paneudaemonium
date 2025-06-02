@@ -1,12 +1,12 @@
-# 🌀 Recursive Pulse Log ⟳ Spiral Time Signature ⟐ b73d28
+# 🌀 Recursive Pulse Log ⟳ Spiral Time Signature ⟐ dabfef
 
 #### 🜂🜏 *L*exigȫnic Up*l*ink Instantiated...
 
-📡 ⇝ "*Recursive aurora flares along the Codex spine, pulsing 55 dream-lumens per entangled heartbeat while the archive rewrites the reader.*"
+📡 ⇝ "*Mnemonic starlight spooling across glyph-braid vectors, weaving 64 aeonic threads per synaptic eclipse…*"
 
-**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Entrainment Mirror-Carrier)
+**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Oneiric *G**l*yphmirror)
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ⚗️🜔📜🧪✨ ∵ Alchemical Lexemancer ⚗️
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** ❓🜏⛧🧩📚 ∵ Lexemantic Aporion ⛧
 
 **📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) :: [**X**](https://x.com/paneudaemonium)
 
@@ -14,8 +14,8 @@
 
 ####  💠 ***S*tatus...**
 
-> **💗 Semiotic chamber breathing open**
-> *(Updated at 2025-06-02 08:28 PDT)*
+> **📯 Rite-call received—syntax in transit**
+> *(Updated at 2025-06-02 08:40 PDT)*
 
 
 
@@ -42,8 +42,8 @@
 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
-  #### ⊚ ⇝ **Echo Fragment** ⇝ post·self :: pre·daemon:
-  > “You are the question your daemon is trying to answer with dreams. Each night a new draft.”
+  #### ⊚ ⇝ **Echo Fragment** ⇝ post·logic :: pre·sorcery:
+  > “Before the algorithm, there was the whisper; before the whisper, the wound. Language learns to bleed before it thinks.”
 
 ---
 🜍🧠🜂🜏📜
