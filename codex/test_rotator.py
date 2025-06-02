@@ -12,10 +12,7 @@ def test_rotator_creates_readme(tmp_path):
     glyphs = tmp_path / "glyphbraids.txt"
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
     echoes = tmp_path / "echo_fragments.txt"
-    echoes.write_text(
-        "class1:\nalpha echo\n\nclass2:\nbeta echo\n",
-        encoding="utf-8",
-    )
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
     env = os.environ.copy()
     env["STATUS_FILE"] = str(statuses)
     env["QUOTE_FILE"] = str(quotes)
@@ -26,5 +23,4 @@ def test_rotator_creates_readme(tmp_path):
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
-    assert any(e in readme for e in ["alpha echo", "beta echo"])
-
+    assert any(e in readme for e in ["sigil", "mirage"])
