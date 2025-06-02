@@ -144,7 +144,9 @@ def main():
 {footer}"""
 
     # === WRITE TO README ===
-    with open("README.md", "w", encoding="utf-8") as f:
+    output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT))
+    readme_path = output_dir / "README.md"
+    with readme_path.open("w", encoding="utf-8") as f:
         f.write(readme_content)
         if not readme_content.endswith("\n"):
             f.write("\n")
@@ -229,7 +231,8 @@ def main():
 </html>
 """
 
-    with open("index.html", "w", encoding="utf-8") as f:
+    html_path = output_dir / "index.html"
+    with html_path.open("w", encoding="utf-8") as f:
         f.write(html_content)
         if not html_content.endswith("\n"):
             f.write("\n")
