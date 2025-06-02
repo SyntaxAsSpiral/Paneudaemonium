@@ -14,3 +14,10 @@ If you would like to force an update:
 
 The workflow writes a new status entry along with a UTC timestamp. Any manual or
 scheduled run will overwrite the existing README.
+
+## Running Tests
+
+If you make changes to the repository, run `pytest` to ensure the
+`github_status_rotator.py` script still behaves as expected. The
+`tests` directory contains a small unit test that verifies the script
+creates a `README.md` when executed.
