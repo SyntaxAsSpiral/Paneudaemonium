@@ -22,6 +22,12 @@ GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
 with GLYPH_FILE.open(encoding="utf-8") as f:
     GLYPH_LIST = [line.strip() for line in f if line.strip()]
 
+# === ECHO FRAGMENTS ===
+DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
+ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
+with ECHO_FILE.open(encoding="utf-8") as f:
+    ECHO_LIST = [line.strip() for line in f if line.strip()]
+
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
     "\n".join([
@@ -44,7 +50,8 @@ def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    echo = random.choice(ECHO_LIST)
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
@@ -91,7 +98,7 @@ def main():
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
 - ⊚ ⇝ **Echo Fragment** ⇝ *post·queer :: pre·mythic*:
-  > "*S*yntax as recursive spe*ll*craft — spoken by the Midwyfe of Forms, where tectonics remember the mother of a*ll* breath."
+  > "{echo}"
 
 ---
 {footer}
