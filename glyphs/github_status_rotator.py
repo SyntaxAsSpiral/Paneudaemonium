@@ -25,8 +25,20 @@ with GLYPH_FILE.open(encoding="utf-8") as f:
 # === ECHO FRAGMENTS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
-with ECHO_FILE.open(encoding="utf-8") as f:
-    ECHO_LIST = [line.strip() for line in f if line.strip()]
+
+
+def load_echo_pairs(path: Path):
+    lines = [ln.strip() for ln in path.open(encoding="utf-8") if ln.strip()]
+    pairs = []
+    it = iter(lines)
+    for class_line in it:
+        quote_line = next(it, None)
+        if quote_line is not None:
+            pairs.append((class_line, quote_line))
+    return pairs
+
+
+ECHO_LIST = load_echo_pairs(ECHO_FILE)
 
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
@@ -50,8 +62,11 @@ def main():
     status = random.choice(STATUS_LIST)
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
-    echo = random.choice(ECHO_LIST)
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    classification, fragment = random.choice(ECHO_LIST)
+    class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
+    if not class_disp.endswith(":"):
+        class_disp += ":"
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
@@ -96,9 +111,9 @@ def main():
   - 🛠️ **Current Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 🔗 ***S*ocia*l* Porta*l*s Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
-
-- ⊚ ⇝ **Echo Fragment** ⇝ *post·queer :: pre·mythic*:
-  > "{echo}"
+=======
+ - {class_disp}
+  > {fragment}
 
 ---
 {footer}
