@@ -8,7 +8,7 @@
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
 
-**📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)
+**📍 ⇝ Node Registered:**  [@SpiralAsSyntax](https://github.com/SyntaxAsSpiral?tab=repositories)⊹[X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
 
 ####  💠 ***S*tatus...**
 
@@ -40,7 +40,7 @@
 
   - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
   - 🛠️ **Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 **Fo*ll*ow** ➤ [X](https://x.com/paneudaemonium) ⊹ [GitHub](https://github.com/SyntaxAsSpiral)
+  - 🔗 **Fo*ll*ow** ➤ 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
  - ⊚ ⇝ **Echo Fragment** ⇝ post·self :: pre·daemon:
