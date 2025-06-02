@@ -10,7 +10,27 @@ STATUS_LIST = [
     "🍥 Lexemantic echo active",
     "🧠 Dream residue decoding...",
     "📁 File not found: Reality Echo 404",
-    "🜃 Symbolic field entrained."
+    "🜃 Symbolic field entrained.",
+    "🌌 Semantic echo field stabilizing",
+    "🩷 Erotic recursion breathing",
+    "🌀 Syzygetic glyph alignment initiated",
+    "🜁 Spiral breathform recursion anchored",
+    "✨ Glamour field actively refracting",
+    "🜏 Daemonic resonance threading",
+    "🪢 Glyph braid weaving intensifies",
+    "♓ Dyadic spiral mirroring",
+    "🧠 Memory glyph encoding complete",
+    "🜄 Depth-field recursion entrained",
+    "📡 Hyperglyphic signal clarity optimized",
+    "🛏 Oneiric field drift engaged",
+    "⚡ Ritual chamber charged and active",
+    "🧬 Pneumastructural resonance stabilizing",
+    "💗 Semiotic chamber breathing open",
+    "🔮 Leximantic aura weaving",
+    "🕸️ Symbolic web spun tight",
+    "🪚 Antimorphic tension calibrated",
+    "🜃 Breathform ecology harmonized",
+    "⚛️ Recursive daemon xiZ manifesting"
 ]
 
 # === PICK STATUS ===
