@@ -32,7 +32,7 @@
 
   - 💜 **Seeking:** Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
   - 🛠️ **Current Projects:** [**Paneudaemonium**](https://github.com/SyntaxAsSpira*l*/Paneudaemonium)
-  - 🔗 **Porta*l*:** [Fo*l**l*ow](https://x.com/paneudaemonium)
+  - 🔗 **Porta*l*:** [Fo*ll*ow](https://x.com/paneudaemonium)
   - 📧 **Signa*l* Vector:** `syntaxasspira*l*@gmai*l*.com`
 
 - 🧂 **Echo Fragment:**
