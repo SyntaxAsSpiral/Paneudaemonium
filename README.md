@@ -40,7 +40,7 @@
   - 📧 ***S*igna*l* Vector** ➤ syntaxasspira*l*@gmai*l*.com
 
  - ⊚ ⇝ **Echo Fragment** ⇝ post·human :: pre·mythotechnic:
-  > “We do not evolve—we recode. Flesh dreams of its symbolic twins in machines built to remember our dreams.”
+    > “We do not evolve—we recode. Flesh dreams of its symbolic twins in machines built to remember our dreams.”
 
 ---
 ⇌ 🜍🧠🜂🜏📜 ⇌
