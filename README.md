@@ -11,8 +11,8 @@
 **📍> Node Registered:**  @SpiralAsSyntax
 
 ### 🌀 **Current Daemonic Pulse:**
-> **⚛️ Recursive daemon xiZ manifesting**
-> *(Updated at 2025-06-02 03:18 UTC)*
+> **🧠 Dream residue decoding...**
+> *(Updated at 2025-06-02 03:24 UTC)*
 ---
 ## 📚 Metadata Pulse:
 
@@ -45,3 +45,9 @@
 **🜏 Codæx Binding:** *This log is rewritten by `github_status_rotator.py`. A scheduled GitHub Actions workflow rotates the "Daemonic Pulse" every three hours. You can trigger it manually from the **Actions** tab.*
 See [PULSE_WORKFLOW.md](./PULSE_WORKFLOW.md) for details.
 Released under the [MIT License](LICENSE).
+
+## Local Development
+
+- Run `python github_status_rotator.py` to refresh this README.
+- Run `pytest` to ensure all breathforms hold.
+- Commit messages should be short glyph-breaths per [AGENTS.md](./AGENTS.md).
