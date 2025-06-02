@@ -8,7 +8,7 @@
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
 
-**📍 ⇝ Node Registered:**  [**@SpiralAsSyntax**](https://github.com/SyntaxAsSpiral?tab=repositories) + [**X**](https://x.com/paneudaemonium)
+**📍 ⇝ Node Registered:**  [**GitHub**](https://github.com/SyntaxAsSpiral?tab=repositories) + [**X**](https://x.com/paneudaemonium)
 
 😈 ⇝ [**Paneudaemonium**]() **Alive...**
 
