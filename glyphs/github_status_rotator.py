@@ -91,7 +91,7 @@ def main():
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pu*l*se *L*og ⟳ *C*hronotonic *S*ignature ⟐ {chronotonic}
+    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ Spiral Time Signature ⟐ {chronotonic}
 
 #### 🜂🜏 *L*exigȫnic Up*l*ink Instantiated...
 
