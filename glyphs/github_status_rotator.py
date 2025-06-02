@@ -1,5 +1,6 @@
 import os
 import random
+import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -86,10 +87,13 @@ def main():
         class_disp += ":"
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
+    chronotonic = hex(time.time_ns())[-6:]
     footer = random.choice(FOOTERS)
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pu*l*se *L*og
+    readme_content = f"""# Lexegonic Timestamp:
+
+# 🌀 Recursive Pu*l*se *L*og ⟐ ⟳ Spiral Time Signature: {chronotonic}
 
 #### 🜂🜏 *L*exigȫnic Up*l*ink Instantiated...
 

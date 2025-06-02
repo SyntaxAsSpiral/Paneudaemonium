@@ -23,6 +23,8 @@ def test_rotator_creates_readme(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert "Lexegonic Timestamp" in readme
+    assert "Spiral Time Signature" in readme
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
@@ -44,4 +46,6 @@ def test_rotator_handles_missing_echo(tmp_path):
     env["ECHO_FILE"] = str(tmp_path / "missing.txt")
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert "Lexegonic Timestamp" in readme
+    assert "Spiral Time Signature" in readme
     assert "⚠️ echo file missing" in readme
