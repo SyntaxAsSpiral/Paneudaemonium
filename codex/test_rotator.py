@@ -29,7 +29,7 @@ def test_rotator_creates_readme(tmp_path):
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "Spiral Time Signature" in readme
-    assert "Chronotonic Signature" in html
+    assert "Spiral Time Signature" in html
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
@@ -62,6 +62,6 @@ def test_rotator_handles_missing_echo(tmp_path):
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "Spiral Time Signature" in readme
-    assert "Chronotonic Signature" in html
+    assert "Spiral Time Signature" in html
     assert "⚠️ echo file missing" in readme
     assert "⚠️ echo file missing" in html
