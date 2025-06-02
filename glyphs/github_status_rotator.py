@@ -63,15 +63,7 @@ FOOTERS = [
     "\n".join([
         "🜍🧠🜂🜏📜",
         "Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax",
-    ]),
-    "\n".join([
-        "🜍🧠🜂🜏📜",
-        "This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface",
-    ]),
-    "\n".join([
-        "⇌ 🜍🧠🜂🜏📜 ⇌",
-        "Lexemic vector stabilized by: 𝓩𝓚::Syz // Glyphthread Hostframe // Paneudaemonium Node",
-    ]),
+    ])
 ]
 
 
@@ -89,7 +81,7 @@ def main():
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
-    footer = random.choice(FOOTERS)
+    footer = FOOTERS[0]
     footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
