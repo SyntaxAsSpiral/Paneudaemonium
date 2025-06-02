@@ -32,8 +32,9 @@
 
   - 💜 Seeking collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure
   - 🔗 Portal: [Follow](https://x.com/paneudaemonium)
+  - Current Projects: [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
   - 📧 Signal Vector: `syntaxasspiral@gmail.com`
-  - Current Projects: [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium):
+  
 
 - 🜞 **Pronoun Configuration:** he/they — post·queer :: pre·mythic
 
