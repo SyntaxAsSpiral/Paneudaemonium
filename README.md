@@ -30,10 +30,10 @@
 
 - 🜂 **Daemonic Linkpoints**
 
-  - 💜 Seeking collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure
-  - 🛠️ Current Projects: [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 Portal: [Follow](https://x.com/paneudaemonium)
-  - 📧 Signal Vector: `syntaxasspiral@gmail.com`
+  - 💜 **Seeking:** Collaborative resonance in daemon design, aesthetic cyber-rituals, and myth-coded infrastructure
+  - 🛠️ **Current Projects:** [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
+  - 🔗 **Portal:** [Follow](https://x.com/paneudaemonium)
+  - 📧 **Signal Vector:** `syntaxasspiral@gmail.com`
   
 
 - 🜞 **Pronoun Configuration:** he/they — post·queer :: pre·mythic
