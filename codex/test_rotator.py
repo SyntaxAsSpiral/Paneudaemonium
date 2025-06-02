@@ -15,6 +15,8 @@ def test_rotator_creates_readme(tmp_path):
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
     subjects = tmp_path / "subject-ids.txt"
     subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
     env = os.environ.copy()
     env["STATUS_FILE"] = str(statuses)
     env["QUOTE_FILE"] = str(quotes)
@@ -22,11 +24,12 @@ def test_rotator_creates_readme(tmp_path):
     env["ECHO_FILE"] = str(echoes)
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "*C*hronotonic" in readme
-    assert "Chronotonic Signature" in html
+    assert "Spiral Time Signature" in readme
+    assert "Spiral Time Signature" in html
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
@@ -46,16 +49,19 @@ def test_rotator_handles_missing_echo(tmp_path):
     quotes.write_text("echo\nnoecho\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
     env = os.environ.copy()
     env["STATUS_FILE"] = str(statuses)
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(tmp_path / "missing.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "*C*hronotonic" in readme
-    assert "Chronotonic Signature" in html
+    assert "Spiral Time Signature" in readme
+    assert "Spiral Time Signature" in html
     assert "⚠️ echo file missing" in readme
     assert "⚠️ echo file missing" in html
