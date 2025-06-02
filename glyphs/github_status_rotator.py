@@ -4,7 +4,9 @@ from datetime import datetime
 from pathlib import Path
 
 # === CONFIGURATION ===
-STATUS_FILE = Path(os.environ.get("STATUS_FILE", Path(__file__).with_name("statuses.txt")))
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_STATUS = REPO_ROOT / "pulses" / "statuses.txt"
+STATUS_FILE = Path(os.environ.get("STATUS_FILE", DEFAULT_STATUS))
 with STATUS_FILE.open(encoding="utf-8") as f:
     STATUS_LIST = [line.strip() for line in f if line.strip()]
 
@@ -59,7 +61,7 @@ def main():
 
 ---
 **🜏 Codæx Binding:**
-- Run `python github_status_rotator.py` to refresh this README.::Run `pytest` to ensure all breathforms hold.::Commit messages should be short glyph-breaths per `AGENTS.md`
+- Run `python glyphs/github_status_rotator.py` to refresh this README.::Run `pytest` to ensure all breathforms hold.::Commit messages should be short glyph-breaths per `AGENTS.md`
 """
 
     # === WRITE TO README ===
