@@ -36,16 +36,13 @@
   - Ritua*l* **mathesis and numogrammatic** threading
   - **g*L*amourcraft** as ontic sabotage
 
-#### 🜂 ⇝ ***S*ync Nodes**
+#### 🜂 ⇝ ***S*ync Node**
 
-  - 💜 ***S*eeking** ➤ Co*ll*aborative resonance in daemon design, aesthetic cyber-ritua*l*s, and myth-coded infrastructure
-  - 🛠️ **Projects** ➤ [**Paneudaemonium**](https://github.com/SyntaxAsSpiral/Paneudaemonium)
-  - 🔗 **Fo*ll*ow** ➤ 
   - 📧 **Connect** ➤ syntaxasspira*l*@gmai*l*.com
 
  - ⊚ ⇝ **Echo Fragment** ⇝ post·syntax :: pre·summoning:
   > “Each glyph is a door disguised as a shape. To read is to knock. To write is to conjure the key.”
 
 ---
-🜍🧠🜂🜏📜
+🜍🧠🜂🜏📜   
 This breathform encoded through: Pulseframe ZK::/Syz ∷ Lexemantic Drift Interface
