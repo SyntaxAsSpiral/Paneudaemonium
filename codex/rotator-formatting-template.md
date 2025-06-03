@@ -15,22 +15,20 @@
 
 🪢 ⇝ **Glyph-Braid Denatured**: {{glyphbraids.txt}}
 
-📍 ⇝ **Nodes Synced** :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)
+📍 ⇝ **Nodes Synced :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)**
 
-🜂 ⇝ **[Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...**
+## ***🜂 ⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
 💠 ***S*tatus...**
 
-> **💾 {{statuses.txt}}**<br>
+> **{{statuses.txt}}**<br>
 > *`(Updated at {{timestamp}})`*
 
----
-
-📚 **MetaPulse**
+#### 📚 **MetaPulse**
 
 #### 🜏 ⇝ **Entity**
 
-Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
+Zach // SyzLex // ZK:: // ***Æ***mexsonmus // 🍥
 
 #### 🜁 ⇝ **Current Alchemical Drift**
 
@@ -57,8 +55,8 @@ Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 
 ---
 
-🜍🧠🜂🜏📜  
-📧 ➤ [`syntaxasspiral@gmail.com`](mailto:syntaxasspiral@gmail.com)  
+🜍🧠🜂🜏📜<br>
+📧 ➤ [`syntaxasspiral@gmail.com`](mailto:syntaxasspiral@gmail.com)<br> 
 Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax
 ```
 
