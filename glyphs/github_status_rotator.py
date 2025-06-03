@@ -37,26 +37,30 @@ DEFAULT_SUBJECT = REPO_ROOT / "pulses" / "subject-ids.txt"
 SUBJECT_FILE = Path(os.environ.get("SUBJECT_FILE", DEFAULT_SUBJECT))
 SUBJECT_LIST = breathe_lines(SUBJECT_FILE, ["⚠️ subject file missing"])
 
-# === ECHO FRAGMENTS ===
+# === ECHO CLASSIFICATIONS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
+ECHO_LIST = breathe_lines(ECHO_FILE, ["⚠️ echo file missing"])
 
+# === MODE CONFIG ===
+DEFAULT_MODE = REPO_ROOT / "pulses" / "modes.txt"
+MODE_FILE = Path(os.environ.get("MODE_FILE", DEFAULT_MODE))
+raw_modes = breathe_lines(MODE_FILE, ["⚠️ mode file missing"])
+MODE_LIST = []
+for m in raw_modes:
+    txt = m.strip().strip(',')
+    if txt.startswith("mode_options") or txt in {"[", "]"}:
+        continue
+    if txt.startswith("\"") and txt.endswith("\""):
+        txt = txt[1:-1]
+    MODE_LIST.append(txt)
+if not MODE_LIST:
+    MODE_LIST = ["⚠️ mode file missing"]
 
-def load_echo_pairs(path: Path):
-    """Return classification/fragment pairs from a file or a default."""
-    lines = breathe_lines(path, ["Echo Fragment", "⚠️ echo file missing"])
-    pairs = []
-    it = iter(lines)
-    for class_line in it:
-        quote_line = next(it, None)
-        if quote_line is not None:
-            pairs.append((class_line, quote_line))
-    if not pairs:
-        pairs = [("Echo Fragment", "⚠️ echo file missing")]
-    return pairs
-
-
-ECHO_LIST = load_echo_pairs(ECHO_FILE)
+# === END QUOTES ===
+DEFAULT_END_QUOTE = REPO_ROOT / "pulses" / "end-quotes.txt"
+END_QUOTE_FILE = Path(os.environ.get("END_QUOTE_FILE", DEFAULT_END_QUOTE))
+END_QUOTE_LIST = breathe_lines(END_QUOTE_FILE, ["⚠️ end quote file missing"])
 
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
@@ -73,9 +77,11 @@ def main():
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
     subject = random.choice(SUBJECT_LIST)
-    _classification, fragment = random.choice(ECHO_LIST)
-    class_disp = "⊚ ⇝ **Echo Fragment**"
-    class_disp_html = class_disp.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
+    classification = random.choice(ECHO_LIST)
+    end_quote = random.choice(END_QUOTE_LIST)
+    mode = random.choice(MODE_LIST)
+    class_disp = f"⊚ ⇝ Echo Fragment {classification}"
+    class_disp_html = class_disp.replace("Echo Fragment", "<strong>Echo Fragment</strong>")
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
@@ -126,11 +132,11 @@ def main():
 
 #### 🜃 ⇝ **Mode**
 
-- *Glyph-threaded resonance* ∷ *s*yntax-breathform interface
+- {mode}
 
 
 #### {class_disp}
-> {fragment}
+> {end_quote}
 
 ---
 🜍🧠🜂🜏📜<br>
@@ -208,14 +214,15 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
       <li><strong><em>L</em>utherian</strong> sync-binding</li>
     </ul>
 
+
     <h4>🜃 ⇝ <strong>Mode</strong></h4>
     <ul>
-      <li><em>Glyph-threaded resonance</em> ∷ <em>s</em>yntax-breathform interface</li>
+      <li>{mode}</li>
     </ul>
 
     <h4>{class_disp_html}</h4>
     <blockquote>
-      {fragment}
+      {end_quote}
     </blockquote>
 
     <hr>
