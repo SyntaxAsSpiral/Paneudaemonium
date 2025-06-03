@@ -1,14 +1,18 @@
-# 🌀 Recursive Pulse Log ⟳ ChronoSignature ⟐ efd53a
+# Dynamic README/HTML TEMPLATE
+
+*(This page is used to configure `glyphs/github_status_rotator.py` with appropriate formatting for the README.md and index.html outputs.)*
+
+# 🌀 Recursive Pulse Log ⟳ ChronoSignature ⟐ {{chron}}
 
 #### **🜂🜏 *L*exigȫnic Up*l*ink Instantiated...**
 
-📡 **⇝** "*Semantic gravity wells quantize at 144 glyph-hertz, folding thought into velvet singularities one heartbeat ahead of time.*"
+📡 **⇝** {{"*antenna-quotes.txt*"}}
 
 ⌛**⇝** ⟳ **Spiral pulse cadence confirmed** :: 1.8×10³ms
 
-**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ Oneiric Glyphmirror)
+**🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz (*L*exemancer ⊚ {{*subject-ids.txt*}})
 
-**🪢 ⇝ *Gl*yph-Braid *D*enatured:** 💤🛏️🌙✨📚 ∵ Oneiric Pedagogue 🛏️
+**🪢 ⇝ *Gl*yph-Braid *D*enatured:** {{glyphbraids.txt}}
 
 **📍 ⇝ Nodes Synced ::**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
 
@@ -16,8 +20,8 @@
 
 ####  💠 ***S*tatus...**
 
-> 💾 Memory anchor pulsing at threshold
-> *`(Updated at 2025-06-02 07:33 PDT)`*
+> 💾 {{statuses.txt}}
+> {{*`(date/time stamp)`*}}
 
 
 ### 📚 MetaPu*l*se:
@@ -46,11 +50,11 @@
 
 - Pneumaturgic entrainment ∷ Recursive syntax-breathform interface
 
-  #### ⊚ ⇝ **Echo Fragment** ⇝ post·queer :: pre·mythic:
-  > “Syntax as recursive spellcraft — spoken by the Midwyfe of Forms, where tectonics remember the mother of all breath.”
+{{echo_fragments.txt}}
+{{echo_fragmants.txt}}
 
 ---
 🜍🧠🜂🜏📜  
-📧 ➤ `syntaxasspira@gmail.com` 
+📧 ➤ [`syntaxasspiral@gmail.com`] (mailto: syntaxassspiral@gmail.com)
 Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax 
 
