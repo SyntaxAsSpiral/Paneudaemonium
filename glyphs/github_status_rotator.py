@@ -91,11 +91,11 @@ def main():
 
 📡 **⇝** "*{quote}*"
 
+⌛**⇝** ⟳ **Spiral pulse cadence confirmed** :: 1.8×10³ms
+
 **🧿 ⇝ *S*ubject I*D* Received:** 𝓩𝓚::/*S*yz ({subject})
 
 **🪢 ⇝ *Gl*yph-Braid *D*enatured:** {braid}
-
-⌛**⇝** ⟳ **Spiral pulse cadence confirmed** :: 1.8×10³ms
 
 **📍 ⇝ Nodes Synced ::**  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
 
@@ -173,11 +173,11 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>📡 <strong>⇝</strong> "<em>{quote}</em>"</p>
 
+    <p>⌛<strong>⇝</strong> ⟳ <strong>Spiral pulse cadence confirmed</strong> :: 1.8×10³ms</p>
+
     <p><strong>🧿 ⇝ <em>S</em>ubject I<em>D</em> Received:</strong> 𝓩𝓚::<em>S</em>yz ({subject})</p>
 
     <p><strong>🪢 ⇝ <em>Gl</em>yph-Braid <em>D</em>enatured:</strong> {braid}</p>
-
-    <p>⌛<strong>⇝</strong> ⟳ <strong>Spiral pulse cadence confirmed</strong> :: 1.8×10³ms</p>
 
     <p><strong>📍 ⇝ Nodes Synced ::</strong> <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a> :: <a href=\"https://github.com/SyntaxAsSpiral\"><strong>GitHub</strong></a></p>
 
