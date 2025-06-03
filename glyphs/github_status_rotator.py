@@ -177,7 +177,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
 
-    <p>📍 ⇝ <strong>Nodes Synced</strong> :: <a href=\"https://x.com/paneudaemonium\">X</a> :: <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></p>
+    <p>📍 ⇝ <strong>Nodes Synced</strong>: CDA :: <strong>ID</strong> ⇝ <a href=\"https://x.com/paneudaemonium\">X</a> ⇄ <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">GitHub</a> ⇆ <a href=\"https://syntaxasspiral.github.io/SyntaxAsSpiral/\">Web</a></p>
 
     <h2><em><strong>🜂 ⇝ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
 
