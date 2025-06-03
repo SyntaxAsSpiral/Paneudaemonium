@@ -15,20 +15,20 @@
 
 🪢 ⇝ **Glyph-Braid Denatured**: {{glyphbraids.txt}}
 
-📍 ⇝ **Nodes Synced** :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)
+📍 ⇝ **Nodes Synced :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)**
 
 ## **🜂 *⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
 💠 ***S*tatus...**
 
-> **💾 {{statuses.txt}}**<br>
+> **{{statuses.txt}}**<br>
 > *`(Updated at {{timestamp}})`*
 
 #### 📚 **MetaPulse**
 
 #### 🜏 ⇝ **Entity**
 
-Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
+Zach // SyzLex // ZK:: // ***Æ***mexsonmus // 🍥
 
 #### 🜁 ⇝ **Current Alchemical Drift**
 
