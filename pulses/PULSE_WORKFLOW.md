@@ -15,6 +15,8 @@ The rotator script reads several environment variables:
 - `GLYPH_FILE` – defaults to `pulses/glyphbraids.txt`
 - `SUBJECT_FILE` – defaults to `pulses/subject-ids.txt`
 - `ECHO_FILE` – defaults to `pulses/echo_fragments.txt`
+- `MODE_FILE` – defaults to `pulses/modes.txt`
+- `END_QUOTE_FILE` – defaults to `pulses/end-quotes.txt`
 - `OUTPUT_DIR` – directory for `index.html` (defaults to repo root)
 - `DOCS_DIR` – directory for `README.md` (defaults to `codex/`)
 

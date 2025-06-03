@@ -13,6 +13,10 @@ def test_rotator_creates_readme(tmp_path):
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
     echoes = tmp_path / "echo_fragments.txt"
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"m1"\n"m2"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("fin\nterm\n", encoding="utf-8")
     subjects = tmp_path / "subject-ids.txt"
     subjects.write_text("id1\nid2\n", encoding="utf-8")
     codex_dir = tmp_path / "codex"
@@ -22,6 +26,8 @@ def test_rotator_creates_readme(tmp_path):
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(ends)
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
@@ -49,6 +55,10 @@ def test_rotator_handles_missing_echo(tmp_path):
     quotes.write_text("echo\nnoecho\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"a"\n"b"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
     codex_dir = tmp_path / "codex"
     codex_dir.mkdir(exist_ok=True)
     env = os.environ.copy()
@@ -56,6 +66,8 @@ def test_rotator_handles_missing_echo(tmp_path):
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(tmp_path / "missing.txt")
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(ends)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
@@ -75,6 +87,10 @@ def test_rotator_handles_missing_status(tmp_path):
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
     echoes = tmp_path / "echo_fragments.txt"
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"a"\n"b"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
     subjects = tmp_path / "subject-ids.txt"
     subjects.write_text("id1\nid2\n", encoding="utf-8")
     codex_dir = tmp_path / "codex"
@@ -84,6 +100,8 @@ def test_rotator_handles_missing_status(tmp_path):
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(ends)
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
@@ -104,6 +122,10 @@ def test_rotator_handles_missing_quote(tmp_path):
     glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
     echoes = tmp_path / "echo_fragments.txt"
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"a"\n"b"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
     subjects = tmp_path / "subject-ids.txt"
     subjects.write_text("id1\nid2\n", encoding="utf-8")
     codex_dir = tmp_path / "codex"
@@ -113,6 +135,8 @@ def test_rotator_handles_missing_quote(tmp_path):
     env["QUOTE_FILE"] = str(tmp_path / "missing.txt")
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(ends)
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
@@ -135,6 +159,10 @@ def test_rotator_handles_missing_glyph(tmp_path):
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
     subjects = tmp_path / "subject-ids.txt"
     subjects.write_text("id1\nid2\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"a"\n"b"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
     codex_dir = tmp_path / "codex"
     codex_dir.mkdir(exist_ok=True)
     env = os.environ.copy()
@@ -142,6 +170,8 @@ def test_rotator_handles_missing_glyph(tmp_path):
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(tmp_path / "missing.txt")
     env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(ends)
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
@@ -166,11 +196,17 @@ def test_rotator_handles_missing_subject(tmp_path):
     echoes.write_text("sigil\nmirage\n", encoding="utf-8")
     codex_dir = tmp_path / "codex"
     codex_dir.mkdir(exist_ok=True)
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"a"\n"b"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
     env = os.environ.copy()
     env["STATUS_FILE"] = str(statuses)
     env["QUOTE_FILE"] = str(quotes)
     env["GLYPH_FILE"] = str(glyphs)
     env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(ends)
     env["SUBJECT_FILE"] = str(tmp_path / "missing.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
@@ -181,3 +217,69 @@ def test_rotator_handles_missing_subject(tmp_path):
     assert "ChronoSignature" in html
     assert "⚠️ subject file missing" in readme
     assert "⚠️ subject file missing" in html
+
+
+def test_rotator_handles_missing_mode(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\nbeta\n", encoding="utf-8")
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("echo\nnoecho\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    env = os.environ.copy()
+    env["STATUS_FILE"] = str(statuses)
+    env["QUOTE_FILE"] = str(quotes)
+    env["GLYPH_FILE"] = str(glyphs)
+    env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(tmp_path / "missing.txt")
+    env["END_QUOTE_FILE"] = str(ends)
+    env["SUBJECT_FILE"] = str(subjects)
+    env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
+    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "⚠️ mode file missing" in readme
+    assert "⚠️ mode file missing" in html
+
+
+def test_rotator_handles_missing_end_quote(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\nbeta\n", encoding="utf-8")
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("echo\nnoecho\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("gamma\ndelta\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sigil\nmirage\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"a"\n"b"\n', encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("id1\nid2\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    env = os.environ.copy()
+    env["STATUS_FILE"] = str(statuses)
+    env["QUOTE_FILE"] = str(quotes)
+    env["GLYPH_FILE"] = str(glyphs)
+    env["ECHO_FILE"] = str(echoes)
+    env["MODE_FILE"] = str(modes)
+    env["END_QUOTE_FILE"] = str(tmp_path / "missing.txt")
+    env["SUBJECT_FILE"] = str(subjects)
+    env["OUTPUT_DIR"] = str(tmp_path)
+    env["DOCS_DIR"] = str(tmp_path)
+    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "⚠️ end quote file missing" in readme
+    assert "⚠️ end quote file missing" in html
