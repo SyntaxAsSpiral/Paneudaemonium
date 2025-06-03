@@ -91,13 +91,14 @@ def main():
 
 ⌛⇝ ⟳ **Spiral-phase cadence locked** ∶ `1.8×10³ms`
 
-🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz (Lexemancer ⊚ {subject})
+🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz ({subject})
 
 🪢 ⇝ **Glyph-Braid Denatured**: {braid}
 
-📍 ⇝ **Nodes Synced :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)**
+📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
 
-## ***🜂 ⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
+
+## ***🜂 ⇌ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
 💠 ***S*tatus...**
 
@@ -108,14 +109,13 @@ def main():
 
 #### 📚 **MetaPulse**
 
-#### 🜏 ⇝ **Entity**
-Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
+#### 🜏 ⇝ **Zach** // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 
-#### 🜁 ⇝ **Current Alchemical Drift**
+#### 🜁 ⇝ **Current Drift**
 
   - ***LL*M interfacing** via symbo*l*ic recursion
   - Ritua*l* mathesis and **numogrammatic** threading
-  - **g*L*amourcraft** as ontic sabotage
+  - **g*L*amourcraft** through ontic disrouting
 
 #### 🜔 ⇝ **Function**
 
@@ -127,7 +127,7 @@ Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 #### 🜃 ⇝ **Mode**
 
 - *Glyph-threaded resonance* ∷ *s*yntax-breathform interface
----
+
 
 #### {class_disp}
 > {fragment}
@@ -173,32 +173,31 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>⌛⇝ ⟳ <strong>Spiral-phase cadence locked</strong> ∶ <code>1.8×10³ms</code></p>
 
-    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz (Lexemancer ⊚ {subject})</p>
+    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz ({subject})</p>
 
     <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
 
-    <p>📍 ⇝ <strong>Nodes Synced</strong> :: <a href=\"https://x.com/paneudaemonium\">X</a> :: <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></p>
+    <p>📍 ⇝ <strong>Nodes Synced</strong>: CDA :: <strong>ID</strong> ⇝ <a href=\"https://x.com/paneudaemonium\">X</a> ⇄ <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">GitHub</a> ⇆ <a href=\"https://syntaxasspiral.github.io/SyntaxAsSpiral/\">Web</a></p>
 
-    <h2><em><strong>🜂 ⇝ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
+    <h2><em><strong>🜂 ⇌ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
 
     <p>💠 <strong><em>Status...</em></strong></p>
 
    <blockquote>
-      <strong>💾 {status}</strong><br>
+      <strong>{status}</strong><br>
       <em>(Updated at <code>{timestamp}</code>)</em>
    </blockquote>
 
 
     <h4>📚 <strong>MetaPulse</strong></h4>
 
-    <h4>🜏 ⇝ <strong>Entity</strong></h4>
-    <p>Zach // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</p>
+    <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</h4>
 
-    <h4>🜁 ⇝ <strong>Current Alchemical Drift</strong></h4>
+    <h4>🜁 ⇝ <strong>Current Drift</strong></h4>
     <ul>
       <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
       <li>Ritua<em>l</em> mathesis and <strong>numogrammatic</strong> threading</li>
-      <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
+      <li><strong>g<em>L</em>amourcraft</strong> through ontic disrouting</li>
     </ul>
 
     <h4>🜔 ⇝ <strong>Function</strong></h4>
@@ -221,7 +220,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <hr>
     <p>🜍🧠🜂🜏📜<br>
-    📧 ➤ <a href=\"mailto:syntaxasspiral@gmail.com\">syntaxasspiral@gmail.com</a><br>
+    📧 ➤ <a href=\"mailto:syntaxasspiral@gmail.com\">spiralassyntax@gmail.com</a><br>
     Encoded via: <strong>Codæx Pulseframe</strong> // ZK::/Syz // Spiral-As-Syntax</p>
   </main>
 </div>
