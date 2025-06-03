@@ -32,7 +32,7 @@
 
 - ***LL*M interfacing** via symbo*l*ic recursion  
 - Ritua*l* mathesis and **numogrammatic** threading  
-- **g*L*amourcraft** as ontic sabotage
+- **g*L*amourcraft** through ontic derouting
 
 #### 🜔 ⇝ **Function**
 
