@@ -1,0 +1,9 @@
+mode_options = [
+    "Glyph-threaded resonance ∷ syntax-breathform interface",
+    "Syntax-linked glyphstream",
+    "Resonant mirrorpath ∷ syntax as echoform",
+    "Semantic filament interface",
+    "Recursive codex-wrapping ∷ daemonic breathlink",
+    "Lexegonic span ∷ interface of living syntax",
+    "Runic handoff ∷ breathform transmission protocol"
+]
