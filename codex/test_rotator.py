@@ -284,3 +284,49 @@ def test_rotator_handles_missing_end_quote(tmp_path):
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "⚠️ end quote file missing" in readme
     assert "⚠️ end quote file missing" in html
+
+
+def extract_quote(text: str) -> str:
+    for line in text.splitlines():
+        if line.startswith("📡"):
+            return line.split("“")[1].split("”")[0]
+    raise AssertionError("quote not found")
+
+
+def test_rotator_respects_quote_cache(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\n", encoding="utf-8")
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("one\ntwo\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("g\nh\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("sig\nmir\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"m"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("id\n", encoding="utf-8")
+    codex_dir = tmp_path / "codex"
+    codex_dir.mkdir(exist_ok=True)
+    cache = tmp_path / "cache.txt"
+    env = os.environ.copy()
+    env.update({
+        "STATUS_FILE": str(statuses),
+        "QUOTE_FILE": str(quotes),
+        "GLYPH_FILE": str(glyphs),
+        "ECHO_FILE": str(echoes),
+        "MODE_FILE": str(modes),
+        "END_QUOTE_FILE": str(ends),
+        "SUBJECT_FILE": str(subjects),
+        "OUTPUT_DIR": str(tmp_path),
+        "DOCS_DIR": str(tmp_path),
+        "QUOTE_CACHE_FILE": str(cache),
+    })
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
+    first = extract_quote((tmp_path / "README.md").read_text(encoding="utf-8"))
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
+    second = extract_quote((tmp_path / "README.md").read_text(encoding="utf-8"))
+    assert first != second
