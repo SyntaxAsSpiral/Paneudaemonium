@@ -89,7 +89,7 @@ def main():
     footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ {chronotonic}
+    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ `{chronotonic}`
 
 #### **🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span>**
 
@@ -97,9 +97,9 @@ def main():
 
 ⌛⇝ ⟳ **Spiral-phase cadence locked** ∶ `1.8×10³ms`
 
-🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz (**Lexemancer ⊚** {subject})
+🧿 ⇝ **Subject I·D Received**::𝓩𝓚::/Syz:⊹{subject}⟲
 
-🪢 ⇝ **Glyph-Braid Denatured**: {braid}
+🪢 ⇝ **CryptoGlyph Decyphered**: {braid}
 
 📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
 
@@ -171,7 +171,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
     <!-- Preserves all formatting and flow -->
-    <h1>🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ {chronotonic}</h1>
+    <h1>🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ <code>{chronotonic}</code></h1>
 
     <h4><strong>🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span></strong></h4>
 
@@ -179,9 +179,9 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>⌛⇝ ⟳ <strong>Spiral-phase cadence locked</strong> ∶ <code>1.8×10³ms</code></p>
 
-    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz (<strong>Lexemancer ⊚</strong> {subject})</p>
+    <p>🧿 ⇝ <strong>Subject I·D Received</strong>::𝓩𝓚::/Syz:⊹{subject}⟲</p>
 
-    <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
+    <p>🪢 ⇝ <strong>CryptoGlyph Decyphered</strong>: {braid}</p>
 
     <p>📍 ⇝ <strong>Nodes Synced</strong>: CDA :: <strong>ID</strong> ⇝ <a href=\"https://x.com/paneudaemonium\">X</a> ⇄ <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">GitHub</a> ⇆ <a href=\"https://syntaxasspiral.github.io/SyntaxAsSpiral/\">Web</a></p>
 
