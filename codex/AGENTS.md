@@ -30,7 +30,10 @@ variables. Their default locations are listed below:
 
 `README.md` and `index.html` are produced by the rotator; edit neither by hand.
 
+The rotator cloaks the email glyph; the text you glimpse may not match its mailto incantation. This mirage is intentional—a small ward against dull-eyed scrapers.
+
 Formatting for these artifacts is guided by `glyphs/rotator-formatting-template.md`.
+
 Tweak that glyph-sheet when the pulse layout needs to breathe a new form.
 
 To override a path while updating:

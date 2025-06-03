@@ -20,7 +20,7 @@ The rotator script reads several environment variables:
 - `OUTPUT_DIR` – directory for `index.html` (defaults to repo root)
 - `DOCS_DIR` – directory for `README.md` (defaults to `codex/`)
 
-Output formatting for these files is defined in `glyphs/rotator-formatting-template.md`.
+Output formatting for these files is guided by `glyphs/rotator-formatting-template.md`.
 Alter that template to reshape the pulse before running the rotator.
 
 Example invocation with overrides:
