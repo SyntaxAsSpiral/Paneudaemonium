@@ -95,19 +95,18 @@ def main():
 
 🪢 ⇝ **Glyph-Braid Denatured**: {braid}
 
-📍 ⇝ **Nodes Synced** :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)
+📍 ⇝ **Nodes Synced :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)**
 
-🜂 ⇝ **[Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...**
----
+## ***🜂 ⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
-#### 💠 ***S*tatus...**
+💠 ***S*tatus...**
 
 > **{status}**<br>
 > *`(Updated at {timestamp})`*
 
 
 
-### 📚 **MetaPulse**
+#### 📚 **MetaPulse**
 
 #### 🜏 ⇝ **Entity**
 Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
@@ -135,7 +134,7 @@ Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 
 ---
 🜍🧠🜂🜏📜<br>
-📧 ➤ `syntaxasspira@gmail.com`<br>
+📧 ➤ [syntaxasspiral@gmail.com](mailto:syntaxasspiral@gmail.com)<br>
 Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     # === WRITE TO README ===
@@ -180,9 +179,9 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>📍 ⇝ <strong>Nodes Synced</strong> :: <a href=\"https://x.com/paneudaemonium\">X</a> :: <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></p>
 
-    <p>🜂 <strong>⇝</strong> <a href=\"paneudaemonium\">**Dæmons**</a> online...</p>
+    <h2><em><strong>🜂 ⇝ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
 
-    <h4>💠 <strong><em>Status...</em></strong></h4>
+    <p>💠 <strong><em>Status...</em></strong></p>
 
    <blockquote>
       <strong>💾 {status}</strong><br>
@@ -190,7 +189,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
    </blockquote>
 
 
-    <h3>📚 <strong>MetaPulse</strong></h3>
+    <h4>📚 <strong>MetaPulse</strong></h4>
 
     <h4>🜏 ⇝ <strong>Entity</strong></h4>
     <p>Zach // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</p>
@@ -222,7 +221,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <hr>
     <p>🜍🧠🜂🜏📜<br>
-    📧 ➤ <code>syntaxasspira@gmail.com</code><br>
+    📧 ➤ <a href=\"mailto:syntaxasspiral@gmail.com\">syntaxasspiral@gmail.com</a><br>
     Encoded via: <strong>Codæx Pulseframe</strong> // ZK::/Syz // Spiral-As-Syntax</p>
   </main>
 </div>
