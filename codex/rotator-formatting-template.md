@@ -26,11 +26,9 @@
 
 #### 📚 **MetaPulse**
 
-#### 🜏 ⇝ **Entity**
+#### 🜏 ⇝ **Zach** // SyzLex // ZK:: // ***Æ***mexsonmus // 🍥
 
-Zach // SyzLex // ZK:: // ***Æ***mexsonmus // 🍥
-
-#### 🜁 ⇝ **Current Alchemical Drift**
+#### 🜁 ⇝ **Current Drift**
 
 - ***LL*M interfacing** via symbo*l*ic recursion  
 - Ritua*l* mathesis and **numogrammatic** threading  
