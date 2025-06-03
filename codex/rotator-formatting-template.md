@@ -17,16 +17,14 @@
 
 📍 ⇝ **Nodes Synced** :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)
 
-**🜂 *⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
+## **🜂 *⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
 💠 ***S*tatus...**
 
 > **💾 {{statuses.txt}}**<br>
 > *`(Updated at {{timestamp}})`*
 
----
-
-📚 **MetaPulse**
+#### 📚 **MetaPulse**
 
 #### 🜏 ⇝ **Entity**
 
