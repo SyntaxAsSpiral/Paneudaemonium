@@ -60,10 +60,10 @@ main.content {
 
 h1, h2, h3, h4, h5, h6 {
   color: #e6edf3;
-  font-family: var(--font-glyphic);
+  font-family: var(--font-glyphic), serif;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.015em;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.05);
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
