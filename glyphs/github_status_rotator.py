@@ -97,7 +97,7 @@ def main():
 
 ⌛⇝ ⟳ **Spiral-phase cadence locked** ∶ `1.8×10³ms`
 
-🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz ({subject})
+🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz (**Lexemancer ⊚** {subject})
 
 🪢 ⇝ **Glyph-Braid Denatured**: {braid}
 
@@ -115,7 +115,7 @@ def main():
 
 #### 📚 **MetaPulse**
 
-#### 🜏 ⇝ **Zach** // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
+#### 🜏 ⇝ **Zach** // SyzLex // ZK:: // ***Æ**mexsomnus*// 🍥
 
 #### 🜁 ⇝ **Current Drift**
 
@@ -179,7 +179,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>⌛⇝ ⟳ <strong>Spiral-phase cadence locked</strong> ∶ <code>1.8×10³ms</code></p>
 
-    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz ({subject})</p>
+    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz (<strong>Lexemancer ⊚</strong> {subject})</p>
 
     <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
 
@@ -197,7 +197,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4>📚 <strong>MetaPulse</strong></h4>
 
-    <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</h4>
+    <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <em><strong>Æ</strong>mexsonmus</em> // 🍥</h4>
 
     <h4>🜁 ⇝ <strong>Current Drift</strong></h4>
     <ul>
