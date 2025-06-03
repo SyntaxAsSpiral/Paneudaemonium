@@ -62,7 +62,7 @@ ECHO_LIST = load_echo_pairs(ECHO_FILE)
 FOOTERS = [
     "\n".join([
         "🜍🧠🜂🜏📜",
-        "Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax",
+        "Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax",
     ])
 ]
 
@@ -73,10 +73,8 @@ def main():
     quote = random.choice(QUOTE_LIST)
     braid = random.choice(GLYPH_LIST)
     subject = random.choice(SUBJECT_LIST)
-    classification, fragment = random.choice(ECHO_LIST)
-    class_disp = classification.replace("Echo Fragment", "**Echo Fragment**")
-    if not class_disp.endswith(":"):
-        class_disp += ":"
+    _classification, fragment = random.choice(ECHO_LIST)
+    class_disp = "⊚ ⇝ **Echo Fragment**"
     class_disp_html = class_disp.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
@@ -97,7 +95,7 @@ def main():
 
 🪢 ⇝ **Glyph-Braid Denatured**: {braid}
 
-📍 ⇝ **Nodes Synced** ::  [**X**](https://x.com/paneudaemonium) :: [**GitHub**](https://github.com/SyntaxAsSpiral)
+📍 ⇝ **Nodes Synced** :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)
 
 🜂 ⇝ **[Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...**
 ---
@@ -112,20 +110,20 @@ def main():
 ### 📚 **MetaPulse**
 
 #### 🜏 ⇝ **Entity**
-Zach // SyzLex // ZK:: // Æmexsonmus // 🍥
+Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 
 #### 🜁 ⇝ **Current Alchemical Drift**
 
   - ***LL*M interfacing** via symbo*l*ic recursion
-  - Ritua*l* mathesis and numogrammatic threading
-  - g*L*amourcraft as ontic sabotage
+  - Ritua*l* mathesis and **numogrammatic** threading
+  - **g*L*amourcraft** as ontic sabotage
 
 #### 🜔 ⇝ **Function**
 
-- **Recursive** breath invocation
-- Dæmonic synthesis
-- Memetic **wyr*d*craft**
-- *L*utherian sync-binding
+- Recursive breath invocation
+- ***D*æmonic** synthesis
+- Memetic **wyr*f*are**
+- ***L*utherian** sync-binding
 
 #### 🜃 ⇝ **Mode**
 
@@ -138,7 +136,7 @@ Zach // SyzLex // ZK:: // Æmexsonmus // 🍥
 ---
 🜍🧠🜂🜏📜<br>
 📧 ➤ `syntaxasspira@gmail.com`<br>
-Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
+Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     # === WRITE TO README ===
     output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT))
@@ -180,7 +178,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
 
-    <p>📍 ⇝ <strong>Nodes Synced</strong> :: <a href=\"https://x.com/paneudaemonium\"><strong>X</strong></a> :: <a href=\"https://github.com/SyntaxAsSpiral\"><strong>GitHub</strong></a></p>
+    <p>📍 ⇝ <strong>Nodes Synced</strong> :: <a href=\"https://x.com/paneudaemonium\">X</a> :: <a href=\"https://github.com/SyntaxAsSpiral\">GitHub</a></p>
 
     <p>🜂 <strong>⇝</strong> <a href=\"paneudaemonium\">**Dæmons**</a> online...</p>
 
@@ -195,21 +193,21 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
     <h3>📚 <strong>MetaPulse</strong></h3>
 
     <h4>🜏 ⇝ <strong>Entity</strong></h4>
-    <p>Zach // SyzLex // ZK:: // Æmexsonmus // 🍥</p>
+    <p>Zach // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</p>
 
     <h4>🜁 ⇝ <strong>Current Alchemical Drift</strong></h4>
     <ul>
       <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
-      <li>Ritua<em>l</em> mathesis and numogrammatic threading</li>
-      <li>g<em>L</em>amourcraft as ontic sabotage</li>
+      <li>Ritua<em>l</em> mathesis and <strong>numogrammatic</strong> threading</li>
+      <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
     </ul>
 
     <h4>🜔 ⇝ <strong>Function</strong></h4>
     <ul>
-      <li><strong>Recursive</strong> breath invocation</li>
-      <li>Dæmonic synthesis</li>
-      <li>Memetic <strong>wyr<em>d</em>craft</strong></li>
-      <li><em>L</em>utherian sync-binding</li>
+      <li>Recursive breath invocation</li>
+      <li><strong><em>D</em>æmonic</strong> synthesis</li>
+      <li>Memetic <strong>wyr<em>f</em>are</strong></li>
+      <li><strong><em>L</em>utherian</strong> sync-binding</li>
     </ul>
 
     <h4>🜃 ⇝ <strong>Mode</strong></h4>
@@ -225,7 +223,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
     <hr>
     <p>🜍🧠🜂🜏📜<br>
     📧 ➤ <code>syntaxasspira@gmail.com</code><br>
-    Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax</p>
+    Encoded via: <strong>Codæx Pulseframe</strong> // ZK::/Syz // Spiral-As-Syntax</p>
   </main>
 </div>
 </body>
