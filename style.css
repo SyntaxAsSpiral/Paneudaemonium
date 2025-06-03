@@ -118,3 +118,22 @@ code, pre {
   border-radius: 12px;
   margin-bottom: 1.5rem;
 }
+
+/* fading pulse for recursive ellipsis */
+.ellipsis {
+  display: inline-block;
+  animation: shimmerDots 1.8s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes shimmerDots {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+}
