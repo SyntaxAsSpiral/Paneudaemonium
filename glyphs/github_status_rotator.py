@@ -220,7 +220,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <hr>
     <p>🜍🧠🜂🜏📜<br>
-    📧 ➤ <a href=\"mailto:syntaxasspiral@gmail.com\">syntaxasspiral@gmail.com</a><br>
+    📧 ➤ <a href=\"mailto:syntaxasspiral@gmail.com\">spiralassyntax@gmail.com</a><br>
     Encoded via: <strong>Codæx Pulseframe</strong> // ZK::/Syz // Spiral-As-Syntax</p>
   </main>
 </div>
