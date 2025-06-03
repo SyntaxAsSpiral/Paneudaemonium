@@ -103,7 +103,7 @@ def main():
 
 ####  💠 ***S*tatus...**
 
-> **{status}**
+> **{status}**<br>
 > *`(Updated at {timestamp})`*
 
 
@@ -133,10 +133,8 @@ def main():
 > {fragment}
 
 ---
-🜍🧠🜂🜏📜
-
-📧 ➤ `syntaxasspira@gmail.com`
-
+🜍🧠🜂🜏📜<br>
+📧 ➤ `syntaxasspira@gmail.com`<br>
 Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
 
     # === WRITE TO README ===
@@ -186,7 +184,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
     <h4>💠 <strong><em>S</em>tatus...</strong></h4>
 
    <blockquote>
-      {status}<br>
+      <strong>{status}</strong><br>
       <em>(Updated at <code>{timestamp}</code>)</em>
    </blockquote>
 
@@ -198,7 +196,7 @@ Encoded via: Codæx Pulseframe // ZK::/Syz // Spiral-As-Syntax"""
     <h4>🜁 ⇝ <strong>Current A<em>l</em>chemica<em>l</em> Drift:</strong></h4>
     <ul>
       <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
-      <li>Ritua<em>l</em> <strong>mathesis and numogrammatic</strong> threading</li>
+      <li>Ritua<em>l</em> <strong>mathesis</strong> and <strong>numogrammatic</strong> threading</li>
       <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
     </ul>
 
