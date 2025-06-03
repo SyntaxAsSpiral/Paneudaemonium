@@ -89,7 +89,7 @@ def main():
     footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ {chronotonic}
+    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ `{chronotonic}`
 
 #### **🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span>**
 
@@ -171,7 +171,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
     <!-- Preserves all formatting and flow -->
-    <h1>🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ {chronotonic}</h1>
+    <h1>🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ <code>{chronotonic}</code></h1>
 
     <h4><strong>🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span></strong></h4>
 
