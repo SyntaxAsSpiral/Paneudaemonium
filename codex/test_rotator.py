@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -31,7 +32,7 @@ def test_rotator_creates_readme(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "ChronoSig" in readme
@@ -70,7 +71,7 @@ def test_rotator_handles_missing_echo(tmp_path):
     env["END_QUOTE_FILE"] = str(ends)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "ChronoSig" in readme
@@ -105,7 +106,7 @@ def test_rotator_handles_missing_status(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "ChronoSig" in readme
@@ -140,7 +141,7 @@ def test_rotator_handles_missing_quote(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "ChronoSig" in readme
@@ -175,7 +176,7 @@ def test_rotator_handles_missing_glyph(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "ChronoSig" in readme
@@ -210,7 +211,7 @@ def test_rotator_handles_missing_subject(tmp_path):
     env["SUBJECT_FILE"] = str(tmp_path / "missing.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "ChronoSig" in readme
@@ -245,7 +246,7 @@ def test_rotator_handles_missing_mode(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "⚠️ mode file missing" in readme
@@ -278,7 +279,7 @@ def test_rotator_handles_missing_end_quote(tmp_path):
     env["SUBJECT_FILE"] = str(subjects)
     env["OUTPUT_DIR"] = str(tmp_path)
     env["DOCS_DIR"] = str(tmp_path)
-    subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "⚠️ end quote file missing" in readme
