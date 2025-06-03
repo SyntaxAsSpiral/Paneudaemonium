@@ -197,7 +197,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4>📚 <strong>MetaPulse</strong></h4>
 
-    <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <em><strong>Æ</strong>mexsonmus</em> // 🍥</h4>
+    <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <em><strong>Æ</strong>mexsomnus</em> // 🍥</h4>
 
     <h4>🜁 ⇝ <strong>Current Drift</strong></h4>
     <ul>
