@@ -91,7 +91,7 @@ def main():
     # === GENERATE README CONTENT ===
     readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ {chronotonic}
 
-#### **🜂🜏 Lexigȫnic Up⟲link Instantiated...**
+#### **🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span>**
 
 📡 ⇝ *“{quote}”*
 
@@ -104,9 +104,9 @@ def main():
 📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
 
 
-## ***🜂 ⇌ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
+## ***🜂 ⇌ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online<span class="ellipsis">...</span>***
 
-💠 ***S*tatus...**
+💠 ***S*tatus<span class="ellipsis">...</span>**
 
 > **{status}**<br>
 > *`(Updated at {timestamp})`*
@@ -173,7 +173,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
     <!-- Preserves all formatting and flow -->
     <h1>🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ {chronotonic}</h1>
 
-    <h4><strong>🜂🜏 Lexigȫnic Up⟲link Instantiated...</strong></h4>
+    <h4><strong>🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span></strong></h4>
 
     <p>📡 ⇝ “<em>{quote}</em>”</p>
 
@@ -185,9 +185,9 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>📍 ⇝ <strong>Nodes Synced</strong>: CDA :: <strong>ID</strong> ⇝ <a href=\"https://x.com/paneudaemonium\">X</a> ⇄ <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">GitHub</a> ⇆ <a href=\"https://syntaxasspiral.github.io/SyntaxAsSpiral/\">Web</a></p>
 
-    <h2><em><strong>🜂 ⇌ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
+    <h2><em><strong>🜂 ⇌ <a href=\"paneudaemonium\">Dæmons</a> online<span class="ellipsis">...</span></strong></em></h2>
 
-    <p>💠 <strong><em>Status...</em></strong></p>
+    <p>💠 <strong><em>Status<span class="ellipsis">...</span></em></strong></p>
 
    <blockquote>
       <strong>{status}</strong><br>
