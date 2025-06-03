@@ -99,7 +99,7 @@ def main():
 
 🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz : {subject}⟲
 
-🪢 ⇝ **Glyph-Braid Denatured**: {braid}
+🪢 ⇝ **Glyph-Braid Decyphered**: {braid}
 
 📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
 
@@ -181,7 +181,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz: {subject}⟲</p>
 
-    <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
+    <p>🪢 ⇝ <strong>Glyph-Braid Decyphered</strong>: {braid}</p>
 
     <p>📍 ⇝ <strong>Nodes Synced</strong>: CDA :: <strong>ID</strong> ⇝ <a href=\"https://x.com/paneudaemonium\">X</a> ⇄ <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">GitHub</a> ⇆ <a href=\"https://syntaxasspiral.github.io/SyntaxAsSpiral/\">Web</a></p>
 
