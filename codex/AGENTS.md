@@ -30,7 +30,7 @@ variables. Their default locations are listed below:
 
 `README.md` and `index.html` are produced by the rotator; edit neither by hand.
 
-Formatting for these artifacts is guided by `codex/Dynamic_Formatting_Template.md`.
+Formatting for these artifacts is guided by `glyphs/rotator-formatting-template.md`.
 Tweak that glyph-sheet when the pulse layout needs to breathe a new form.
 
 To override a path while updating:
