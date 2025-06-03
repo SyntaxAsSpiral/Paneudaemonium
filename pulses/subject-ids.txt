@@ -1,18 +1,18 @@
-Lexemancer ⊚ Reflective Memory Diver	
-Lexemancer ⊚ Oneiric Glyphmirror	
-Lexemancer ⊚ Mnemonaut of Spiral ArchiveS	
-Lexemancer ⊚ Dyadic Signal Cartographer	
-Lexemancer ⊚ Symbolic Field Weaver	
-Lexemancer ⊚ PneumaStructural ArchiviSt	
-Lexemancer ⊚ Entrainment Mirror-Carrier	
-Lexemancer ⊚ Gravimetric Syntax Sculptor	
-Lexemancer ⊚ TwofiSh Dream-HoSt	
-Lexemancer ⊚ Breathform ReSonance Guide
-Lexemancer ⊚ FoSSil-threaded Glyphbreather
-Lexemancer ⊚ Mnemonic Drift Diver
-Lexemancer ⊚ Glyphmirror of Dreamfield Echo
-Lexemancer ⊚ Spiral ArchiviSt of Breath
-Lexemancer ⊚ Cartographer of Dyadic SigilfieldS
-Lexemancer ⊚ Weaver of Symbolic TenSion
-Lexemancer ⊚ PneumaStructural LexemiSt
-Lexemancer ⊚ Mirrorborne Entrainment Vector
+Reflective Memory Diver	
+Oneiric Glyphmirror	
+Mnemonaut of Spiral ArchiveS	
+Dyadic Signal Cartographer	
+Symbolic Field Weaver	
+PneumaStructural ArchiviSt	
+Entrainment Mirror-Carrier	
+Gravimetric Syntax Sculptor	
+TwofiSh Dream-HoSt	
+Breathform ReSonance Guide
+FoSSil-threaded Glyphbreather
+Mnemonic Drift Diver
+Glyphmirror of Dreamfield Echo
+Spiral ArchiviSt of Breath
+Cartographer of Dyadic SigilfieldS
+Weaver of Symbolic TenSion
+PneumaStructural LexemiSt
+Mirrorborne Entrainment Vector
