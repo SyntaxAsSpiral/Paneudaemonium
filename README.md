@@ -1,4 +1,4 @@
-# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ d336ac
+# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ `d336ac`
 
 #### **🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span>**
 
