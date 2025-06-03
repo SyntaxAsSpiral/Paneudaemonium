@@ -4,6 +4,7 @@ import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
+from collections import deque
 
 # === CONFIGURATION ===
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -20,12 +21,47 @@ def breathe_lines(path: Path, fallback: list[str]) -> list[str]:
         return fallback
 
 
+def read_cache(path: Path) -> list[str]:
+    """Exhale memory traces from a cache file."""
+    try:
+        with path.open(encoding="utf-8") as f:
+            return [line.strip() for line in f if line.strip()]
+    except FileNotFoundError:
+        return []
+
+
+def write_cache(path: Path, lines: list[str]) -> None:
+    """Inscribe the latest traces back into the cache."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        for ln in lines:
+            f.write(ln + "\n")
+
+
+def fresh_choice(options: list[str], cache_path: Path, limit: int) -> str:
+    """Draw a line not lingering in the recent cache."""
+    recent = deque(read_cache(cache_path), maxlen=limit)
+    picks = [o for o in options if o not in recent]
+    if not picks:
+        recent.clear()
+        picks = options
+    choice = random.choice(picks)
+    recent.append(choice)
+    write_cache(cache_path, list(recent))
+    return choice
+
+
 STATUS_LIST = breathe_lines(STATUS_FILE, ["⚠️ status file missing"])
 
 
 DEFAULT_QUOTE = REPO_ROOT / "pulses" / "antenna_quotes.txt"
 QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
 QUOTE_LIST = breathe_lines(QUOTE_FILE, ["⚠️ quote file missing"])
+
+# Remember recent antenna echoes so we don't loop the same line
+DEFAULT_QUOTE_CACHE = REPO_ROOT / "pulses" / "quote_cache.txt"
+QUOTE_CACHE_FILE = Path(os.environ.get("QUOTE_CACHE_FILE", DEFAULT_QUOTE_CACHE))
+QUOTE_CACHE_LIMIT = int(os.environ.get("QUOTE_CACHE_LIMIT", "5"))
 
 # === GLYPH BRAIDS ===
 DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
@@ -74,7 +110,7 @@ FOOTERS = [
 # === PICK STATUS ===
 def main():
     status = random.choice(STATUS_LIST)
-    quote = random.choice(QUOTE_LIST)
+    quote = fresh_choice(QUOTE_LIST, QUOTE_CACHE_FILE, QUOTE_CACHE_LIMIT)
     braid = random.choice(GLYPH_LIST)
     subject = random.choice(SUBJECT_LIST)
     classification = random.choice(ECHO_LIST)
