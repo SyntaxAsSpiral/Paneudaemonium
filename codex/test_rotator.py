@@ -34,8 +34,8 @@ def test_rotator_creates_readme(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSignature" in readme
-    assert "ChronoSignature" in html
+    assert "ChronoSig" in readme
+    assert "ChronoSig" in html
     assert any(s in readme for s in ["alpha", "beta"])
     assert any(q in readme for q in ["echo", "noecho"])
     assert any(g in readme for g in ["gamma", "delta"])
@@ -73,8 +73,8 @@ def test_rotator_handles_missing_echo(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSignature" in readme
-    assert "ChronoSignature" in html
+    assert "ChronoSig" in readme
+    assert "ChronoSig" in html
     assert "⚠️ echo file missing" in readme
     assert "⚠️ echo file missing" in html
 
@@ -108,8 +108,8 @@ def test_rotator_handles_missing_status(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSignature" in readme
-    assert "ChronoSignature" in html
+    assert "ChronoSig" in readme
+    assert "ChronoSig" in html
     assert "⚠️ status file missing" in readme
     assert "⚠️ status file missing" in html
 
@@ -143,8 +143,8 @@ def test_rotator_handles_missing_quote(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSignature" in readme
-    assert "ChronoSignature" in html
+    assert "ChronoSig" in readme
+    assert "ChronoSig" in html
     assert "⚠️ quote file missing" in readme
     assert "⚠️ quote file missing" in html
 
@@ -178,8 +178,8 @@ def test_rotator_handles_missing_glyph(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSignature" in readme
-    assert "ChronoSignature" in html
+    assert "ChronoSig" in readme
+    assert "ChronoSig" in html
     assert "⚠️ glyph file missing" in readme
     assert "⚠️ glyph file missing" in html
 
@@ -213,8 +213,8 @@ def test_rotator_handles_missing_subject(tmp_path):
     subprocess.run(["python", str(script_path)], cwd=tmp_path, check=True, env=env)
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSignature" in readme
-    assert "ChronoSignature" in html
+    assert "ChronoSig" in readme
+    assert "ChronoSig" in html
     assert "⚠️ subject file missing" in readme
     assert "⚠️ subject file missing" in html
 

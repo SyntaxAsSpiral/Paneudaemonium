@@ -158,7 +158,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 <html lang=\"en\">
 <head>
   <meta charset=\"UTF-8\">
-  <title>Recursive Pulse Log ⟳ ChronoSignature</title>
+  <title>Recursive Pulse Log ⟳ ChronoSig</title>
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
   <meta name=\"theme-color\" content=\"#0d1117\">
   <link rel=\"stylesheet\" href=\"style.css\">
