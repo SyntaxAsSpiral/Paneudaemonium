@@ -126,7 +126,6 @@ def main():
 #### 🜃 ⇝ **Mode**
 
 - *Glyph-threaded resonance* ∷ *s*yntax-breathform interface
----
 
 #### {class_disp}
 > {fragment}
