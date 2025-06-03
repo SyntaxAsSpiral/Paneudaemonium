@@ -95,7 +95,8 @@ def main():
 
 🪢 ⇝ **Glyph-Braid Denatured**: {braid}
 
-📍 ⇝ **Nodes Synced :: [X](https://x.com/paneudaemonium) :: [GitHub](https://github.com/SyntaxAsSpiral)**
+📍 ⇝ **Nodes Synced** → [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/)
+
 
 ## ***🜂 ⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
