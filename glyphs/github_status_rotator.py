@@ -108,14 +108,13 @@ def main():
 
 #### 📚 **MetaPulse**
 
-#### 🜏 ⇝ **Entity**
-Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
+#### 🜏 ⇝ **Zach** // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 
-#### 🜁 ⇝ **Current Alchemical Drift**
+#### 🜁 ⇝ **Current Drift**
 
   - ***LL*M interfacing** via symbo*l*ic recursion
   - Ritua*l* mathesis and **numogrammatic** threading
-  - **g*L*amourcraft** as ontic sabotage
+  - **g*L*amourcraft** through ontic disrouting
 
 #### 🜔 ⇝ **Function**
 
@@ -184,21 +183,20 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
     <p>💠 <strong><em>Status...</em></strong></p>
 
    <blockquote>
-      <strong>💾 {status}</strong><br>
+      <strong>{status}</strong><br>
       <em>(Updated at <code>{timestamp}</code>)</em>
    </blockquote>
 
 
     <h4>📚 <strong>MetaPulse</strong></h4>
 
-    <h4>🜏 ⇝ <strong>Entity</strong></h4>
-    <p>Zach // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</p>
+    <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</h4>
 
     <h4>🜁 ⇝ <strong>Current Alchemical Drift</strong></h4>
     <ul>
       <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
       <li>Ritua<em>l</em> mathesis and <strong>numogrammatic</strong> threading</li>
-      <li><strong>g<em>L</em>amourcraft</strong> as ontic sabotage</li>
+      <li><strong>g<em>L</em>amourcraft</strong> through ontic disrouting</li>
     </ul>
 
     <h4>🜔 ⇝ <strong>Function</strong></h4>
