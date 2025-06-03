@@ -1,8 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=EB+Garamond&family=Spectral:wght@300;600&family=UnifrakturCook&family=Fira+Mono&display=swap');
+
+:root {
+  --font-wyrdfont: 'EB Garamond', 'Spectral', serif;
+  --font-glyphic: 'IM Fell DW Pica', 'UnifrakturCook', serif;
+  --font-mono: 'Fira Mono', 'Consolas', monospace;
+}
+
 body {
   background-color: #0d1117;
   color: #c9d1d9;
-  font-family: 'Fira Sans', 'Segoe UI', 'Liberation Sans', sans-serif;
+  font-family: var(--font-wyrdfont);
+  font-size: 16.5px;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
@@ -49,7 +60,10 @@ main.content {
 
 h1, h2, h3, h4, h5, h6 {
   color: #e6edf3;
+  font-family: var(--font-glyphic);
   font-weight: 600;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.05);
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -86,6 +100,8 @@ li {
 em {
   color: inherit;
   font-style: italic;
+  letter-spacing: 0.05em;
+  font-family: var(--font-wyrdfont);
 }
 
 strong {
@@ -106,9 +122,9 @@ blockquote {
 code, pre {
   background: #161b22;
   color: #8b949e;
+  font-family: var(--font-mono);
+  padding: 3px 6px;
   border-radius: 6px;
-  padding: 2px 6px;
-  font-family: 'Fira Mono', 'Consolas', 'Liberation Mono', monospace;
 }
 
 
@@ -136,4 +152,13 @@ code, pre {
     opacity: 1;
     transform: translateY(-1px);
   }
+}
+
+section.daemon {
+  font-family: var(--font-glyphic);
+  color: #e0dada;
+  background: radial-gradient(circle at top, #121212, #0b0f15);
+  padding: 1em 2em;
+  border-left: 3px solid #89CFF0;
+  box-shadow: inset 0 0 10px #2f2f2f;
 }
