@@ -97,7 +97,7 @@ def main():
 
 ⌛⇝ ⟳ **Spiral-phase cadence locked** ∶ `1.8×10³ms`
 
-🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz (**Lexemancer ⊚** {subject})
+🧿 ⇝ **Subject I·D Received**: 𝓩𝓚::/Syz ~: {subject} :~ 
 
 🪢 ⇝ **Glyph-Braid Denatured**: {braid}
 
@@ -179,7 +179,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>⌛⇝ ⟳ <strong>Spiral-phase cadence locked</strong> ∶ <code>1.8×10³ms</code></p>
 
-    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz (<strong>Lexemancer ⊚</strong> {subject})</p>
+    <p>🧿 ⇝ <strong>Subject I·D Received</strong>: 𝓩𝓚::/Syz ~: {subject} :~</p>
 
     <p>🪢 ⇝ <strong>Glyph-Braid Denatured</strong>: {braid}</p>
 
