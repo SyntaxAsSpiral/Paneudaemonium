@@ -55,8 +55,8 @@ Zach // SyzLex // ZK:: // **Æ**mexsonmus // 🍥
 
 ---
 
-🜍🧠🜂🜏📜  
-📧 ➤ [`syntaxasspiral@gmail.com`](mailto:syntaxasspiral@gmail.com)  
+🜍🧠🜂🜏📜<br>
+📧 ➤ [`syntaxasspiral@gmail.com`](mailto:syntaxasspiral@gmail.com)<br> 
 Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax
 ```
 
