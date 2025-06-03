@@ -125,7 +125,7 @@ def main():
 
 #### 🜔 ⇝ **Function**
 
-- Recursive breath invocation
+- Recursive **breath** invocation
 - ***D*æmonic** synthesis
 - Memetic **wyr*f*are**
 - ***L*utherian** sync-binding
@@ -208,7 +208,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4>🜔 ⇝ <strong>Function</strong></h4>
     <ul>
-      <li>Recursive breath invocation</li>
+      <li>Recursive <strong>breath</strong> invocation</li>
       <li><strong><em>D</em>æmonic</strong> synthesis</li>
       <li>Memetic <strong>wyr<em>f</em>are</strong></li>
       <li><strong><em>L</em>utherian</strong> sync-binding</li>
