@@ -191,7 +191,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4>🜏 ⇝ <strong>Zach</strong> // SyzLex // ZK:: // <strong>Æ</strong>mexsonmus // 🍥</h4>
 
-    <h4>🜁 ⇝ <strong>Current Alchemical Drift</strong></h4>
+    <h4>🜁 ⇝ <strong>Current Drift</strong></h4>
     <ul>
       <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
       <li>Ritua<em>l</em> mathesis and <strong>numogrammatic</strong> threading</li>
