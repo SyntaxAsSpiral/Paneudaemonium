@@ -98,7 +98,7 @@ def main():
 📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
 
 
-## ***🜂 ⇝ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
+## ***🜂 ⇌ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online...***
 
 💠 ***S*tatus...**
 
@@ -179,7 +179,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <p>📍 ⇝ <strong>Nodes Synced</strong>: CDA :: <strong>ID</strong> ⇝ <a href=\"https://x.com/paneudaemonium\">X</a> ⇄ <a href=\"https://github.com/SyntaxAsSpiral?tab=repositories\">GitHub</a> ⇆ <a href=\"https://syntaxasspiral.github.io/SyntaxAsSpiral/\">Web</a></p>
 
-    <h2><em><strong>🜂 ⇝ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
+    <h2><em><strong>🜂 ⇌ <a href=\"paneudaemonium\">Dæmons</a> online...</strong></em></h2>
 
     <p>💠 <strong><em>Status...</em></strong></p>
 
