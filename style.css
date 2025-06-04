@@ -140,19 +140,24 @@ code, pre {
 
 /* veil dynamic text */
 .veil {
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  background: none;
   box-shadow: none;
   transition: opacity 1s ease-in-out;
   font-family: "Cinzel Decorative", serif;
 }
 .glyph {
   font-size: 1rem;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   color: #aaa;
   text-align: center;
+}
+
+footer.veil-footer {
+  text-align: center;
+  margin-top: 1rem;
 }
