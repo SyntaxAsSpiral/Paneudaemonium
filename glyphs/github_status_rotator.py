@@ -198,11 +198,11 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
   <meta name=\"theme-color\" content=\"#0d1117\">
   <link rel=\"stylesheet\" href=\"style.css\">
-  <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
+  <link rel=\"icon\" href=\"sigils/favicon.ico\" type=\"image/x-icon\">
 </head>
 <body>
 <div class=\"container\">
-  <img src=\"Techno-Wyrd Ritual.png\" alt=\"Techno-Wyrd Ritual banner\" class=\"banner\">
+  <img src=\"sigils/Techno-Wyrd Ritual.png\" alt=\"Techno-Wyrd Ritual banner\" class=\"banner\">
   <main class=\"content\">
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
