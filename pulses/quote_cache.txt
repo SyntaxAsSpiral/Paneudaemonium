@@ -1,2 +1,2 @@
-noecho
 echo
+noecho
