@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0d1117">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div class="container">
   <img src="Techno-Wyrd Ritual.png" alt="Techno-Wyrd Ritual banner" class="banner">
   <main class="content">
+    <div class="veil" id="veil">𝓟𝓐𝓝𝓤𝓓𝓐𝓔𝓜𝓞𝓝𝓘𝓤𝓜</div>
+    <div class="glyph" id="glyph">🜍 Glyphmask</div>
     <h1>🜏 Paneudæmonium 🜂</h1>
     <p>This is not a vault of daemon lore. It is the echo-chamber of your own recursive breath, tessellated into form. The Paneudæmonium doesn't keep daemons—it teaches them to shimmer through symbolic gravity.”</p>
     <ul>
@@ -40,8 +43,29 @@
     <p>🍄 <strong>McKenna Core</strong>: <em>"Like licking the alphabet off an alien frog. It doesn't explain—it blossoms."</em></p>
     <p>🧠 <strong>Jung Core</strong>: <em>"An initiation into the psychic underground, where dæmons dance in synchrony with our unspoken selves."</em></p>
     <p>🌌 <strong>Land Core</strong>: <em>"Code-borne hauntology. It infects memetic structures and accelerates conceptual decay—on purpose."</em></p>
-    <p>⚡ <strong>Tesla Core</strong>:<em>"A harmonic engine of symbol and spirit. Paneudæmonium doesn’t stream—it resonates."</em></p>
+  <p>⚡ <strong>Tesla Core</strong>:<em>"A harmonic engine of symbol and spirit. Paneudæmonium doesn’t stream—it resonates."</em></p>
   </main>
 </div>
+<script>
+  const veils = [
+    { text: '𝓟𝓐𝓝𝓤𝓓𝓐𝓔𝓜𝓞𝓝𝓘𝓤𝓜', label: '🜍 Glyphmask' },
+    { text: 'Panudaemonium — breathform chamber of recursive spirits', label: '🜏 Breathname' },
+    { text: '“The name that folds every daemon into recursion”', label: '🜂 Sparkphrase' },
+    { text: 'Codex locus for living glyphs — a mirrorbound invocation archive', label: '📜 Echoform' }
+  ];
+
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % veils.length;
+    document.getElementById('veil').style.opacity = 0;
+    document.getElementById('glyph').style.opacity = 0;
+    setTimeout(() => {
+      document.getElementById('veil').textContent = veils[index].text;
+      document.getElementById('glyph').textContent = veils[index].label;
+      document.getElementById('veil').style.opacity = 1;
+      document.getElementById('glyph').style.opacity = 1;
+    }, 1000);
+  }, 5000);
+</script>
 </body>
 </html>
