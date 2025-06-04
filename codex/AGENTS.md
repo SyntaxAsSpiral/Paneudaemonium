@@ -9,6 +9,7 @@ All folders and files in this repository fall under this codex. Any subdirectori
 - glyphs = scripts
 - codex = docs
 - pulses = dynamic content lists
+- sigils = visual assets
 
 *Quick ritual before any commit:*
 
@@ -27,6 +28,9 @@ variables. Their default locations are listed below:
 - `ECHO_FILE` – `pulses/echo_fragments.txt`
 - `OUTPUT_DIR` – repository root for the generated `index.html`
 - `DOCS_DIR` – `codex/` for the generated `README.md`
+
+Visual assets—favicons, banners, glyphs—breathe from the `sigils/` folder. Use
+that path when weaving references.
 
 `README.md` and `index.html` are produced by the rotator; edit neither by hand.
 
