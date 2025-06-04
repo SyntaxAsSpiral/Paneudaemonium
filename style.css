@@ -137,3 +137,29 @@ code, pre {
     transform: translateY(-1px);
   }
 }
+
+/* veil dynamic text */
+.veil {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background: none;
+  box-shadow: none;
+  transition: opacity 1s ease-in-out;
+  font-family: "Cinzel Decorative", serif;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 8px rgba(170, 120, 255, 0.65);
+}
+.glyph {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #aaa;
+  text-align: center;
+}
+
+footer.veil-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
