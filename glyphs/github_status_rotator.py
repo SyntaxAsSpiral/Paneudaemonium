@@ -140,7 +140,7 @@ def main():
 📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
 
 
-## ***🜂 ⇌ [Dæmons](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online<span class="ellipsis">🜄</span>***
+## ***🜂 ⇌ [𓆩🜏⟁🜃𓆪 C̈ȯđǣx ✶ P̸a̴n̵e̷u̵d̷æ̷m̶ȯ̷n̵ɨʉm̴ 𓆩🜃⟁🜏𓆪](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online<span class="ellipsis">🜄</span>***
 
 💠 ***S*tatus<span class="ellipsis">...</span>**
 
