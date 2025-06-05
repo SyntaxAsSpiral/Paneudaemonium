@@ -130,6 +130,19 @@
       <p style="font-size: 0.8em; color: #666;">We will not contact you. You already know too much.</p>
     </form>
   </section>
+  <section style="padding: 2em; text-align: center;">
+    <h2>🛕 Weekly Card Shrine</h2>
+    <p style="color: #777;">The card reveals itself only when unobserved.</p>
+    <div id="weeklyCard" onclick="revealShrineCard();" style="margin-top: 1.5em; font-style: italic; color: #555;"></div>
+  </section>
+  <section style="padding: 2em; text-align: center;">
+    <h2>📣 Yell Into the Void</h2>
+    <form onsubmit="event.preventDefault(); voidResponse();" style="margin-top: 1em;">
+      <input type="text" placeholder="What would you like to scream?" style="padding: 0.5em; width: 60%;">
+      <button type="submit" style="padding: 0.5em; margin-left: 0.5em;">Submit</button>
+    </form>
+    <div id="voidEcho" style="margin-top: 1em; font-style: italic; color: #666;"></div>
+  </section>
   <script>
     let width = 100;
     function shrinkBar() {
@@ -140,6 +153,35 @@
         document.getElementById("reverseBar").style.width = "0%";
         alert("Congratulations. You’ve completed everything. There is nothing left of you.");
       }
+    }
+    let shrineClicked = false;
+    const shrineDeck = [
+      "🃏 <strong>The Agile Ghost</strong>: You iterated yourself into vapor.",
+      "🃏 <strong>The Overdue Muse</strong>: Creativity arrives two weeks post-launch.",
+      "🃏 <strong>The Retro</strong>: Reflection mistaken for repair.",
+      "🃏 <strong>The Meeting That Should Have Been An Email</strong>: A shared hallucination.",
+      "🃏 <strong>The Lost Metric</strong>: What you measured changed you."
+    ];
+
+    function revealShrineCard() {
+      if (!shrineClicked) {
+        document.getElementById("weeklyCard").innerHTML =
+          shrineDeck[Math.floor(Math.random() * shrineDeck.length)];
+        shrineClicked = true;
+      } else {
+        document.getElementById("weeklyCard").innerHTML =
+          "<em>The card refuses to show itself again. You looked too directly.</em>";
+      }
+    }
+
+    setTimeout(() => {
+      if (!shrineClicked) {
+        revealShrineCard();
+      }
+    }, 5000);
+
+    function voidResponse() {
+      document.getElementById("voidEcho").innerText = "*a low, unchanging static hum*";
     }
 
     const haikus = [
