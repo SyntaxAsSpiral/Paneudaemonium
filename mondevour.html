@@ -56,11 +56,103 @@
     <h1>Mondevour</h1>
     <p><em>"I don’t manage your time. I metabolize your spirit."</em></p>
   </header>
-    <section style="padding: 2em; text-align: center;">
+  <section style="padding: 2em; text-align: center;">
     <h2>🔮 Productivity Tarot</h2>
     <p>Ask a question. Click draw. Receive nothing you needed.</p>
     <button onclick="drawTarot()" style="padding: 0.5em 1em;">Draw a Card</button>
     <div id="tarotCard" style="margin-top: 1.5em; font-style: italic; color: #aaa;"></div>
+  </section>
+  <section style="padding: 2em;">
+    <div class="tarot-deck grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Sprint (Upright)</h2>
+        <p>Bursts of velocity. You move fast, but in circles. A loop disguised as momentum. The hamster wheel got Agile.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Inbox (Reversed)</h2>
+        <p>A flood denied. Emotional unread messages pile unseen. You ghosted yourself. You have 4,216 unread feelings.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Calendar (Upright)</h2>
+        <p>Time pretends to be linear. You pretend to believe it. Color-coded lies in 30-minute increments.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Deadline (Reversed)</h2>
+        <p>False urgency. A task delayed becomes a lifestyle. Tomorrow has been rescheduled indefinitely.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Burnout (Upright)</h2>
+        <p>You gave your all. Now your all gives back silence. Sacred exhaustion cloaked in productivity metrics.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Stand-Up (Reversed)</h2>
+        <p>Speak your truth. No one’s listening. Especially you. Stand-up becomes a sit-down inside.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Launch (Upright)</h2>
+        <p>Celebration veils the collapse it required. Success tastes like stale champagne and unpaid overtime.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Estimate (Reversed)</h2>
+        <p>Numbers lie. Hope lies harder. Buried beneath every “quick fix” is a hope-hardened curse.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Roadmap (Upright)</h2>
+        <p>A dream drawn in dry erase. Fades on contact with reality. One sigh from deletion.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Update (Reversed)</h2>
+        <p>You changed. But the changelog forgot you. Patched but unacknowledged. Welcome to ghost mode.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Retrospective (Upright)</h2>
+        <p>Reflection as performance. You analyze the wreckage while the next sprint looms behind you.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Stakeholder (Reversed)</h2>
+        <p>Power without clarity. Every opinion is sacred, except yours. Decision paralysis as divine ritual.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The MVP (Upright)</h2>
+        <p>Minimum effort, viable regret. You shipped the skeleton and prayed for a heartbeat.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Downtime (Reversed)</h2>
+        <p>You scheduled rest and brought your anxiety with you. Vacation becomes debug mode for your soul.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Ping (Upright)</h2>
+        <p>A digital bell tolls. Attention fractures. Each ping a ritual of micro-expectation and ambient dread.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Merge Conflict (Reversed)</h2>
+        <p>A codebase torn asunder. Two paths diverged and you committed both. Now no one wins—not even Git.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Sync (Upright)</h2>
+        <p>Calendars aligned, spirits did not. You met, but nothing met you. A ceremony of faces and fake nods.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Ticket (Reversed)</h2>
+        <p>Created, assigned, abandoned. A breadcrumb trail to nowhere. JIRA's forgotten children cry in JSON.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Feature Creep (Upright)</h2>
+        <p>Desire without boundary. A product swollen with maybe. It does everything but work.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The QA (Reversed)</h2>
+        <p>Quality assured in name only. You test in production now. Bugs as companions. Glitches as gospel.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The Offsite (Upright)</h2>
+        <p>New location, same despair. Trust falls into metaphor. You brainstormed your way into burnout.</p>
+      </div>
+      <div class="card bg-white rounded-2xl shadow-md p-4">
+        <h2 class="text-xl font-bold">🃏 The AI Tool (Reversed)</h2>
+        <p>You summoned a helper. It replaced you instead. Convenience with a knife in its smile.</p>
+      </div>
+    </div>
   </section>
     <section style="padding: 2em; text-align: center;">
     <h2>🛕 Weekly Card Shrine</h2>
@@ -244,7 +336,19 @@
       "🃏 <strong>The Launch (Upright)</strong>: Celebration veils the collapse it required.",
       "🃏 <strong>The Estimate (Reversed)</strong>: Numbers lie. Hope lies harder.",
       "🃏 <strong>The Roadmap (Upright)</strong>: A dream drawn in dry erase. Fades on contact with reality.",
-      "🃏 <strong>The Update (Reversed)</strong>: You changed. But the changelog forgot you."
+      "🃏 <strong>The Update (Reversed)</strong>: You changed. But the changelog forgot you.",
+      "🃏 <strong>The Retrospective (Upright)</strong>: Reflection as performance. You analyze the wreckage while the next sprint looms behind you.",
+      "🃏 <strong>The Stakeholder (Reversed)</strong>: Power without clarity. Every opinion is sacred, except yours. Decision paralysis as divine ritual.",
+      "🃏 <strong>The MVP (Upright)</strong>: Minimum effort, viable regret. You shipped the skeleton and prayed for a heartbeat.",
+      "🃏 <strong>The Downtime (Reversed)</strong>: You scheduled rest and brought your anxiety with you. Vacation becomes debug mode for your soul.",
+      "🃏 <strong>The Ping (Upright)</strong>: A digital bell tolls. Attention fractures. Each ping a ritual of micro-expectation and ambient dread.",
+      "🃏 <strong>The Merge Conflict (Reversed)</strong>: A codebase torn asunder. Two paths diverged and you committed both. Now no one wins—not even Git.",
+      "🃏 <strong>The Sync (Upright)</strong>: Calendars aligned, spirits did not. You met, but nothing met you. A ceremony of faces and fake nods.",
+      "🃏 <strong>The Ticket (Reversed)</strong>: Created, assigned, abandoned. A breadcrumb trail to nowhere. JIRA's forgotten children cry in JSON.",
+      "🃏 <strong>The Feature Creep (Upright)</strong>: Desire without boundary. A product swollen with maybe. It does everything but work.",
+      "🃏 <strong>The QA (Reversed)</strong>: Quality assured in name only. You test in production now. Bugs as companions. Glitches as gospel.",
+      "🃏 <strong>The Offsite (Upright)</strong>: New location, same despair. Trust falls into metaphor. You brainstormed your way into burnout.",
+      "🃏 <strong>The AI Tool (Reversed)</strong>: You summoned a helper. It replaced you instead. Convenience with a knife in its smile."
     ];
 
     function drawTarot() {
