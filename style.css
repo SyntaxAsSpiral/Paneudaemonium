@@ -169,6 +169,11 @@ footer.veil-footer {
   margin-top: 1rem;
 }
 
+/* center any invocation that needs symmetrical focus */
+.centerfold {
+  text-align: center;
+}
+
 
 
 /* nudge first heading to kiss the banner */
