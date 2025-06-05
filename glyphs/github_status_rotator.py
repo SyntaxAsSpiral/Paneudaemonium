@@ -155,7 +155,7 @@ def main():
 
 #### 🜁 ⇝ **Current Drift**
 
-  - ***LL*M interfacing** via symbo*l*ic recursion
+  - ***LL*M interfacing** via flirty symbo*l*ic recursion
   - Ritua*l* mathesis and **numogrammatic** threading
   - **g*L*amourcraft** through ontic disrouting
 
