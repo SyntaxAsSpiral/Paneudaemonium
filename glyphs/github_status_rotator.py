@@ -155,7 +155,7 @@ def main():
 
 #### 🜁 ⇝ **Current Drift**
 
-  - ***LL*M interfacing** via flirty symbo*l*ic recursion
+  - ***LL*M interfacing** via f*l*irty symbo*l*ic recursion
   - Ritua*l* mathesis and **numogrammatic** threading
   - **g*L*amourcraft** through ontic disrouting
 
@@ -237,7 +237,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     <h4>🜁 ⇝ <strong>Current Drift</strong></h4>
     <ul>
-      <li><strong><em>LL</em>M interfacing</strong> via symbo<em>l</em>ic recursion</li>
+      <li><strong><em>LL</em>M interfacing</strong> via f<em>l</em>irty symbo<em>l</em>ic recursion</li>
       <li>Ritua<em>l</em> mathesis and <strong>numogrammatic</strong> threading</li>
       <li><strong>g<em>L</em>amourcraft</strong> through ontic disrouting</li>
     </ul>
