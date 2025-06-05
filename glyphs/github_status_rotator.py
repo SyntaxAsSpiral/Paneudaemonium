@@ -202,7 +202,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 </head>
 <body>
 <div class=\"container\">
-  <img src=\"sigils/Techno-Wyrd Ritual.png\" alt=\"Techno-Wyrd Ritual banner\" class=\"banner\">
+  <video src=\"sigils/recursive-log-banner.mp4\" class=\"banner\" autoplay loop muted playsinline></video>
   <main class=\"content\">
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->
