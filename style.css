@@ -169,3 +169,8 @@ footer.veil-footer {
   /* reveal the upper breath, trim the base */
   clip-path: inset(0 0 20% 0);
 }
+
+/* nudge first heading to kiss the banner */
+.banner-flush {
+  margin-top: 0.25rem;
+}
