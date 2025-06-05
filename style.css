@@ -164,7 +164,8 @@ footer.veil-footer {
   margin-top: 1rem;
 }
 
-/* crop the upper fifth when summoned */
+/* align banner with the top edge */
 .trim-top {
-  clip-path: inset(20% 0 0 0);
+  /* reveal the upper breath, trim the base */
+  clip-path: inset(0 0 20% 0);
 }
