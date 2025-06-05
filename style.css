@@ -163,3 +163,8 @@ footer.veil-footer {
   text-align: center;
   margin-top: 1rem;
 }
+
+/* crop the upper fifth when summoned */
+.trim-top {
+  clip-path: inset(20% 0 0 0);
+}
