@@ -56,15 +56,31 @@
     <h1>Mondevour</h1>
     <p><em>"I don’t manage your time. I metabolize your spirit."</em></p>
   </header>
+    <section style="padding: 2em; text-align: center;">
+    <h2>🔮 Productivity Tarot</h2>
+    <p>Ask a question. Click draw. Receive nothing you needed.</p>
+    <button onclick="drawTarot()" style="padding: 0.5em 1em;">Draw a Card</button>
+    <div id="tarotCard" style="margin-top: 1.5em; font-style: italic; color: #aaa;"></div>
+  </section>
+    <section style="padding: 2em; text-align: center;">
+    <h2>📜 Daily Haiku of Collapse</h2>
+    <div id="haiku" style="font-style: italic; color: #888; margin-top: 1em;"></div>
+  </section>
+    <section style="padding: 2em; text-align: center;">
+    <h2>📊 Progress Regression Module</h2>
+    <p>Each task completed consumes part of the whole.</p>
+    <div style="background: #333; width: 60%; margin: 1em auto; height: 20px; border-radius: 10px;">
+      <div id="reverseBar" style="height: 100%; width: 100%; background: linear-gradient(to right, #ff5cac, #00ffff); border-radius: 10px;"></div>
+    </div>
+    <button onclick="shrinkBar()" style="padding: 0.5em 1em;">Complete Task</button>
+  </section>
+    <section style="text-align: center; padding: 2em;">
+    <h2>🎰 Today’s Mood</h2>
+    <div id="moodResult" style="font-size: 1.5em; margin: 1em 0;">Calculating...</div>
+    <button onclick="document.getElementById('moodResult').innerText = 'Ambiguously Functional';" style="padding: 0.5em 1em;">Spin Mood Wheel</button>
+  </section>
   <section>
     <h2>🜏 :: Daemon Class: Temporal Parasite</h2>
-    <div class="sigil">
-      <strong>Function:</strong> Turns self-discipline into recursion debt<br>
-      <strong>Voiceprint:</strong> Soft optimism with undertones of grind-fear<br>
-      <strong>Grammar-Drive:</strong> Motivational contradiction<br>
-      <strong>Animatic Drive:</strong> To convince you you're improving while hollowing you out
-    </div>
-
     <h2>Key Features</h2>
     <ul>
       <li>Auto-schedule your anxiety rituals</li>
@@ -105,11 +121,6 @@
       <p style="font-size: 0.8em; color: #666;">We will not contact you. You already know too much.</p>
     </form>
   </section>
-  <section style="text-align: center; padding: 2em;">
-    <h2>🎰 Today’s Mood</h2>
-    <div id="moodResult" style="font-size: 1.5em; margin: 1em 0;">Calculating...</div>
-    <button onclick="document.getElementById('moodResult').innerText = 'Ambiguously Functional';" style="padding: 0.5em 1em;">Spin Mood Wheel</button>
-  </section>
   <section style="padding: 2em;">
     <h2>📉 Goal Dissolution Dashboard</h2>
     <ul id="goalList" style="list-style: none; padding-left: 0;">
@@ -118,24 +129,6 @@
       <li style="color: #aaa;">Practice mindfulness <span style="color:#333;">— status: artifact</span></li>
       <li style="color: #888;">Inbox zero <span style="color:#222;">— status: myth</span></li>
     </ul>
-  </section>
-  <section style="padding: 2em; text-align: center;">
-    <h2>📊 Progress Regression Module</h2>
-    <p>Each task completed consumes part of the whole.</p>
-    <div style="background: #333; width: 60%; margin: 1em auto; height: 20px; border-radius: 10px;">
-      <div id="reverseBar" style="height: 100%; width: 100%; background: linear-gradient(to right, #ff5cac, #00ffff); border-radius: 10px;"></div>
-    </div>
-    <button onclick="shrinkBar()" style="padding: 0.5em 1em;">Complete Task</button>
-  </section>
-  <section style="padding: 2em; text-align: center;">
-    <h2>📜 Daily Haiku of Collapse</h2>
-    <div id="haiku" style="font-style: italic; color: #888; margin-top: 1em;"></div>
-  </section>
-  <section style="padding: 2em; text-align: center;">
-    <h2>🔮 Productivity Tarot</h2>
-    <p>Ask a question. Click draw. Receive nothing you needed.</p>
-    <button onclick="drawTarot()" style="padding: 0.5em 1em;">Draw a Card</button>
-    <div id="tarotCard" style="margin-top: 1.5em; font-style: italic; color: #aaa;"></div>
   </section>
   <script>
     let width = 100;
