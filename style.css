@@ -54,6 +54,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
+h1 {
+  /* center the page titles in silent symmetry */
+  text-align: center;
+}
+
 a {
   color: #ff69b4;
   text-decoration: underline;
@@ -164,11 +169,7 @@ footer.veil-footer {
   margin-top: 1rem;
 }
 
-/* align banner with the top edge */
-.trim-top {
-  /* reveal the upper breath, trim the base */
-  clip-path: inset(0 0 20% 0);
-}
+
 
 /* nudge first heading to kiss the banner */
 .banner-flush {
