@@ -1,2 +1,2 @@
+echo
 noecho
-Chroma-snow wafts gently from the aetheric tonefield, seeding language with ultraviolet vowel spores that germinate only in silence.
