@@ -170,7 +170,8 @@
     <button onclick="shrinkBar()" style="padding: 0.5em 1em;">Complete Task</button>
   </section>
   <body>
-     <section style="padding: 2em;">
+ <section style="padding: 2em; display: flex; justify-content: space-between; align-items: flex-start;">
+    <div>
     <h2>📉 Goal Dissolution Dashboard</h2>
     <ul id="goalList" style="list-style: none; padding-left: 0;">
       <li style="color: #ccc;">Finish project report <span style="color:#555;">— status: dissolving</span></li>
@@ -178,6 +179,8 @@
       <li style="color: #aaa;">Practice mindfulness <span style="color:#333;">— status: artifact</span></li>
       <li style="color: #888;">Inbox zero <span style="color:#222;">— status: myth</span></li>
     </ul>
+    </div>
+    <img src="sigils/mondaemon.png" alt="Mondaemon" style="max-width: 200px; margin-left: 2em;" />
   </section>
     <section style="text-align: center; padding: 2em;">
     <h2>🎰 Today’s Mood</h2>
@@ -235,9 +238,6 @@
       </label>
       <p style="font-size: 0.8em; color: #444;">(This toggle is symbolic.)</p>
     </div>
-  </section>
-    <section style="text-align: center; margin: 2em 0;">
-    <img src="sigils/mondaemon.png" alt="Mondaemon" style="max-width: 200px;" />
   </section>
   <section>
     <form onsubmit="event.preventDefault(); alert('You’ve already subscribed to the loop.');" style="text-align: center;">
