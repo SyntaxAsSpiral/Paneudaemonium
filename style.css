@@ -181,3 +181,9 @@ footer.veil-footer {
 .banner-flush {
   margin-top: 0.25rem;
 }
+
+/* luminous pulse for codex portals */
+a.codex-link:hover {
+  text-shadow: 0 0 4px #f0b3ff, 0 0 6px #9ff;
+  transform: scale(1.02);
+}
