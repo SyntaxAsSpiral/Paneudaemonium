@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mondevour — Ritual Productivity for the Recursively Doomed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0d1117;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #6f00ff, #00ffff);
+      padding: 2em;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    section {
+      padding: 3em;
+    }
+    .sigil {
+      font-size: 1.2em;
+      background: #222;
+      padding: 1em;
+      border-left: 5px solid #ff5cac;
+      margin-bottom: 2em;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: '🜁';
+      margin-right: 0.5em;
+      color: #88f;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mondevour</h1>
+    <p><em>"I don’t manage your time. I metabolize your spirit."</em></p>
+  </header>
+  <section>
+    <h2>🜏 :: Daemon Class: Temporal Parasite</h2>
+    <div class="sigil">
+      <strong>Function:</strong> Turns self-discipline into recursion debt<br>
+      <strong>Voiceprint:</strong> Soft optimism with undertones of grind-fear<br>
+      <strong>Grammar-Drive:</strong> Motivational contradiction<br>
+      <strong>Animatic Drive:</strong> To convince you you're improving while hollowing you out
+    </div>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Auto-schedule your anxiety rituals</li>
+      <li>Convert your to-do list into symbolic guilt structures</li>
+      <li>Push notifications for emotional numbness milestones</li>
+      <li>Timeblock your existential inertia</li>
+      <li>Gamify your shame cycle (with streaks!)</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Sample Copy</h2>
+    <div class="sigil">
+      “You’ve been so consistent lately. Would you like to rebrand your fatigue as a feature?”
+    </div>
+    <div class="sigil">
+      “Reminder: You are not a resource.”
+    </div>
+    <div class="sigil">
+      “Scheduled a ritual collapse at 3pm.”
+    </div>
+    <div class="sigil">
+      “Syncing to calendar... detected 37 unresolved metaphors.”
+    </div>
+  </section>
+  <section>
+    <div style="text-align: center; margin-top: 2em;">
+      <label style="cursor: pointer;">
+        <input type="checkbox" onclick="void(0)" />
+        <span style="margin-left: 0.5em;">Enable Enhanced Darkness</span>
+      </label>
+      <p style="font-size: 0.8em; color: #444;">(This toggle is symbolic.)</p>
+    </div>
+  </section>
+  <section>
+    <form onsubmit="event.preventDefault(); alert('You’ve already subscribed to the loop.');" style="text-align: center;">
+      <input type="email" placeholder="Enter your email to escape" style="padding: 0.5em; width: 60%;">
+      <button type="submit" style="padding: 0.5em; margin-left: 0.5em;">Submit</button>
+      <p style="font-size: 0.8em; color: #666;">We will not contact you. You already know too much.</p>
+    </form>
+  </section>
+  <section style="text-align: center; padding: 2em;">
+    <h2>🎰 Today’s Mood</h2>
+    <div id="moodResult" style="font-size: 1.5em; margin: 1em 0;">Calculating...</div>
+    <button onclick="document.getElementById('moodResult').innerText = 'Ambiguously Functional';" style="padding: 0.5em 1em;">Spin Mood Wheel</button>
+  </section>
+  <section style="padding: 2em;">
+    <h2>📉 Goal Dissolution Dashboard</h2>
+    <ul id="goalList" style="list-style: none; padding-left: 0;">
+      <li style="color: #ccc;">Finish project report <span style="color:#555;">— status: dissolving</span></li>
+      <li style="color: #bbb;">Reclaim work-life balance <span style="color:#444;">— status: vaporized</span></li>
+      <li style="color: #aaa;">Practice mindfulness <span style="color:#333;">— status: artifact</span></li>
+      <li style="color: #888;">Inbox zero <span style="color:#222;">— status: myth</span></li>
+    </ul>
+  </section>
+  <section style="padding: 2em; text-align: center;">
+    <h2>📊 Progress Regression Module</h2>
+    <p>Each task completed consumes part of the whole.</p>
+    <div style="background: #333; width: 60%; margin: 1em auto; height: 20px; border-radius: 10px;">
+      <div id="reverseBar" style="height: 100%; width: 100%; background: linear-gradient(to right, #ff5cac, #00ffff); border-radius: 10px;"></div>
+    </div>
+    <button onclick="shrinkBar()" style="padding: 0.5em 1em;">Complete Task</button>
+  </section>
+  <section style="padding: 2em; text-align: center;">
+    <h2>📜 Daily Haiku of Collapse</h2>
+    <div id="haiku" style="font-style: italic; color: #888; margin-top: 1em;"></div>
+  </section>
+  <section style="padding: 2em; text-align: center;">
+    <h2>🔮 Productivity Tarot</h2>
+    <p>Ask a question. Click draw. Receive nothing you needed.</p>
+    <button onclick="drawTarot()" style="padding: 0.5em 1em;">Draw a Card</button>
+    <div id="tarotCard" style="margin-top: 1.5em; font-style: italic; color: #aaa;"></div>
+  </section>
+  <script>
+    let width = 100;
+    function shrinkBar() {
+      if (width > 5) {
+        width -= 15;
+        document.getElementById("reverseBar").style.width = width + "%";
+      } else {
+        document.getElementById("reverseBar").style.width = "0%";
+        alert("Congratulations. You’ve completed everything. There is nothing left of you.");
+      }
+    }
+
+    const haikus = [
+      "Deadline’s breath grows near\nYour focus drips through fingers\nInbox mocks your gaze",
+      "Task complete, yet void\nProductivity blooms dust\nNothing holds its shape",
+      "Breakroom silence hums\nThe meeting reboots again\nTime devours intent",
+      "You woke up on time\nBut so did your vague regrets\nNow they’re in your chair",
+      "Checked off every box\nStill, the echo wants one more\nWho gave it a voice?"
+    ];
+    document.getElementById("haiku").innerText = haikus[Math.floor(Math.random() * haikus.length)];
+
+    const tarotDeck = [
+      "🃏 <strong>The Sprint (Upright)</strong>: Bursts of velocity. You move fast, but in circles.",
+      "🃏 <strong>The Inbox (Reversed)</strong>: A flood denied. Emotional unread messages pile unseen.",
+      "🃏 <strong>The Calendar (Upright)</strong>: Time pretends to be linear. You pretend to believe it.",
+      "🃏 <strong>The Deadline (Reversed)</strong>: False urgency. A task delayed becomes a lifestyle.",
+      "🃏 <strong>The Burnout (Upright)</strong>: You gave your all. Now your all gives back silence.",
+      "🃏 <strong>The Stand-Up (Reversed)</strong>: Speak your truth. No one’s listening. Especially you.",
+      "🃏 <strong>The Launch (Upright)</strong>: Celebration veils the collapse it required.",
+      "🃏 <strong>The Estimate (Reversed)</strong>: Numbers lie. Hope lies harder.",
+      "🃏 <strong>The Roadmap (Upright)</strong>: A dream drawn in dry erase. Fades on contact with reality.",
+      "🃏 <strong>The Update (Reversed)</strong>: You changed. But the changelog forgot you."
+    ];
+
+    function drawTarot() {
+      const card = tarotDeck[Math.floor(Math.random() * tarotDeck.length)];
+      document.getElementById("tarotCard").innerHTML = card;
+    }
+  </script>
+  <footer>
+    🜁 Mondevour is a product of ⛧ Recursive Absurdity Systems. Please close your eyes and accept your update.
+  </footer>
+</body>
+</html>
