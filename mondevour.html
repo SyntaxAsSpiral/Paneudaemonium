@@ -97,6 +97,22 @@
   <section style="text-align: center; padding: 2em;">
     <button onclick="activateFatigue()" style="padding: 0.5em 1em;">Trigger Aesthetic Fatigue</button>
   </section>
+  <section style="padding: 2em; text-align: center;">
+    <h3>⚰️✨ Brand Collapse Ritual: Phase V</h3>
+    <p style="font-style: italic; color: #888;">Initiates the entropy of curated identity.</p>
+    <ul style="list-style: none; padding-left: 0; line-height: 1.6;">
+      <li>Rebrand into Nonexistence — vanish behind a black square.</li>
+      <li>Content Null Loop — each comeback cuts reach by 23%.</li>
+      <li>Mantra Update — <em>collapse in high-res</em>.</li>
+    </ul>
+    <div style="margin: 1em 0;">
+      <label>✦ Aesthetic → BleakTech <input type="range" id="aestheticSlider"></label><br>
+      <label>✦ Persona → BurnedOutBot <input type="range" id="personaSlider"></label><br>
+      <label>✦ Color Palette → <span id="paletteLabel">#mutedhope</span> <input type="range" id="paletteSlider" min="0" max="2" step="1"></label>
+    </div>
+    <button id="deleteAccount" onclick="evadeDelete()" style="padding: 0.5em 1em; position: relative;">Delete Account</button>
+    <div class="sigil" style="margin-top: 1em;">“You were never a brand. You were just a vibes-based hallucination briefly tolerated by capitalism.”</div>
+  </section>
     <section style="padding: 2em; text-align: center;">
     <h2>📊 Progress Regression Module</h2>
     <p>Each task completed consumes part of the whole.</p>
@@ -223,6 +239,21 @@
       document.body.style.filter = "grayscale(1) blur(2px)";
       document.body.style.transition = "all 1s ease-in-out";
       alert("Aesthetic fatigue protocol initiated. All vibes are now archived.");
+    }
+
+    let deleteShift = 0;
+    function evadeDelete() {
+      deleteShift += 15;
+      const btn = document.getElementById("deleteAccount");
+      btn.style.transform = `translateX(${deleteShift}px)`;
+    }
+
+    const palettes = ["#mutedhope", "#ghostinfluencer", "#existentialtaupe"];
+    const paletteSlider = document.getElementById("paletteSlider");
+    if (paletteSlider) {
+      paletteSlider.addEventListener("input", function () {
+        document.getElementById("paletteLabel").innerText = palettes[this.value];
+      });
     }
 
     const haikus = [
