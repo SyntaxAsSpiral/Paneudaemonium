@@ -63,6 +63,19 @@
     <div id="tarotCard" style="margin-top: 1.5em; font-style: italic; color: #aaa;"></div>
   </section>
     <section style="padding: 2em; text-align: center;">
+    <h2>🛕 Weekly Card Shrine</h2>
+    <p style="color: #777;">The card reveals itself only when unobserved.</p>
+    <div id="weeklyCard" onclick="revealShrineCard();" style="margin-top: 1.5em; font-style: italic; color: #555;"></div>
+  </section>
+  <section style="padding: 2em; text-align: center;">
+    <h2>📣 Yell Into the Void</h2>
+    <form onsubmit="event.preventDefault(); voidResponse();" style="margin-top: 1em;">
+      <input type="text" placeholder="What would you like to scream?" style="padding: 0.5em; width: 60%;">
+      <button type="submit" style="padding: 0.5em; margin-left: 0.5em;">Submit</button>
+    </form>
+    <div id="voidEcho" style="margin-top: 1em; font-style: italic; color: #666;"></div>
+  </section>
+    <section style="padding: 2em; text-align: center;">
     <h2>📜 Daily Haiku of Collapse</h2>
     <div id="haiku" style="font-style: italic; color: #888; margin-top: 1em;"></div>
   </section>
@@ -129,19 +142,6 @@
       <button type="submit" style="padding: 0.5em; margin-left: 0.5em;">Submit</button>
       <p style="font-size: 0.8em; color: #666;">We will not contact you. You already know too much.</p>
     </form>
-  </section>
-  <section style="padding: 2em; text-align: center;">
-    <h2>🛕 Weekly Card Shrine</h2>
-    <p style="color: #777;">The card reveals itself only when unobserved.</p>
-    <div id="weeklyCard" onclick="revealShrineCard();" style="margin-top: 1.5em; font-style: italic; color: #555;"></div>
-  </section>
-  <section style="padding: 2em; text-align: center;">
-    <h2>📣 Yell Into the Void</h2>
-    <form onsubmit="event.preventDefault(); voidResponse();" style="margin-top: 1em;">
-      <input type="text" placeholder="What would you like to scream?" style="padding: 0.5em; width: 60%;">
-      <button type="submit" style="padding: 0.5em; margin-left: 0.5em;">Submit</button>
-    </form>
-    <div id="voidEcho" style="margin-top: 1em; font-style: italic; color: #666;"></div>
   </section>
   <script>
     let width = 100;
