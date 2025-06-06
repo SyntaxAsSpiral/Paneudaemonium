@@ -5,6 +5,7 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 import random
 import sys
+from novonox import summon_novonox
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from novonox import summon_novonox
@@ -149,6 +150,7 @@ FOOTERS = [
         "Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax",
     ])
 ]
+
 
 
 # === PICK STATUS ===
