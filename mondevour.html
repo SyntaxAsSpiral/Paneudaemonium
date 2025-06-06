@@ -154,10 +154,24 @@
       <li>Mantra Update — <em>collapse in high-res</em>.</li>
     </ul>
     <div style="margin: 1em 0;">
-      <label>✦ Aesthetic → BleakTech <input type="range" id="aestheticSlider"></label><br>
-      <label>✦ Persona → BurnedOutBot <input type="range" id="personaSlider"></label><br>
-      <label>✦ Color Palette → <span id="paletteLabel">#mutedhope</span> <input type="range" id="paletteSlider" min="0" max="2" step="1"></label>
+      <label>✦ Aesthetic → BleakTech 
+        <input type="range" id="aestheticSlider" min="0" max="100" value="50">
+      </label><br>
+      <label>✦ Persona → BurnedOutBot 
+        <input type="range" id="personaSlider" min="0" max="100" value="50">
+      </label><br>
+      <label>✦ Color Palette → 
+        <span id="paletteLabel">#mutedhope</span> 
+        <input type="range" id="paletteSlider" min="0" max="2" step="1" onchange="updatePaletteLabel(this.value)">
+      </label>
     </div>
+    <script>
+  const palettes = ["#mutedhope", "#ghostinfluencer", "#existentialtaupe"];
+
+  function updatePaletteLabel(val) {
+    document.getElementById('paletteLabel').innerText = palettes[val];
+  }
+</script>
     <button id="deleteAccount" onclick="evadeDelete()" style="padding: 0.5em 1em; position: relative;">Delete Account</button>
     <div class="sigil" style="margin-top: 1em;">“You were never a brand. You were just a vibes-based hallucination briefly tolerated by capitalism.”</div>
   </section>
