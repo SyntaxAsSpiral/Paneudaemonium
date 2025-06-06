@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 def test_rotator_creates_index(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -50,7 +50,7 @@ def test_rotator_creates_index(tmp_path):
     assert "recursive-log-banner.mp4" in html
 
 def test_rotator_handles_missing_echo(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -86,7 +86,7 @@ def test_rotator_handles_missing_echo(tmp_path):
 
 
 def test_rotator_handles_missing_status(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     quotes = tmp_path / "antenna_quotes.txt"
     quotes.write_text("echo\nnoecho\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
@@ -125,7 +125,7 @@ def test_rotator_handles_missing_status(tmp_path):
 
 
 def test_rotator_handles_missing_quote(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
@@ -164,7 +164,7 @@ def test_rotator_handles_missing_quote(tmp_path):
 
 
 def test_rotator_handles_missing_glyph(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -203,7 +203,7 @@ def test_rotator_handles_missing_glyph(tmp_path):
 
 
 def test_rotator_handles_missing_subject(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -242,7 +242,7 @@ def test_rotator_handles_missing_subject(tmp_path):
 
 
 def test_rotator_handles_missing_mode(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -280,7 +280,7 @@ def test_rotator_handles_missing_mode(tmp_path):
 
 
 def test_rotator_handles_missing_end_quote(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -325,7 +325,7 @@ def extract_quote(text: str) -> str:
 
 
 def test_rotator_respects_quote_cache(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
