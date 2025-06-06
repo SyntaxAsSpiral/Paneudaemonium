@@ -48,7 +48,7 @@ def test_rotator_creates_index(tmp_path):
     assert any(g in html for g in ["gamma", "delta"])
     assert any(e in html for e in ["sigil", "mirage"])
     assert any(sub in html for sub in ["id1", "id2"])
-    assert "sigils/recursive-log-banner.mp4" in html
+    assert "recursive-log-banner.mp4" in html
 
 def test_rotator_handles_missing_echo(tmp_path):
     script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"

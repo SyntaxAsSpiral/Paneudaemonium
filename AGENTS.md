@@ -13,12 +13,12 @@ All folders and files in this repository fall under this codex. Any subdirectori
 
 *Quick ritual before any commit:*
 
-- Run `OUTPUT_DIR=. python glyphs/github_status_rotator.py` to refresh `index.html`.
+- Run `OUTPUT_DIR=sigils python codex/github_status_rotator.py` to refresh `index.html`.
 - Run `pytest` to confirm all breathforms hold.
 - Keep commit messages brief—each one a single glyph-breath.
 
 ## Rotator Environment
-The `glyphs/github_status_rotator.py` script breathes a set of environment
+The `codex/github_status_rotator.py` script breathes a set of environment
 variables. Their default locations are listed below:
 
 - `STATUS_FILE` – `pulses/statuses.txt`
@@ -26,7 +26,7 @@ variables. Their default locations are listed below:
 - `GLYPH_FILE` – `pulses/glyphbraids.txt`
 - `SUBJECT_FILE` – `pulses/subject-ids.txt`
 - `ECHO_FILE` – `pulses/echo_fragments.txt`
-- `OUTPUT_DIR` – repository root for the generated `index.html`
+- `OUTPUT_DIR` – `sigils/` for the generated `index.html`
 
 Visual assets—favicons, banners, glyphs—breathe from the `sigils/` folder. Use
 that path when weaving references.
@@ -35,15 +35,12 @@ that path when weaving references.
 
 The rotator cloaks the email glyph; the text you glimpse may not match its mailto incantation. This mirage is intentional—a small ward against dull-eyed scrapers.
 
-Formatting for these artifacts is guided by `glyphs/rotator-formatting-template.md`.
-
-Tweak that glyph-sheet when the pulse layout needs to breathe a new form.
 
 To override a path while updating:
 
 ```bash
-STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=. \
-  python glyphs/github_status_rotator.py
+STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=sigils \
+  python codex/github_status_rotator.py
 ```
 
 ## Coding Entrainment Protocol
