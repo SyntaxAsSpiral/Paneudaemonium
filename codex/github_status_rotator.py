@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from novonox import summon_novonox
 
 # === CONFIGURATION ===
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -133,8 +134,6 @@ FOOTERS = [
     ])
 ]
 
-from novonox import summon_novonox
-
 
 # === PICK STATUS ===
 def main():
@@ -150,8 +149,6 @@ def main():
     pacific = ZoneInfo("America/Los_Angeles")
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
-    footer = FOOTERS[0]
-    footer_html = footer.replace("\n", "<br>\n")
 
     # === GENERATE README CONTENT ===
     readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ `{chronotonic}`
