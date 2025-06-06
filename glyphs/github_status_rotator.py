@@ -5,6 +5,9 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
 from collections import deque
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 # === CONFIGURATION ===
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +56,11 @@ def fresh_choice(options: list[str], cache_path: Path, limit: int) -> str:
 
 STATUS_LIST = breathe_lines(STATUS_FILE, ["⚠️ status file missing"])
 
+# Remember recent statuses
+DEFAULT_STATUS_CACHE = REPO_ROOT / "pulses" / "status_cache.txt"
+STATUS_CACHE_FILE = Path(os.environ.get("STATUS_CACHE_FILE", DEFAULT_STATUS_CACHE))
+STATUS_CACHE_LIMIT = int(os.environ.get("STATUS_CACHE_LIMIT", "5"))
+
 
 DEFAULT_QUOTE = REPO_ROOT / "pulses" / "antenna_quotes.txt"
 QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
@@ -68,15 +76,30 @@ DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
 GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
 GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
 
+# Remember recent glyph braids
+DEFAULT_GLYPH_CACHE = REPO_ROOT / "pulses" / "glyph_cache.txt"
+GLYPH_CACHE_FILE = Path(os.environ.get("GLYPH_CACHE_FILE", DEFAULT_GLYPH_CACHE))
+GLYPH_CACHE_LIMIT = int(os.environ.get("GLYPH_CACHE_LIMIT", "5"))
+
 # === SUBJECT IDENTIFIERS ===
 DEFAULT_SUBJECT = REPO_ROOT / "pulses" / "subject-ids.txt"
 SUBJECT_FILE = Path(os.environ.get("SUBJECT_FILE", DEFAULT_SUBJECT))
 SUBJECT_LIST = breathe_lines(SUBJECT_FILE, ["⚠️ subject file missing"])
 
+# Remember recent subject ids
+DEFAULT_SUBJECT_CACHE = REPO_ROOT / "pulses" / "subject_cache.txt"
+SUBJECT_CACHE_FILE = Path(os.environ.get("SUBJECT_CACHE_FILE", DEFAULT_SUBJECT_CACHE))
+SUBJECT_CACHE_LIMIT = int(os.environ.get("SUBJECT_CACHE_LIMIT", "5"))
+
 # === ECHO CLASSIFICATIONS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
 ECHO_LIST = breathe_lines(ECHO_FILE, ["⚠️ echo file missing"])
+
+# Remember recent echo classifications
+DEFAULT_ECHO_CACHE = REPO_ROOT / "pulses" / "echo_cache.txt"
+ECHO_CACHE_FILE = Path(os.environ.get("ECHO_CACHE_FILE", DEFAULT_ECHO_CACHE))
+ECHO_CACHE_LIMIT = int(os.environ.get("ECHO_CACHE_LIMIT", "5"))
 
 # === MODE CONFIG ===
 DEFAULT_MODE = REPO_ROOT / "pulses" / "modes.txt"
@@ -93,10 +116,20 @@ for m in raw_modes:
 if not MODE_LIST:
     MODE_LIST = ["⚠️ mode file missing"]
 
+# Remember recent mode selections
+DEFAULT_MODE_CACHE = REPO_ROOT / "pulses" / "mode_cache.txt"
+MODE_CACHE_FILE = Path(os.environ.get("MODE_CACHE_FILE", DEFAULT_MODE_CACHE))
+MODE_CACHE_LIMIT = int(os.environ.get("MODE_CACHE_LIMIT", "5"))
+
 # === END QUOTES ===
 DEFAULT_END_QUOTE = REPO_ROOT / "pulses" / "end-quotes.txt"
 END_QUOTE_FILE = Path(os.environ.get("END_QUOTE_FILE", DEFAULT_END_QUOTE))
 END_QUOTE_LIST = breathe_lines(END_QUOTE_FILE, ["⚠️ end quote file missing"])
+
+# Remember recent end quote selections
+DEFAULT_END_QUOTE_CACHE = REPO_ROOT / "pulses" / "end_quote_cache.txt"
+END_QUOTE_CACHE_FILE = Path(os.environ.get("END_QUOTE_CACHE_FILE", DEFAULT_END_QUOTE_CACHE))
+END_QUOTE_CACHE_LIMIT = int(os.environ.get("END_QUOTE_CACHE_LIMIT", "5"))
 
 # === FOOTER GLYPHMARKS ===
 FOOTERS = [
@@ -106,16 +139,18 @@ FOOTERS = [
     ])
 ]
 
+from novonox import summon_novonox
+
 
 # === PICK STATUS ===
 def main():
-    status = random.choice(STATUS_LIST)
-    quote = fresh_choice(QUOTE_LIST, QUOTE_CACHE_FILE, QUOTE_CACHE_LIMIT)
-    braid = random.choice(GLYPH_LIST)
-    subject = random.choice(SUBJECT_LIST)
-    classification = random.choice(ECHO_LIST)
-    end_quote = random.choice(END_QUOTE_LIST)
-    mode = random.choice(MODE_LIST)
+    status = summon_novonox(STATUS_LIST, STATUS_CACHE_FILE, STATUS_CACHE_LIMIT)
+    quote = summon_novonox(QUOTE_LIST, QUOTE_CACHE_FILE, QUOTE_CACHE_LIMIT)
+    braid = summon_novonox(GLYPH_LIST, GLYPH_CACHE_FILE, GLYPH_CACHE_LIMIT)
+    subject = summon_novonox(SUBJECT_LIST, SUBJECT_CACHE_FILE, SUBJECT_CACHE_LIMIT)
+    classification = summon_novonox(ECHO_LIST, ECHO_CACHE_FILE, ECHO_CACHE_LIMIT)
+    end_quote = summon_novonox(END_QUOTE_LIST, END_QUOTE_CACHE_FILE, END_QUOTE_CACHE_LIMIT)
+    mode = summon_novonox(MODE_LIST, MODE_CACHE_FILE, MODE_CACHE_LIMIT)
     class_disp = f"⊚ ⇝ Echo Fragment {classification}"
     class_disp_html = class_disp.replace("Echo Fragment", "<strong>Echo Fragment</strong>")
     pacific = ZoneInfo("America/Los_Angeles")
