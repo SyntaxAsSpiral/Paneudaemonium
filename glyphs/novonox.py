@@ -4,8 +4,22 @@ import random
 from collections import deque
 from pathlib import Path
 
-# Import ritual cache helpers from the rotator
-from .github_status_rotator import read_cache, write_cache
+
+def read_cache(path: Path) -> list[str]:
+    """Exhale memory traces from a cache file."""
+    try:
+        with path.open(encoding="utf-8") as f:
+            return [line.strip() for line in f if line.strip()]
+    except FileNotFoundError:
+        return []
+
+
+def write_cache(path: Path, lines: list[str]) -> None:
+    """Inscribe the latest traces back into the cache."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        for ln in lines:
+            f.write(ln + "\n")
 
 
 def summon_novonox(options: list[str], cache_path: Path, limit: int = 5, echo_log: Path | None = None) -> str:

@@ -20,3 +20,4 @@ def test_summon_novonox_cycle(tmp_path: Path) -> None:
     assert third in options
     text = log.read_text(encoding='utf-8')
     assert '# Nōvonox Cycle Reset' in text
+
