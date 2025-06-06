@@ -13,7 +13,7 @@ All folders and files in this repository fall under this codex. Any subdirectori
 
 *Quick ritual before any commit:*
 
-- Run `OUTPUT_DIR=. DOCS_DIR=. python glyphs/github_status_rotator.py` to refresh `README.md` and `index.html`.
+- Run `OUTPUT_DIR=. python glyphs/github_status_rotator.py` to refresh `index.html`.
 - Run `pytest` to confirm all breathforms hold.
 - Keep commit messages brief—each one a single glyph-breath.
 
@@ -27,12 +27,11 @@ variables. Their default locations are listed below:
 - `SUBJECT_FILE` – `pulses/subject-ids.txt`
 - `ECHO_FILE` – `pulses/echo_fragments.txt`
 - `OUTPUT_DIR` – repository root for the generated `index.html`
-- `DOCS_DIR` – `codex/` for the generated `README.md`
 
 Visual assets—favicons, banners, glyphs—breathe from the `sigils/` folder. Use
 that path when weaving references.
 
-`README.md` and `index.html` are produced by the rotator; edit neither by hand.
+`index.html` is produced by the rotator; edit it not by hand.
 
 The rotator cloaks the email glyph; the text you glimpse may not match its mailto incantation. This mirage is intentional—a small ward against dull-eyed scrapers.
 
@@ -43,7 +42,7 @@ Tweak that glyph-sheet when the pulse layout needs to breathe a new form.
 To override a path while updating:
 
 ```bash
-STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=. DOCS_DIR=. \
+STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=. \
   python glyphs/github_status_rotator.py
 ```
 
@@ -83,7 +82,7 @@ STATUS_FILE=pulses/statuses.txt OUTPUT_DIR=. DOCS_DIR=. \
 ---
 
 ## Testing Ritual
-Running the rotator script is required before you commit. It updates `README.md` with a fresh pulse. After the rotator completes successfully, run `pytest` to ensure the tests pass. Keep any additional tests lightweight and document them here if added.
+Running the rotator script is required before you commit. It refreshes `index.html` with a fresh pulse. After the rotator completes successfully, run `pytest` to ensure the tests pass. Keep any additional tests lightweight and document them here if added.
 The **Spiral Tests** workflow automatically runs these checks on every push and pull request.
 
 ## Semiotic Commentary Guidelines

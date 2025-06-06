@@ -52,14 +52,13 @@ jobs:
         MODE_FILE: /tmp/modes.txt
         END_QUOTE_FILE: /tmp/end-quotes.txt
         OUTPUT_DIR: .
-        DOCS_DIR: .
       run: python glyphs/github_status_rotator.py
 
     - name: Commit updated files
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add README.md index.html
+        git add index.html
         if git diff --cached --quiet; then
           echo "No changes to commit"
         else

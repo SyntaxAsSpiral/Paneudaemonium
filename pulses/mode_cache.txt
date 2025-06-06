@@ -1,2 +1,2 @@
 Alchemical breathspan ∷ iridescent syntax flow
-⚠️ mode file missing
+⚠️ file missing

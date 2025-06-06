@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 
-def test_rotator_creates_readme(tmp_path):
+def test_rotator_creates_index(tmp_path):
     script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
@@ -38,17 +38,10 @@ def test_rotator_creates_readme(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSig" in readme
     assert "ChronoSig" in html
-    assert any(s in readme for s in ["alpha", "beta"])
-    assert any(q in readme for q in ["echo", "noecho"])
-    assert any(g in readme for g in ["gamma", "delta"])
-    assert any(e in readme for e in ["sigil", "mirage"])
-    assert any(sub in readme for sub in ["id1", "id2"])
     assert any(s in html for s in ["alpha", "beta"])
     assert any(q in html for q in ["echo", "noecho"])
     assert any(g in html for g in ["gamma", "delta"])
@@ -85,13 +78,10 @@ def test_rotator_handles_missing_echo(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSig" in readme
     assert "ChronoSig" in html
-    assert "⚠️ echo file missing" in readme
     assert "⚠️ echo file missing" in html
 
 
@@ -127,13 +117,10 @@ def test_rotator_handles_missing_status(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSig" in readme
     assert "ChronoSig" in html
-    assert "⚠️ status file missing" in readme
     assert "⚠️ status file missing" in html
 
 
@@ -169,13 +156,10 @@ def test_rotator_handles_missing_quote(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSig" in readme
     assert "ChronoSig" in html
-    assert "⚠️ quote file missing" in readme
     assert "⚠️ quote file missing" in html
 
 
@@ -211,13 +195,10 @@ def test_rotator_handles_missing_glyph(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSig" in readme
     assert "ChronoSig" in html
-    assert "⚠️ glyph file missing" in readme
     assert "⚠️ glyph file missing" in html
 
 
@@ -253,13 +234,10 @@ def test_rotator_handles_missing_subject(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "ChronoSig" in readme
     assert "ChronoSig" in html
-    assert "⚠️ subject file missing" in readme
     assert "⚠️ subject file missing" in html
 
 
@@ -295,11 +273,9 @@ def test_rotator_handles_missing_mode(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "⚠️ mode file missing" in readme
     assert "⚠️ mode file missing" in html
 
 
@@ -335,17 +311,15 @@ def test_rotator_handles_missing_end_quote(tmp_path):
     env["MODE_CACHE_FILE"] = str(tmp_path / "mode_cache.txt")
     env["END_QUOTE_CACHE_FILE"] = str(tmp_path / "end_quote_cache.txt")
     env["OUTPUT_DIR"] = str(tmp_path)
-    env["DOCS_DIR"] = str(tmp_path)
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert not (tmp_path / "README.md").exists()
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "⚠️ end quote file missing" in readme
     assert "⚠️ end quote file missing" in html
 
 
 def extract_quote(text: str) -> str:
     for line in text.splitlines():
-        if line.startswith("📡"):
+        if "📡" in line:
             return line.split("“")[1].split("”")[0]
     raise AssertionError("quote not found")
 
@@ -379,7 +353,6 @@ def test_rotator_respects_quote_cache(tmp_path):
         "END_QUOTE_FILE": str(ends),
         "SUBJECT_FILE": str(subjects),
         "OUTPUT_DIR": str(tmp_path),
-        "DOCS_DIR": str(tmp_path),
         "STATUS_CACHE_FILE": str(tmp_path / "status_cache.txt"),
         "QUOTE_CACHE_FILE": str(cache),
         "GLYPH_CACHE_FILE": str(tmp_path / "glyph_cache.txt"),
@@ -389,7 +362,8 @@ def test_rotator_respects_quote_cache(tmp_path):
         "END_QUOTE_CACHE_FILE": str(tmp_path / "end_quote_cache.txt"),
     })
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    first = extract_quote((tmp_path / "README.md").read_text(encoding="utf-8"))
+    assert not (tmp_path / "README.md").exists()
+    first = extract_quote((tmp_path / "index.html").read_text(encoding="utf-8"))
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
-    second = extract_quote((tmp_path / "README.md").read_text(encoding="utf-8"))
+    second = extract_quote((tmp_path / "index.html").read_text(encoding="utf-8"))
     assert first != second
