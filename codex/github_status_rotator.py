@@ -223,7 +223,8 @@ def main():
 Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
 
     # === WRITE TO README ===
-    output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT))
+    # Index breath now settles with the sigils
+    output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT / "sigils"))
     docs_dir = Path(os.environ.get("DOCS_DIR", REPO_ROOT / "codex"))
     readme_path = docs_dir / "README.md"
     readme_path.parent.mkdir(parents=True, exist_ok=True)
@@ -241,11 +242,11 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
   <meta name=\"theme-color\" content=\"#0d1117\">
   <link rel=\"stylesheet\" href=\"style.css\">
-  <link rel=\"icon\" href=\"sigils/favicon.ico\" type=\"image/x-icon\">
+  <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
 </head>
 <body>
 <div class=\"container\">
-  <video src=\"sigils/recursive-log-banner.mp4\" class=\"banner\" autoplay loop muted playsinline></video>
+  <video src=\"recursive-log-banner.mp4\" class=\"banner\" autoplay loop muted playsinline></video>
   <main class=\"content\">
     <!-- Dynamic content will be inserted here -->
     <!-- DO NOT MODIFY THE TEXT; it is updated by github_status_rotator.py -->

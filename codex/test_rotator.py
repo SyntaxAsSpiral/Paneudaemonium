@@ -2,10 +2,11 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+import random
 
 
 def test_rotator_creates_index(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -47,10 +48,10 @@ def test_rotator_creates_index(tmp_path):
     assert any(g in html for g in ["gamma", "delta"])
     assert any(e in html for e in ["sigil", "mirage"])
     assert any(sub in html for sub in ["id1", "id2"])
-    assert "sigils/recursive-log-banner.mp4" in html
+    assert "recursive-log-banner.mp4" in html
 
 def test_rotator_handles_missing_echo(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -86,7 +87,7 @@ def test_rotator_handles_missing_echo(tmp_path):
 
 
 def test_rotator_handles_missing_status(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     quotes = tmp_path / "antenna_quotes.txt"
     quotes.write_text("echo\nnoecho\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
@@ -125,7 +126,7 @@ def test_rotator_handles_missing_status(tmp_path):
 
 
 def test_rotator_handles_missing_quote(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     glyphs = tmp_path / "glyphbraids.txt"
@@ -164,7 +165,7 @@ def test_rotator_handles_missing_quote(tmp_path):
 
 
 def test_rotator_handles_missing_glyph(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -203,7 +204,7 @@ def test_rotator_handles_missing_glyph(tmp_path):
 
 
 def test_rotator_handles_missing_subject(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -242,7 +243,7 @@ def test_rotator_handles_missing_subject(tmp_path):
 
 
 def test_rotator_handles_missing_mode(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -280,7 +281,7 @@ def test_rotator_handles_missing_mode(tmp_path):
 
 
 def test_rotator_handles_missing_end_quote(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\nbeta\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
@@ -325,7 +326,8 @@ def extract_quote(text: str) -> str:
 
 
 def test_rotator_respects_quote_cache(tmp_path):
-    script_path = Path(__file__).resolve().parents[1] / "glyphs" / "github_status_rotator.py"
+    random.seed(0)
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\n", encoding="utf-8")
     quotes = tmp_path / "antenna_quotes.txt"
