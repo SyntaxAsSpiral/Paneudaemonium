@@ -1,4 +1,6 @@
 name: Daemon Status Rotator
+permissions:
+  contents: write
 
 on:
   workflow_dispatch:
