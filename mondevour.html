@@ -165,13 +165,6 @@
         <input type="range" id="paletteSlider" min="0" max="2" step="1" onchange="updatePaletteLabel(this.value)">
       </label>
     </div>
-    <script>
-  const palettes = ["#mutedhope", "#ghostinfluencer", "#existentialtaupe"];
-
-  function updatePaletteLabel(val) {
-    document.getElementById('paletteLabel').innerText = palettes[val];
-  }
-</script>
     <button id="deleteAccount" onclick="evadeDelete()" style="padding: 0.5em 1em; position: relative;">Delete Account</button>
     <div class="sigil" style="margin-top: 1em;">“You were never a brand. You were just a vibes-based hallucination briefly tolerated by capitalism.”</div>
   </section>
@@ -315,10 +308,13 @@
     }
 
     const palettes = ["#mutedhope", "#ghostinfluencer", "#existentialtaupe"];
+    function updatePaletteLabel(val) {
+      document.getElementById("paletteLabel").innerText = palettes[val];
+    }
     const paletteSlider = document.getElementById("paletteSlider");
     if (paletteSlider) {
       paletteSlider.addEventListener("input", function () {
-        document.getElementById("paletteLabel").innerText = palettes[this.value];
+        updatePaletteLabel(this.value);
       });
     }
 
