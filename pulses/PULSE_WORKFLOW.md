@@ -19,6 +19,9 @@ The rotator script reads several environment variables:
 - `END_QUOTE_FILE` – defaults to `pulses/end-quotes.txt`
 - `OUTPUT_DIR` – directory for `index.html` (defaults to `sigils`)
 
+The repository does not contain these dynamic lists. Values are supplied at
+runtime through GitHub Secrets, keeping the pulse texts private.
+
 Example invocation with overrides:
 
 ```bash
