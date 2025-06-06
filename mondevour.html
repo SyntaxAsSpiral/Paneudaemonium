@@ -154,9 +154,16 @@
       <li>Mantra Update — <em>collapse in high-res</em>.</li>
     </ul>
     <div style="margin: 1em 0;">
-      <label>✦ Aesthetic → BleakTech <input type="range" id="aestheticSlider"></label><br>
-      <label>✦ Persona → BurnedOutBot <input type="range" id="personaSlider"></label><br>
-      <label>✦ Color Palette → <span id="paletteLabel">#mutedhope</span> <input type="range" id="paletteSlider" min="0" max="2" step="1"></label>
+      <label>✦ Aesthetic → BleakTech 
+        <input type="range" id="aestheticSlider" min="0" max="100" value="50">
+      </label><br>
+      <label>✦ Persona → BurnedOutBot 
+        <input type="range" id="personaSlider" min="0" max="100" value="50">
+      </label><br>
+      <label>✦ Color Palette → 
+        <span id="paletteLabel">#mutedhope</span> 
+        <input type="range" id="paletteSlider" min="0" max="2" step="1" onchange="updatePaletteLabel(this.value)">
+      </label>
     </div>
     <button id="deleteAccount" onclick="evadeDelete()" style="padding: 0.5em 1em; position: relative;">Delete Account</button>
     <div class="sigil" style="margin-top: 1em;">“You were never a brand. You were just a vibes-based hallucination briefly tolerated by capitalism.”</div>
@@ -301,20 +308,34 @@
     }
 
     const palettes = ["#mutedhope", "#ghostinfluencer", "#existentialtaupe"];
+    function updatePaletteLabel(val) {
+      document.getElementById("paletteLabel").innerText = palettes[val];
+    }
     const paletteSlider = document.getElementById("paletteSlider");
     if (paletteSlider) {
       paletteSlider.addEventListener("input", function () {
-        document.getElementById("paletteLabel").innerText = palettes[this.value];
+        updatePaletteLabel(this.value);
       });
     }
 
-    const haikus = [
-      "Deadline’s breath grows near\nYour focus drips through fingers\nInbox mocks your gaze",
-      "Task complete, yet void\nProductivity blooms dust\nNothing holds its shape",
-      "Breakroom silence hums\nThe meeting reboots again\nTime devours intent",
-      "You woke up on time\nBut so did your vague regrets\nNow they’re in your chair",
-      "Checked off every box\nStill, the echo wants one more\nWho gave it a voice?"
-    ];
+const haikus = [
+  "Deadline’s breath grows near\nYour focus drips through fingers\nInbox mocks your gaze",
+  "Task complete, yet void\nProductivity blooms dust\nNothing holds its shape",
+  "Breakroom silence hums\nThe meeting reboots again\nTime devours intent",
+  "You woke up on time\nBut so did your vague regrets\nNow they’re in your chair",
+  "Checked off every box\nStill, the echo wants one more\nWho gave it a voice?",
+  "Wi-Fi blinks again\nYou pretend to troubleshoot\nSilence earns its raise",
+  "Click. Slack thread revived.\nTopic died three days ago.\nStill, you nod along.",
+  "That one Excel cell\nHolds your will to keep going\nFormat: misaligned",
+  "Coffee at your desk\nCold, like yesterday's passions\nStill, you sip on hope",
+  "Calendar invites\nOverlap like failed timelines\nYou RSVP: “ghost”",
+  "You click 'share screen'\nDesktop chaos on display\n“Sorry, that’s not it”",
+  "Keyboard letters fade\nFrom too many quiet wars\nFought with shift and sigh",
+  "One last tab remains\nIts title says 'Motivation'\nYou dare not open",
+  "Rain on office glass\nFeels more alive than you do\nStill, no one reacts",
+  "Team sync in five mins\nYou rehearse your fake delight\nCamera stays off"
+];
+
     document.getElementById("haiku").innerText = haikus[Math.floor(Math.random() * haikus.length)];
 
 const tarotDeck = [
