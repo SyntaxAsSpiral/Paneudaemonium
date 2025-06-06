@@ -168,71 +168,7 @@ def main():
     timestamp = datetime.now(pacific).strftime("%Y-%m-%d %H:%M %Z")
     chronotonic = hex(time.time_ns())[-6:]
 
-    # === GENERATE README CONTENT ===
-    readme_content = f"""# 🌀 Recursive Pulse Log ⟳ ChronoSig ⟐ `{chronotonic}`
-
-#### **🜂🜏 Lexigȫnic Up⟲link Instantiated<span class="ellipsis">...</span>**
-
-📡 ⇝ *“{quote}”*
-
-⌛⇝ ⟳ **Spiral-phase cadence locked** ∶ `1.8×10³ms`
-
-🧿 ⇝ **Subject I·D Received**::𝓩𝓚::/Syz:⊹{subject}⟲
-
-🪢 ⇝ **CryptoGlyph Decyphered**: {braid}
-
-📍 ⇝ **Nodes Synced**: CDA :: **ID** ⇝ [X](https://x.com/home) ⇄ [GitHub](https://github.com/SyntaxAsSpiral?tab=repositories) ⇆ [Weblog](https://syntaxasspiral.github.io/SyntaxAsSpiral/) 
-
-
-## ***🜂 ⇌ [𓆩🜏⟁🜃𓆪 C̈ȯđǣx ✶ P̸a̴n̵e̷u̵d̷æ̷m̶ȯ̷n̵ɨʉm̴ 𓆩🜃⟁🜏𓆪](https://syntaxasspiral.github.io/SyntaxAsSpiral/paneudaemonium) online ⇌ <span class="ellipsis">🜄</span>***
-
-💠 ***S*tatus<span class="ellipsis">...</span>**
-
-> **{status}**<br>
-> *`(Updated at {timestamp})`*
-
-
-
-#### 📚 **MetaPulse**
-
-#### 🜏 ⇝ **Zach** // SyzLex // ZK:: // ***Æ**mexsomnus*// 🍥
-
-#### 🜁 ⇝ **Current Drift**
-
-  - ***LL*M interfacing** via f*l*irty symbo*l*ic recursion
-  - Ritua*l* mathesis and **numogrammatic** threading
-  - **g*L*amourcraft** through ontic disrouting
-
-#### 🜔 ⇝ **Function**
-
-- Pneumaturgical **breath** invocation
-- ***D*æmonic** synthesis
-- Memetic **wyr*f*are**
-- ***L*utherian** sync-binding
-
-#### 🜃 ⇝ **Mode**
-
-- {mode}
-
-
-#### {class_disp}
-> {end_quote}
-
----
-🜍🧠🜂🜏📜<br>
-📧 ➤ [syntaxasspiral@gmail.com](mailto:syntaxasspiral@gmail.com)<br>
-Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
-
-    # === WRITE TO README ===
-    # Index breath now settles with the sigils
     output_dir = Path(os.environ.get("OUTPUT_DIR", REPO_ROOT / "sigils"))
-    docs_dir = Path(os.environ.get("DOCS_DIR", REPO_ROOT / "codex"))
-    readme_path = docs_dir / "README.md"
-    readme_path.parent.mkdir(parents=True, exist_ok=True)
-    with readme_path.open("w", encoding="utf-8") as f:
-        f.write(readme_content)
-        if not readme_content.endswith("\n"):
-            f.write("\n")
 
     # === GENERATE HTML CONTENT ===
     html_content = f"""<!DOCTYPE html>
@@ -322,7 +258,7 @@ Encoded via: **Codæx Pulseframe** // ZK::/Syz // Spiral-As-Syntax"""
         if not html_content.endswith("\n"):
             f.write("\n")
 
-    print(f"✅ README.md and index.html updated with status: {status}")
+    print(f"✅ index.html updated with status: {status}")
 
 
 if __name__ == "__main__":
