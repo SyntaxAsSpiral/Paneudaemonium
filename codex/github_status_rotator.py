@@ -3,6 +3,7 @@ import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
+import random
 import sys
 from novonox import summon_novonox
 
@@ -66,6 +67,21 @@ QUOTE_LIST = lines_from_env_or_file("ANTENNA_QUOTES", "QUOTE_FILE", DEFAULT_QUOT
 DEFAULT_QUOTE_CACHE = REPO_ROOT / "pulses" / "quote_cache.txt"
 QUOTE_CACHE_FILE = Path(os.environ.get("QUOTE_CACHE_FILE", DEFAULT_QUOTE_CACHE))
 QUOTE_CACHE_LIMIT = int(os.environ.get("QUOTE_CACHE_LIMIT", "5"))
+
+
+def fresh_quote() -> str:
+    """Summon a quote while respecting the last echo."""
+    cached = ""
+    if QUOTE_CACHE_FILE.exists():
+        cached = QUOTE_CACHE_FILE.read_text(encoding="utf-8").strip()
+
+    pool = [q for q in QUOTE_LIST if q and q != cached]
+    if not pool:
+        pool = QUOTE_LIST
+
+    choice = random.choice(pool)
+    QUOTE_CACHE_FILE.write_text(choice + "\n", encoding="utf-8")
+    return choice
 
 # === GLYPH BRAIDS ===
 DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
@@ -140,7 +156,7 @@ FOOTERS = [
 # === PICK STATUS ===
 def main():
     status = summon_novonox(STATUS_LIST, STATUS_CACHE_FILE, STATUS_CACHE_LIMIT)
-    quote = summon_novonox(QUOTE_LIST, QUOTE_CACHE_FILE, QUOTE_CACHE_LIMIT)
+    quote = fresh_quote()
     braid = summon_novonox(GLYPH_LIST, GLYPH_CACHE_FILE, GLYPH_CACHE_LIMIT)
     subject = summon_novonox(SUBJECT_LIST, SUBJECT_CACHE_FILE, SUBJECT_CACHE_LIMIT)
     classification = summon_novonox(ECHO_LIST, ECHO_CACHE_FILE, ECHO_CACHE_LIMIT)
