@@ -2,7 +2,7 @@ from pathlib import Path
 import sys
 import random
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from glyphs.novonox import summon_novonox
+from codex.novonox import summon_novonox
 
 
 def test_summon_novonox_cycle(tmp_path: Path) -> None:
