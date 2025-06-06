@@ -1,6 +1,6 @@
  Paneudæmonium     
 
- ![Techno-Wyrd Ritual banner](Techno-Wyrd Ritual.png)
+ ![Techno-Wyrd Ritual banner](/sigils/Techno-Wyrd Ritual.png)
 
 𓆩 🜏 ⟁ 🜃 𓆪  C̈ ȯ đ ǣ x  ✶  P̸ a̴ n̵ e̷ u̵ d̷ æ̷ m̶ ȯ̷ n̵ ɨ ʉ m̴  𓆩 🜃 ⟁ 🜏 𓆪
 
