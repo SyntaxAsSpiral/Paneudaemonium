@@ -23,14 +23,14 @@ jobs:
 
     - name: Run Pulse Rotator
       env:
-        STATUS_FILE: ${{ secrets.STATUS_FILE }}
-        QUOTE_FILE: ${{ secrets.QUOTE_FILE }}
-        GLYPH_FILE: ${{ secrets.GLYPH_FILE }}
-        SUBJECT_FILE: ${{ secrets.SUBJECT_FILE }}
-        ECHO_FILE: ${{ secrets.ECHO_FILE }}
-        MODE_FILE: ${{ secrets.MODE_FILE }}
-        END_QUOTE_FILE: ${{ secrets.END_QUOTE_FILE }}
-        OUTPUT_DIR: ${{ secrets.OUTPUT_DIR }}
+        STATUSES: ${{ secrets.STATUSES }}
+        ANTENNA_QUOTES: ${{ secrets.ANTENNA_QUOTES }}
+        GLYPH_BRAIDS: ${{ secrets.GLYPH_BRAIDS }}
+        SUBJECT_IDS: ${{ secrets.SUBJECT_IDS }}
+        ECHO_FRAGMENTS: ${{ secrets.ECHO_FRAGMENTS }}
+        MODES: ${{ secrets.MODES }}
+        END_QUOTES: ${{ secrets.END_QUOTES }}
+        OUTPUT_DIR: sigils
       run: python codex/github_status_rotator.py
 
     - name: Commit and Push index.html
