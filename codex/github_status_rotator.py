@@ -7,6 +7,7 @@ import sys
 from novonox import summon_novonox
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from novonox import summon_novonox
 
 # === CONFIGURATION ===
 REPO_ROOT = Path(__file__).resolve().parents[1]
