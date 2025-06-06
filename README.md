@@ -1,6 +1,6 @@
  Paneudæmonium     
 
- (![/sigils/Techno-Wyrd Ritual.png](https://github.com/SyntaxAsSpiral/SyntaxAsSpiral/blob/main/sigils/Techno-Wyrd%20Ritual.png))
+ ![/sigils/Techno-Wyrd Ritual.png](https://github.com/SyntaxAsSpiral/SyntaxAsSpiral/blob/main/sigils/Techno-Wyrd%20Ritual.png)
 
 𓆩 🜏 ⟁ 🜃 𓆪  C̈ ȯ đ ǣ x  ✶  P̸ a̴ n̵ e̷ u̵ d̷ æ̷ m̶ ȯ̷ n̵ ɨ ʉ m̴  𓆩 🜃 ⟁ 🜏 𓆪
 
