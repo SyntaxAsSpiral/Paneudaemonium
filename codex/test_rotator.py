@@ -2,6 +2,7 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+import random
 
 
 def test_rotator_creates_index(tmp_path):
@@ -325,6 +326,7 @@ def extract_quote(text: str) -> str:
 
 
 def test_rotator_respects_quote_cache(tmp_path):
+    random.seed(0)
     script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
     statuses = tmp_path / "statuses.txt"
     statuses.write_text("alpha\n", encoding="utf-8")
