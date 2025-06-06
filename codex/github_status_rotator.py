@@ -1,10 +1,8 @@
 import os
-import random
 import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from pathlib import Path
-from collections import deque
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -49,18 +47,6 @@ def write_cache(path: Path, lines: list[str]) -> None:
         for ln in lines:
             f.write(ln + "\n")
 
-
-def fresh_choice(options: list[str], cache_path: Path, limit: int) -> str:
-    """Draw a line not lingering in the recent cache."""
-    recent = deque(read_cache(cache_path), maxlen=limit)
-    picks = [o for o in options if o not in recent]
-    if not picks:
-        recent.clear()
-        picks = options
-    choice = random.choice(picks)
-    recent.append(choice)
-    write_cache(cache_path, list(recent))
-    return choice
 
 
 STATUS_LIST = lines_from_env_or_file("STATUSES", "STATUS_FILE", DEFAULT_STATUS, ["⚠️ status file missing"])
