@@ -23,10 +23,34 @@ jobs:
         python-version: '3.10'
 
 
+    - name: Prepare pulse secrets
+      run: |
+        printf '%s' "$STATUSES" > /tmp/statuses.txt
+        printf '%s' "$ANTENNA_QUOTES" > /tmp/antenna_quotes.txt
+        printf '%s' "$GLYPH_BRAIDS" > /tmp/glyphbraids.txt
+        printf '%s' "$SUBJECT_IDS" > /tmp/subject-ids.txt
+        printf '%s' "$ECHO_FRAGMENTS" > /tmp/echo_fragments.txt
+        printf '%s' "$MODES" > /tmp/modes.txt
+        printf '%s' "$END_QUOTES" > /tmp/end-quotes.txt
+      env:
+        STATUSES: ${{ secrets.STATUSES }}
+        ANTENNA_QUOTES: ${{ secrets.ANTENNA_QUOTES }}
+        GLYPH_BRAIDS: ${{ secrets.GLYPH_BRAIDS }}
+        SUBJECT_IDS: ${{ secrets.SUBJECT_IDS }}
+        ECHO_FRAGMENTS: ${{ secrets.ECHO_FRAGMENTS }}
+        MODES: ${{ secrets.MODES }}
+        END_QUOTES: ${{ secrets.END_QUOTES }}
+
     - name: Run the status rotator
       env:
         GITHUB_TOKEN: ${{ secrets.STATUS_UPDATE_TOKEN }}
-        STATUS_FILE: pulses/statuses.txt
+        STATUS_FILE: /tmp/statuses.txt
+        QUOTE_FILE: /tmp/antenna_quotes.txt
+        GLYPH_FILE: /tmp/glyphbraids.txt
+        SUBJECT_FILE: /tmp/subject-ids.txt
+        ECHO_FILE: /tmp/echo_fragments.txt
+        MODE_FILE: /tmp/modes.txt
+        END_QUOTE_FILE: /tmp/end-quotes.txt
         OUTPUT_DIR: .
         DOCS_DIR: .
       run: python glyphs/github_status_rotator.py

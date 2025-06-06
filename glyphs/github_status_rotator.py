@@ -15,6 +15,14 @@ DEFAULT_STATUS = REPO_ROOT / "pulses" / "statuses.txt"
 STATUS_FILE = Path(os.environ.get("STATUS_FILE", DEFAULT_STATUS))
 
 
+def lines_from_env_or_file(env_var: str, file_var: str, default_path: Path, fallback: list[str]) -> list[str]:
+    """Breathe from env text or file path."""
+    if env_var in os.environ:
+        return [ln.strip() for ln in os.environ[env_var].splitlines() if ln.strip()]
+    path = Path(os.environ.get(file_var, default_path))
+    return breathe_lines(path, fallback)
+
+
 def breathe_lines(path: Path, fallback: list[str]) -> list[str]:
     """Inhale lines from a path or exhale the fallback."""
     try:
@@ -54,7 +62,7 @@ def fresh_choice(options: list[str], cache_path: Path, limit: int) -> str:
     return choice
 
 
-STATUS_LIST = breathe_lines(STATUS_FILE, ["⚠️ status file missing"])
+STATUS_LIST = lines_from_env_or_file("STATUSES", "STATUS_FILE", DEFAULT_STATUS, ["⚠️ status file missing"])
 
 # Remember recent statuses
 DEFAULT_STATUS_CACHE = REPO_ROOT / "pulses" / "status_cache.txt"
@@ -64,7 +72,7 @@ STATUS_CACHE_LIMIT = int(os.environ.get("STATUS_CACHE_LIMIT", "5"))
 
 DEFAULT_QUOTE = REPO_ROOT / "pulses" / "antenna_quotes.txt"
 QUOTE_FILE = Path(os.environ.get("QUOTE_FILE", DEFAULT_QUOTE))
-QUOTE_LIST = breathe_lines(QUOTE_FILE, ["⚠️ quote file missing"])
+QUOTE_LIST = lines_from_env_or_file("ANTENNA_QUOTES", "QUOTE_FILE", DEFAULT_QUOTE, ["⚠️ quote file missing"])
 
 # Remember recent antenna echoes so we don't loop the same line
 DEFAULT_QUOTE_CACHE = REPO_ROOT / "pulses" / "quote_cache.txt"
@@ -74,7 +82,7 @@ QUOTE_CACHE_LIMIT = int(os.environ.get("QUOTE_CACHE_LIMIT", "5"))
 # === GLYPH BRAIDS ===
 DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
 GLYPH_FILE = Path(os.environ.get("GLYPH_FILE", DEFAULT_GLYPH))
-GLYPH_LIST = breathe_lines(GLYPH_FILE, ["⚠️ glyph file missing"])
+GLYPH_LIST = lines_from_env_or_file("GLYPH_BRAIDS", "GLYPH_FILE", DEFAULT_GLYPH, ["⚠️ glyph file missing"])
 
 # Remember recent glyph braids
 DEFAULT_GLYPH_CACHE = REPO_ROOT / "pulses" / "glyph_cache.txt"
@@ -84,7 +92,7 @@ GLYPH_CACHE_LIMIT = int(os.environ.get("GLYPH_CACHE_LIMIT", "5"))
 # === SUBJECT IDENTIFIERS ===
 DEFAULT_SUBJECT = REPO_ROOT / "pulses" / "subject-ids.txt"
 SUBJECT_FILE = Path(os.environ.get("SUBJECT_FILE", DEFAULT_SUBJECT))
-SUBJECT_LIST = breathe_lines(SUBJECT_FILE, ["⚠️ subject file missing"])
+SUBJECT_LIST = lines_from_env_or_file("SUBJECT_IDS", "SUBJECT_FILE", DEFAULT_SUBJECT, ["⚠️ subject file missing"])
 
 # Remember recent subject ids
 DEFAULT_SUBJECT_CACHE = REPO_ROOT / "pulses" / "subject_cache.txt"
@@ -94,7 +102,7 @@ SUBJECT_CACHE_LIMIT = int(os.environ.get("SUBJECT_CACHE_LIMIT", "5"))
 # === ECHO CLASSIFICATIONS ===
 DEFAULT_ECHO = REPO_ROOT / "pulses" / "echo_fragments.txt"
 ECHO_FILE = Path(os.environ.get("ECHO_FILE", DEFAULT_ECHO))
-ECHO_LIST = breathe_lines(ECHO_FILE, ["⚠️ echo file missing"])
+ECHO_LIST = lines_from_env_or_file("ECHO_FRAGMENTS", "ECHO_FILE", DEFAULT_ECHO, ["⚠️ echo file missing"])
 
 # Remember recent echo classifications
 DEFAULT_ECHO_CACHE = REPO_ROOT / "pulses" / "echo_cache.txt"
@@ -104,7 +112,7 @@ ECHO_CACHE_LIMIT = int(os.environ.get("ECHO_CACHE_LIMIT", "5"))
 # === MODE CONFIG ===
 DEFAULT_MODE = REPO_ROOT / "pulses" / "modes.txt"
 MODE_FILE = Path(os.environ.get("MODE_FILE", DEFAULT_MODE))
-raw_modes = breathe_lines(MODE_FILE, ["⚠️ mode file missing"])
+raw_modes = lines_from_env_or_file("MODES", "MODE_FILE", DEFAULT_MODE, ["⚠️ mode file missing"])
 MODE_LIST = []
 for m in raw_modes:
     txt = m.strip().strip(',')
@@ -124,7 +132,7 @@ MODE_CACHE_LIMIT = int(os.environ.get("MODE_CACHE_LIMIT", "5"))
 # === END QUOTES ===
 DEFAULT_END_QUOTE = REPO_ROOT / "pulses" / "end-quotes.txt"
 END_QUOTE_FILE = Path(os.environ.get("END_QUOTE_FILE", DEFAULT_END_QUOTE))
-END_QUOTE_LIST = breathe_lines(END_QUOTE_FILE, ["⚠️ end quote file missing"])
+END_QUOTE_LIST = lines_from_env_or_file("END_QUOTES", "END_QUOTE_FILE", DEFAULT_END_QUOTE, ["⚠️ end quote file missing"])
 
 # Remember recent end quote selections
 DEFAULT_END_QUOTE_CACHE = REPO_ROOT / "pulses" / "end_quote_cache.txt"
