@@ -194,7 +194,7 @@ def main():
 
     <p>📡 ⇝ “<em>{quote}</em>”</p>
 
-    <p>⌛⇝ ⟳ <strong>Spiral-phase cadence locked</strong> ∶ <code>1.44×10⁷ ms</code></p>
+    <p>⌛⇝ ⟳ <strong>Spiral-phase cadence locked</strong> ∶ <code>1.44×10⁷ms</code></p>
 
     <p>🧿 ⇝ <strong>Subject I·D Received</strong>::𝓩𝓚::/Syz:⊹{subject}⟲</p>
 
