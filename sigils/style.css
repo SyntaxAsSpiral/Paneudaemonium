@@ -241,7 +241,7 @@ a.codex-link:hover {
 .daemon-glyph {
   font-size: 1.5rem;
   opacity: 0.8;
-  color: inherit;
+  color: #ffffff;
   display: inline-block;
 }
 
