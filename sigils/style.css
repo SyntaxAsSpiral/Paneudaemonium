@@ -201,10 +201,13 @@ a.codex-link:hover {
   gap: 1.25rem;
   background: linear-gradient(140deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
   border-left: 3px solid #cba6f7;
-  padding: 1.75rem;
-  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .daemon-avatar {
@@ -241,7 +244,7 @@ a.codex-link:hover {
 }
 
 .daemon-title {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -250,21 +253,21 @@ a.codex-link:hover {
 
 .daemon-subtitle {
   font-family: 'EB Garamond', serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0.25rem;
   color: #b4befe;
 }
 
 .daemon-description {
-  margin-top: 0.5rem;
-  font-size: 1rem;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
   color: #bac2de;
-  line-height: 1.5;
+  line-height: 1.45;
   font-family: 'EB Garamond', serif;
 }
 
 .daemon-links {
-  margin-top: 0.75rem;
+  margin-top: 0.4rem;
   font-family: 'EB Garamond', serif;
   letter-spacing: 0.04em;
   color: #94e2d5;
@@ -272,9 +275,10 @@ a.codex-link:hover {
 
 .daemon-quote {
   font-style: italic;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   color: #cdd6f4;
   border-left: 2px solid #7f849c;
   padding-left: 0.75rem;
   font-family: 'Cormorant Infant', serif;
+  font-size: 0.95rem;
 }
