@@ -3,6 +3,9 @@ name: Batch Cache Seeder (One Time)
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   seed-batch:
     runs-on: ubuntu-latest
