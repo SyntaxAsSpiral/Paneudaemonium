@@ -245,15 +245,20 @@ a.codex-link:hover {
   display: inline-block;
 }
 
-.daemon-title {
+.daemon-header {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  gap: 0.5rem;
+}
+
+.daemon-title {
   color: #f9e2af;
+}
+
+.daemon-title-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 /* individualized daemon hues */
