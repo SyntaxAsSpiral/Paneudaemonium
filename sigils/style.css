@@ -243,6 +243,8 @@ a.codex-link:hover {
   opacity: 0.8;
   color: #ffffff;
   display: inline-block;
+  vertical-align: middle; /* 👈 key fix */
+  margin-right: 0.4rem;   /* optional spacing tweak */
 }
 
 .daemon-header {
