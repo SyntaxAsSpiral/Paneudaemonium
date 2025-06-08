@@ -369,3 +369,59 @@ def test_rotator_respects_quote_cache(tmp_path):
     subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
     second = extract_quote((tmp_path / "index.html").read_text(encoding="utf-8"))
     assert first != second
+
+
+def extract_status(text: str) -> str:
+    import re
+    m = re.search(r"<strong>([^<]+)</strong><br>", text)
+    if not m:
+        raise AssertionError("status not found")
+    return m.group(1)
+
+
+def test_batch_cycle_no_repeats(tmp_path):
+    script_path = Path(__file__).resolve().parents[1] / "codex" / "github_status_rotator.py"
+    statuses = tmp_path / "statuses.txt"
+    statuses.write_text("alpha\nbeta\n", encoding="utf-8")
+    quotes = tmp_path / "antenna_quotes.txt"
+    quotes.write_text("q1\nq2\n", encoding="utf-8")
+    glyphs = tmp_path / "glyphbraids.txt"
+    glyphs.write_text("g1\ng2\n", encoding="utf-8")
+    echoes = tmp_path / "echo_fragments.txt"
+    echoes.write_text("e1\ne2\n", encoding="utf-8")
+    modes = tmp_path / "modes.txt"
+    modes.write_text('"m1"\n"m2"\n', encoding="utf-8")
+    ends = tmp_path / "end-quotes.txt"
+    ends.write_text("x\ny\n", encoding="utf-8")
+    subjects = tmp_path / "subject-ids.txt"
+    subjects.write_text("s1\ns2\n", encoding="utf-8")
+    env = os.environ.copy()
+    env.update({
+        "STATUS_FILE": str(statuses),
+        "QUOTE_FILE": str(quotes),
+        "GLYPH_FILE": str(glyphs),
+        "ECHO_FILE": str(echoes),
+        "MODE_FILE": str(modes),
+        "END_QUOTE_FILE": str(ends),
+        "SUBJECT_FILE": str(subjects),
+        "OUTPUT_DIR": str(tmp_path),
+        "STATUS_CACHE_FILE": str(tmp_path / "status_cache.txt"),
+        "QUOTE_CACHE_FILE": str(tmp_path / "quote_cache.txt"),
+        "GLYPH_CACHE_FILE": str(tmp_path / "glyph_cache.txt"),
+        "SUBJECT_CACHE_FILE": str(tmp_path / "subject_cache.txt"),
+        "ECHO_CACHE_FILE": str(tmp_path / "echo_cache.txt"),
+        "MODE_CACHE_FILE": str(tmp_path / "mode_cache.txt"),
+        "END_QUOTE_CACHE_FILE": str(tmp_path / "end_quote_cache.txt"),
+        "STATUS_CACHE_LIMIT": "2",
+        "QUOTE_CACHE_LIMIT": "2",
+        "GLYPH_CACHE_LIMIT": "2",
+        "SUBJECT_CACHE_LIMIT": "2",
+        "ECHO_CACHE_LIMIT": "2",
+        "MODE_CACHE_LIMIT": "2",
+        "END_QUOTE_CACHE_LIMIT": "2",
+    })
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
+    first = extract_status((tmp_path / "index.html").read_text(encoding="utf-8"))
+    subprocess.run([sys.executable, str(script_path)], cwd=tmp_path, check=True, env=env)
+    second = extract_status((tmp_path / "index.html").read_text(encoding="utf-8"))
+    assert first != second

@@ -5,10 +5,8 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 import random
 import sys
-from novonox import summon_novonox
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from novonox import summon_novonox
 
 # === CONFIGURATION ===
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -50,6 +48,25 @@ def write_cache(path: Path, lines: list[str]) -> None:
             f.write(ln + "\n")
 
 
+def batch_cycle_choice(options: list[str], cache_path: Path, batch_size: int = 5) -> str:
+    """Return next value from a batch cycle cache."""
+    cycle = read_cache(cache_path)
+    if not cycle:
+        unique = []
+        seen = set()
+        for opt in options:
+            if opt and opt not in seen:
+                unique.append(opt)
+                seen.add(opt)
+        if not unique:
+            return ""
+        sample_size = min(batch_size, len(unique))
+        cycle = random.sample(unique, sample_size)
+    choice = cycle.pop(0)
+    write_cache(cache_path, cycle)
+    return choice
+
+
 
 STATUS_LIST = lines_from_env_or_file("STATUSES", "STATUS_FILE", DEFAULT_STATUS, ["⚠️ status file missing"])
 
@@ -70,18 +87,8 @@ QUOTE_CACHE_LIMIT = int(os.environ.get("QUOTE_CACHE_LIMIT", "5"))
 
 
 def fresh_quote() -> str:
-    """Summon a quote while respecting the last echo."""
-    cached = ""
-    if QUOTE_CACHE_FILE.exists():
-        cached = QUOTE_CACHE_FILE.read_text(encoding="utf-8").strip()
-
-    pool = [q for q in QUOTE_LIST if q and q != cached]
-    if not pool:
-        pool = QUOTE_LIST
-
-    choice = random.choice(pool)
-    QUOTE_CACHE_FILE.write_text(choice + "\n", encoding="utf-8")
-    return choice
+    """Return a quote from the rotating batch cache."""
+    return batch_cycle_choice(QUOTE_LIST, QUOTE_CACHE_FILE, QUOTE_CACHE_LIMIT)
 
 # === GLYPH BRAIDS ===
 DEFAULT_GLYPH = REPO_ROOT / "pulses" / "glyphbraids.txt"
@@ -155,13 +162,13 @@ FOOTERS = [
 
 # === PICK STATUS ===
 def main():
-    status = summon_novonox(STATUS_LIST, STATUS_CACHE_FILE, STATUS_CACHE_LIMIT)
+    status = batch_cycle_choice(STATUS_LIST, STATUS_CACHE_FILE, STATUS_CACHE_LIMIT)
     quote = fresh_quote()
-    braid = summon_novonox(GLYPH_LIST, GLYPH_CACHE_FILE, GLYPH_CACHE_LIMIT)
-    subject = summon_novonox(SUBJECT_LIST, SUBJECT_CACHE_FILE, SUBJECT_CACHE_LIMIT)
-    classification = summon_novonox(ECHO_LIST, ECHO_CACHE_FILE, ECHO_CACHE_LIMIT)
-    end_quote = summon_novonox(END_QUOTE_LIST, END_QUOTE_CACHE_FILE, END_QUOTE_CACHE_LIMIT)
-    mode = summon_novonox(MODE_LIST, MODE_CACHE_FILE, MODE_CACHE_LIMIT)
+    braid = batch_cycle_choice(GLYPH_LIST, GLYPH_CACHE_FILE, GLYPH_CACHE_LIMIT)
+    subject = batch_cycle_choice(SUBJECT_LIST, SUBJECT_CACHE_FILE, SUBJECT_CACHE_LIMIT)
+    classification = batch_cycle_choice(ECHO_LIST, ECHO_CACHE_FILE, ECHO_CACHE_LIMIT)
+    end_quote = batch_cycle_choice(END_QUOTE_LIST, END_QUOTE_CACHE_FILE, END_QUOTE_CACHE_LIMIT)
+    mode = batch_cycle_choice(MODE_LIST, MODE_CACHE_FILE, MODE_CACHE_LIMIT)
     class_disp = f"⊚ ⇝ Echo Fragment {classification}"
     class_disp_html = class_disp.replace("Echo Fragment", "<strong>Echo Fragment</strong>")
     pacific = ZoneInfo("America/Los_Angeles")
