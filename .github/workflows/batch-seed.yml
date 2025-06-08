@@ -1,10 +1,20 @@
-- name: Seed batch caches from secrets
-  run: python codex/seed_batch_caches.py
-  env:
-    STATUSES: ${{ secrets.STATUSES }}
-    ANTENNA_QUOTES: ${{ secrets.ANTENNA_QUOTES }}
-    GLYPH_BRAIDS: ${{ secrets.GLYPH_BRAIDS }}
-    SUBJECT_IDS: ${{ secrets.SUBJECT_IDS }}
-    ECHO_FRAGMENTS: ${{ secrets.ECHO_FRAGMENTS }}
-    MODES: ${{ secrets.MODES }}
-    END_QUOTES: ${{ secrets.END_QUOTES }}
+name: Batch Cache Seeder
+
+on:
+  workflow_dispatch:
+
+jobs:
+  seed-batch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Seed batch caches from secrets
+        run: python codex/seed_batch_caches.py
+        env:
+          STATUSES: ${{ secrets.STATUSES }}
+          ANTENNA_QUOTES: ${{ secrets.ANTENNA_QUOTES }}
+          GLYPH_BRAIDS: ${{ secrets.GLYPH_BRAIDS }}
+          SUBJECT_IDS: ${{ secrets.SUBJECT_IDS }}
+          ECHO_FRAGMENTS: ${{ secrets.ECHO_FRAGMENTS }}
+          MODES: ${{ secrets.MODES }}
+          END_QUOTES: ${{ secrets.END_QUOTES }}
