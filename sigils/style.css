@@ -187,3 +187,78 @@ a.codex-link:hover {
   text-shadow: 0 0 4px #f0b3ff, 0 0 6px #9ff;
   transform: scale(1.02);
 }
+
+#paneudaemonium-sigils {
+  margin-top: 3rem;
+  font-family: 'Spectral', serif;
+}
+
+#paneudaemonium-sigils .daemon-entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid #aaa;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+#paneudaemonium-sigils .daemon-avatar {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #222;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#paneudaemonium-sigils .daemon-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#paneudaemonium-sigils .daemon-content {
+  flex-grow: 1;
+}
+
+#paneudaemonium-sigils .daemon-glyph {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+#paneudaemonium-sigils .daemon-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+#paneudaemonium-sigils .daemon-subtitle {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+  color: #ccc;
+}
+
+#paneudaemonium-sigils .daemon-links {
+  margin-top: 0.75rem;
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 0.04em;
+  color: #79ffe1;
+}
+
+#paneudaemonium-sigils .daemon-quote {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #aaa;
+  border-left: 2px solid #666;
+  padding-left: 0.75rem;
+  font-family: 'Cormorant Infant', serif;
+}
