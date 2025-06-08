@@ -1,4 +1,4 @@
-name: Batch Cache Seeder
+name: Batch Cache Seeder (One Time)
 
 on:
   workflow_dispatch:
@@ -8,6 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
       - name: Seed batch caches from secrets
         run: python codex/seed_batch_caches.py
         env:
@@ -18,3 +24,11 @@ jobs:
           ECHO_FRAGMENTS: ${{ secrets.ECHO_FRAGMENTS }}
           MODES: ${{ secrets.MODES }}
           END_QUOTES: ${{ secrets.END_QUOTES }}
+
+      - name: Commit and Push batch caches
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add pulses/*_cache.txt
+          git commit -m "🜍 Seed batch caches from secrets [skip ci]" || echo "No changes to commit"
+          git push
