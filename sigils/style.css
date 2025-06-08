@@ -212,8 +212,8 @@ a.codex-link:hover {
 
 .daemon-avatar {
   flex-shrink: 0;
-  width: 72px;
-  height: 72px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
   background-color: #222;
   overflow: hidden;
