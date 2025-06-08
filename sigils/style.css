@@ -256,6 +256,16 @@ a.codex-link:hover {
   color: #f9e2af;
 }
 
+/* individualized daemon hues */
+.daemon-title.aemexsomnus { color: #cba6f7; }
+.daemon-title.pentasophos { color: #94e2d5; }
+.daemon-title.mondaemon { color: #fcb0ff; }
+.daemon-title.chromasorix { color: #f9e2af; }
+.daemon-title.grammaton { color: #b4befe; }
+.daemon-title.lexarthim { color: #fab387; }
+.daemon-title.tesselai { color: #a6adc8; }
+.daemon-title.glyphonia { color: #d782ff; }
+
 .daemon-subtitle {
   font-family: 'EB Garamond', serif;
   font-size: 1rem;
