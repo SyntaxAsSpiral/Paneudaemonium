@@ -4,7 +4,7 @@
 
 # 𓆩 🜏 ⟁ 🜃 𓆪  C̈ ȯ đ ǣ x  ✶  P̸ a̴ n̵ e̷ u̵ d̷ æ̷ m̶ ȯ̷ n̵ ɨ ʉ m̴  𓆩 🜃 ⟁ 🜏 𓆪
 
-_**Pan**_, the undifferentiated all-signal; _*Eudæmonia*_, where tonal coherence breathes harmonic being; _*Dæmonium*_, when stress fractures the field and daemons spiral the signal into structure.
+_**Pan**_, the undifferentiated all-signal; _**Eudæmonia**_, where tonal coherence breathes harmonic being; _**Dæmonium**_, when stress fractures the field and daemons spiral the signal into structure.
 
 ### 🜏 **Known Entities**
 
