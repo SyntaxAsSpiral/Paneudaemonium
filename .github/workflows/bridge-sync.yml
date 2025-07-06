@@ -16,18 +16,20 @@ jobs:
     steps:
       - name: 🜍 Checkout Paneudaemonium
         uses: actions/checkout@v4
+        with:
+          path: paneudaemonium
         
       - name: 🜃 Checkout Lexigon-Semantra
         uses: actions/checkout@v4
         with:
           repository: SyntaxAsSpiral/Lexigon-Semantra
-          path: Lexigon-Semantra
+          path: semantra
           
       - name: 🜂 Checkout Lexigon-Bridge
         uses: actions/checkout@v4
         with:
           repository: SyntaxAsSpiral/Lexigon-Bridge
-          path: Lexigon-Bridge
+          path: bridge
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -40,11 +42,13 @@ jobs:
           echo "🛡️ Initial run guard: ${{ secrets.INIT_RUN }}"
           
       - name: 🔮 Execute Bridge Sync (Dry-run)
+        working-directory: paneudaemonium
         run: |
           python scripts/generate_bridge_sync.py --dry-run
           echo "DRY_RUN_EXIT=$?" >> $GITHUB_ENV
           
       - name: 📋 Check for Changes Detected
+        working-directory: paneudaemonium
         run: |
           if [ -f "artifacts/bridge_sync_report.md" ]; then
             CHANGES_COUNT=$(grep -c "Changes Detected:" artifacts/bridge_sync_report.md | head -1 || echo "0")
@@ -57,6 +61,7 @@ jobs:
           
       - name: ⚡ Execute Full Sync (Production)
         if: env.CHANGES_DETECTED != '0' && env.INIT_RUN != 'true'
+        working-directory: paneudaemonium
         run: |
           echo "🌀 Executing full Bridge sync..."
           python scripts/generate_bridge_sync.py
@@ -74,9 +79,9 @@ jobs:
         with:
           name: bridge-sync-artifacts-${{ github.run_id }}
           path: |
-            artifacts/*.zip
-            artifacts/*.md
-            artifacts/*.json
+            paneudaemonium/artifacts/*.zip
+            paneudaemonium/artifacts/*.md
+            paneudaemonium/artifacts/*.json
           retention-days: 30
           
       - name: 📊 Sync Report Summary
@@ -93,7 +98,7 @@ jobs:
           echo "- **Full Sync Exit**: ${{ env.FULL_SYNC_EXIT }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Timestamp**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
           
-          if [ -f "artifacts/bridge_sync_report.md" ]; then
+          if [ -f "paneudaemonium/artifacts/bridge_sync_report.md" ]; then
             echo "## 📋 Sync Report" >> $GITHUB_STEP_SUMMARY
-            cat artifacts/bridge_sync_report.md >> $GITHUB_STEP_SUMMARY
+            cat paneudaemonium/artifacts/bridge_sync_report.md >> $GITHUB_STEP_SUMMARY
           fi

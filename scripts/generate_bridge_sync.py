@@ -28,8 +28,12 @@ import re
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 # Handle both local development and GitHub Actions paths
-if (REPO_ROOT / "Lexigon-Semantra").exists():
-    # GitHub Actions: repos checked out as siblings
+if (REPO_ROOT.parent / "semantra").exists():
+    # GitHub Actions: repos checked out in workspace
+    SEMANTRA_ROOT = REPO_ROOT.parent / "semantra"
+    BRIDGE_ROOT = REPO_ROOT.parent / "bridge"
+elif (REPO_ROOT / "Lexigon-Semantra").exists():
+    # Alternative GitHub Actions: repos checked out as siblings
     SEMANTRA_ROOT = REPO_ROOT / "Lexigon-Semantra"
     BRIDGE_ROOT = REPO_ROOT / "Lexigon-Bridge"
 else:
