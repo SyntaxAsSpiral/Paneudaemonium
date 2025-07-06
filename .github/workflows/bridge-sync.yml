@@ -1,0 +1,95 @@
+name: 🌀 Bridge Sync Engine
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
+  workflow_dispatch:
+  push:
+    paths: ['scripts/generate_bridge_sync.py']
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Limited to current repo (Paneudaemonium)
+    
+    steps:
+      - name: 🜍 Checkout Paneudaemonium
+        uses: actions/checkout@v4
+        
+      - name: 🜃 Checkout Lexigon-Semantra
+        uses: actions/checkout@v4
+        with:
+          repository: SyntaxAsSpiral/Lexigon-Semantra
+          path: ../Lexigon-Semantra
+          
+      - name: 🜂 Checkout Lexigon-Bridge
+        uses: actions/checkout@v4
+        with:
+          repository: SyntaxAsSpiral/Lexigon-Bridge
+          path: ../Lexigon-Bridge
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 🔍 Guard-Rail Check (Dry-run enforcement)
+        run: |
+          echo "INIT_RUN=${{ secrets.INIT_RUN }}" >> $GITHUB_ENV
+          echo "🛡️ Initial run guard: ${{ secrets.INIT_RUN }}"
+          
+      - name: 🔮 Execute Bridge Sync (Dry-run)
+        run: |
+          python scripts/generate_bridge_sync.py --dry-run
+          echo "DRY_RUN_EXIT=$?" >> $GITHUB_ENV
+          
+      - name: 📋 Check for Changes Detected
+        run: |
+          if [ -f "artifacts/bridge_sync_report.md" ]; then
+            CHANGES_COUNT=$(grep -c "Changes Detected:" artifacts/bridge_sync_report.md | head -1 || echo "0")
+            echo "CHANGES_DETECTED=$CHANGES_COUNT" >> $GITHUB_ENV
+            echo "🔄 Changes detected: $CHANGES_COUNT"
+          else
+            echo "CHANGES_DETECTED=0" >> $GITHUB_ENV
+            echo "📝 No sync report found"
+          fi
+          
+      - name: ⚡ Execute Full Sync (Production)
+        if: env.CHANGES_DETECTED != '0' && env.INIT_RUN != 'true'
+        run: |
+          echo "🌀 Executing full Bridge sync..."
+          python scripts/generate_bridge_sync.py
+          echo "FULL_SYNC_EXIT=$?" >> $GITHUB_ENV
+          
+      - name: 🛡️ Guard-Rail Notice (Init mode)
+        if: env.INIT_RUN == 'true'
+        run: |
+          echo "🛡️ INIT_RUN=true detected - Full sync bypassed"
+          echo "📋 Review the dry-run report, then set INIT_RUN=false to enable production sync"
+          
+      - name: 📦 Upload Sync Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bridge-sync-artifacts-${{ github.run_id }}
+          path: |
+            artifacts/*.zip
+            artifacts/*.md
+            artifacts/*.json
+          retention-days: 30
+          
+      - name: 📊 Sync Report Summary
+        if: always()
+        run: |
+          echo "## 🌀 Bridge Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: $([[ ${{ env.INIT_RUN }} == 'true' ]] && echo 'DRY-RUN ONLY (Init Guard)' || echo 'Production')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes Detected**: ${{ env.CHANGES_DETECTED }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Dry-run Exit**: ${{ env.DRY_RUN_EXIT }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Full Sync Exit**: ${{ env.FULL_SYNC_EXIT }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "artifacts/bridge_sync_report.md" ]; then
+            echo "## 📋 Sync Report" >> $GITHUB_STEP_SUMMARY
+            cat artifacts/bridge_sync_report.md >> $GITHUB_STEP_SUMMARY
+          fi
