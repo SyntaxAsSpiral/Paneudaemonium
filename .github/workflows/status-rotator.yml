@@ -33,13 +33,13 @@ jobs:
         ECHO_FRAGMENTS: ${{ secrets.ECHO_FRAGMENTS }}
         MODES: ${{ secrets.MODES }}
         END_QUOTES: ${{ secrets.END_QUOTES }}
-        OUTPUT_DIR: sigils
+        OUTPUT_DIR: docs
       run: python codex/github_status_rotator.py
 
     - name: Commit and Push index.html
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add sigils/index.html
+        git add docs/index.html
         git commit -m "Automated pulse update [skip ci]" || echo "No changes to commit"
         git push
