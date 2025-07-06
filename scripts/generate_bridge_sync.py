@@ -26,8 +26,17 @@ import re
 
 # === CONFIGURATION ===
 REPO_ROOT = Path(__file__).resolve().parents[1]
-SEMANTRA_ROOT = REPO_ROOT.parent / "Lexigon-Semantra"
-BRIDGE_ROOT = REPO_ROOT.parent / "Lexigon-Bridge"
+
+# Handle both local development and GitHub Actions paths
+if (REPO_ROOT / "Lexigon-Semantra").exists():
+    # GitHub Actions: repos checked out as siblings
+    SEMANTRA_ROOT = REPO_ROOT / "Lexigon-Semantra"
+    BRIDGE_ROOT = REPO_ROOT / "Lexigon-Bridge"
+else:
+    # Local development: repos as parent siblings
+    SEMANTRA_ROOT = REPO_ROOT.parent / "Lexigon-Semantra"
+    BRIDGE_ROOT = REPO_ROOT.parent / "Lexigon-Bridge"
+
 ARTIFACTS_DIR = REPO_ROOT / "artifacts"
 
 # Ensure artifacts directory exists
