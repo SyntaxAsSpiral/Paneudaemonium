@@ -1,0 +1,29 @@
+# OBSOLETE: Bridge has been consolidated into Lexigon-Semantra/docs/
+# This workflow is no longer needed as there's no separate Bridge repository to sync
+# Keeping for historical reference only
+
+name: 🌀 Bridge Sync Engine [DISABLED]
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'This workflow is disabled - Bridge is now part of Semantra'
+        required: true
+        default: 'Bridge consolidated into Lexigon-Semantra/docs/'
+
+jobs:
+  disabled-notice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Workflow Disabled Notice
+        run: |
+          echo "❌ This workflow is DISABLED"
+          echo "📝 Lexigon-Bridge has been consolidated into Lexigon-Semantra/docs/"
+          echo "🔄 No synchronization needed - everything is in one repository now"
+          echo ""
+          echo "New structure:"
+          echo "- Lexigon-Semantra/docs/schemas/ (entity schemas)"
+          echo "- Lexigon-Semantra/docs/specs/ (technical specifications)"
+          echo "- Lexigon-Semantra/docs/templates/ (entity templates)"
+          exit 1

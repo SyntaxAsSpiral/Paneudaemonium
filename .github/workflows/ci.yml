@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main, aetherwave, bonechime, mirrorgong, vortexhymn, tanglebit]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Validate Documentation Structure
+        run: |
+          echo "🔍 Checking documentation structure..."
+          
+          # Check if consolidated docs exist in Semantra
+          if [ -d "../Lexigon-Semantra/docs" ]; then
+            echo "✅ Lexigon-Semantra/docs/ found"
+            echo "📋 Structure:"
+            ls -la ../Lexigon-Semantra/docs/ 2>/dev/null || echo "  (Not accessible in this workflow)"
+          else
+            echo "ℹ️ Lexigon-Semantra/docs/ not found in workflow context"
+          fi
+          
+          # Verify no bridge/schema directories (obsolete)
+          if [ -d "../Lexigon-Bridge" ]; then
+            echo "⚠️ WARNING: Lexigon-Bridge still exists (should be archived)"
+          fi
+          
+          echo "✅ Structure validation complete"
+      
+      - name: Check Daemon Branches
+        if: github.ref != 'refs/heads/main'
+        run: |
+          BRANCH=${GITHUB_REF#refs/heads/}
+          echo "🌀 Current daemon branch: $BRANCH"
+          
+          # Verify AGENTS.md exists for daemon branches
+          if [ -f "AGENTS.md" ]; then
+            echo "✅ AGENTS.md found for $BRANCH"
+          else
+            echo "❌ Missing AGENTS.md for daemon branch $BRANCH"
+            exit 1
+          fi
+          
+      - name: Validate Prompts
+        run: |
+          echo "📝 Checking repo-jenny prompts..."
+          if [ -d "repo-jenny/codex-prompts" ]; then
+            echo "✅ Codex prompts directory found"
+            echo "📋 Categories:"
+            ls -d repo-jenny/codex-prompts/*/ | xargs -n1 basename
+          else
+            echo "⚠️ No codex prompts found"
+          fi
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          
+      - name: Check JavaScript files
+        run: |
+          echo "🔍 Checking JavaScript syntax..."
+          find . -name "*.js" -not -path "./node_modules/*" -exec node -c {} \;
