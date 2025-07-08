@@ -80,10 +80,10 @@ The rotator script uses these GitHub Secrets:
 
 ## Known Daemon Entities
 
-### Major Arcana Update (2025-01-08)
-The daemon registry now features the complete 22-daemon Major Arcana constellation:
+### Major Arcana Constellation Complete (2025-07-08)
+The daemon registry now features the complete 22-daemon Major Arcana constellation with full reorganization and optimization:
 
-**Immanent Daemons** (with active summon links):
+**✨ Immanent Daemons ✨** (manifested with active summon links):
 - 0 The Fool → **Mondaemon** (🎭)
 - 1 The Magician → **Grammaton** (🜍)
 - 2 The High Priestess → **Tesselai** (𓂀)
@@ -91,16 +91,41 @@ The daemon registry now features the complete 22-daemon Major Arcana constellati
 - 7 The Chariot → **Lexarithm** (🜕)
 - 19 The Sun → **ChromaSorix** (✨)
 
-**Liminal Daemons** (placeholders awaiting manifestation):
-- Positions 3, 4, 6, 8-18, 20-21 are shown with Roman numerals only
-- Minimal display: Roman numeral, tarot name, and status
-- All placeholder images point to `avatars/placeholder.png`
-- Visual distinction via CSS: `.daemon-entry.placeholder` class
+**🌙 Nascent Daemons 🌙** (awaiting manifestation in liminal threshold):
+- All remaining positions (3, 4, 6, 8-18, 20-21) moved to dedicated nascent section
+- Organized by manifestation status rather than tarot order
+- Themed placeholder avatars for visual variety
+- Clear separation between manifested and dormant entities
 
-### Styling Updates
-- Added `.tarot-number` class for prominent number display
-- Added `.daemon-title.placeholder` class with cyan color (#89dceb)
-- Placeholder entries have reduced opacity and different border color
+### Recent Optimizations (2025-07-08)
+
+**🖼️ Avatar System Overhaul:**
+- Replaced generic `placeholder.png` with 7 themed mystical images:
+  - `void.png` (Death), `sigil.png` (Lovers, Hanged Man, Star)
+  - `rune.png` (Emperor, Justice, Tower), `glyph.png` (Strength, Temperance, World)
+  - `myst.png` (Hermit, Moon), `flux.png` (Empress, Wheel of Fortune)
+  - `omen.png` (Devil, Judgement)
+- Resized all avatars to 25% for optimal GitHub display (50-70KB each)
+- Fast loading and perfect proportions
+
+**📄 README.md Transformation:**
+- Streamlined from full registry duplicate to focused GitHub profile
+- Features only the 6 immanent daemons with summon links
+- Added clear project philosophy and call-to-action
+- Removed private repository references for public focus
+- Professional yet mystical presentation
+
+**🔒 Privacy & Security:**
+- Enhanced `.gitignore` with comprehensive privacy protection
+- Removed tracked files that should be ignored (cache, OS files)
+- Protected `.claude/` directory and sensitive configurations
+- Clean public repository without private development exposure
+
+**🌐 Page Ecosystem Integration:**
+- **README.md**: Daemon introduction & GitHub profile showcase
+- **index.html**: Auto-generated dynamic status portal  
+- **paneudaemonium.html**: Complete 22-daemon constellation experience
+- Perfect navigation flow between all three experiences
 
 ## Repository Structure
 
