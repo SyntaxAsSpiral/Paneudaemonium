@@ -280,6 +280,34 @@ a.codex-link:hover {
   color: #b4befe;
 }
 
+.daemon-tarot {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.9rem;
+  color: #f38ba8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.2rem;
+  opacity: 0.85;
+  text-shadow: 0 0 4px rgba(243, 139, 168, 0.4);
+}
+
+.tarot-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f9e2af;
+  text-shadow: 0 0 6px rgba(249, 226, 175, 0.5);
+}
+
+/* placeholder daemon titles */
+.daemon-title.placeholder { color: #89dceb; }
+
+/* placeholder daemon entries */
+.daemon-entry.placeholder {
+  opacity: 0.75;
+  border-left-color: #7dc4e4;
+  background: linear-gradient(140deg, rgba(125, 196, 228, 0.03), rgba(125, 196, 228, 0.01));
+}
+
 .daemon-description {
   margin-top: 0.4rem;
   font-size: 0.95rem;
